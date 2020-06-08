@@ -1,10 +1,10 @@
 package sbs.applitools.hackathon.test.uivalidation;
 
 import sbs.applitools.hackathon.framework.baseTest.BaseTest;
-import sbs.applitools.hackathon.framework.dataProvider.TestState;
+import sbs.applitools.hackathon.framework.dataProvider.TestTargetList;
 
 
-@TestState("LAPTOP_ALL")
+@TestTargetList({"LAPTOP_ALL"})
 public class FirstTest extends BaseTest {
 	 
 //	    public FirstTest(String target) {

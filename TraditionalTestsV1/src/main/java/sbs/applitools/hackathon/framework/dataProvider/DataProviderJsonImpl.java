@@ -16,7 +16,7 @@ import sbs.applitools.hackathon.framework.utils.JSONUtilsGsonImpl;;
 
 public class DataProviderJsonImpl implements ProvidesData {
 
-	private static final String DEFAULT_DATA_FILE = "C:\\Users\\sagar.shinde\\workspace-AutoFramework\\MyMTA\\MyMTA\\src\\main\\resources\\testData.json";
+	private static final String DEFAULT_DATA_FILE = System.getProperty("user.dir")+ "//config//testData.json";
 
 	@Override
 	public Object[][] getData(ITestContext iTestContext, Method testMethod) throws IOException {

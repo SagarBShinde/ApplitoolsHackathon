@@ -8,13 +8,13 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface TestState {
+public @interface TestTargetList {
 	
-	String NO_PARAMETER = "NO_PARAMETER";
+	String DEFAULT_PARAMETER = "Default";
 	
 	/**
 	 * Parameter for data provider 
 	 */
-	String value() default DataSet.NO_PARAMETER;
+	String[] value() default TestTargetList.DEFAULT_PARAMETER;
 
 }
