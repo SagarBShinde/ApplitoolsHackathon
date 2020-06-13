@@ -3,6 +3,10 @@ package sbs.applitools.hackathon.framework.constants;
 
 public class FrameworkConstants {
 	
-	public static final String DEFAULT_DATA_FILE="C:\\Users\\sagar.shinde\\workspace-AutoFramework\\MyMTA\\MyMTA\\src\\main\\resources\\testData.json";
 	
+	public static final long PAGE_LOAD_TIMEOUT = 30;
+	public static final long MAX_EXPLICIT_WAIT = 30;
+	public static final long DRIVER_IMPLICIT_WAIT = 30;
+	public static final long SCRRIPT_TIMEOUT = 30;
+			
 }

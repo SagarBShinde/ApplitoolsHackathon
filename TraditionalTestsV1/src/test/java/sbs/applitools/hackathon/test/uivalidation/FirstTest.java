@@ -1,54 +1,44 @@
 package sbs.applitools.hackathon.test.uivalidation;
 
+import org.testng.annotations.Test;
+
 import sbs.applitools.hackathon.framework.baseTest.BaseTest;
 import sbs.applitools.hackathon.framework.dataProvider.TestTargetList;
+import sbs.applitools.hackathon.framework.setup.TestTarget;
+import sbs.applitools.hackathon.pages.HomePage;
 
 
-@TestTargetList({"LAPTOP_ALL"})
+@TestTargetList({"Default"})
+@Test
 public class FirstTest extends BaseTest {
 	 
-//	    public FirstTest(String target) {
-//	        this.testTarget = target;
-//	    }
-//	 
-//	    @BeforeClass
-//	    public void beforeClass() {
-//	        System.out.println("Before SimpleTest class executed.");
-//	    }
-//	 
-//	    @Test
-//	    public void testMethod() {
-//	        System.out.println("testMethod parameter value is: " + testTarget.targetName);
-//	    }
-	    
-	    
-//		@Factory
-//		public  Object[] getTestInstances() {
-//			
-//			InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("test_targets.json");
-//			
-//			System.out.println("**************In the test Factory**********************");
-//			 
-//			String TargetJson = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8))
-//		      .lines()
-//		      .collect(Collectors.joining("\n"));
-//			 
-//			List<Object> testList = new ArrayList<Object>();
-//			TestTarget targets[] = (TestTarget[]) new JSONHelper().getObject(TargetJson, TestTarget[].class);
-//			for(TestTarget target : targets) {
-//				try {
-//					// testList.add(this.class.getConstructor(this.class).newInstance(target));
-//					testList.add(this.getClass().getConstructor(TestTarget.class).newInstance(target));
-//				
-//				} catch (Exception e) {
-//					
-//					e.printStackTrace();
-//				}	
-//			}			
-//					
-//			return testList.toArray();
-//			
-//			
-//		}
+	
+	 public FirstTest(TestTarget target) {
+		    this.testTarget = target;
+		 }
+		    
+	public FirstTest() {
+		    	
+		}
+	
+
+
+	public void validateProductCount() {
+		System.out.println("Is Driver null in the test"+ this.getDriver() == null);
+		HomePage homePage = new HomePage(this.getDriver());
+		System.out.println(homePage.appHeader.getDriver() == null);
+		homePage.appHeader.click(homePage.appHeader.mainMenu);
+		System.out.println("Products displayed are:"+ homePage.productSection.getGridItemCount());
+	}
+	
+
+	public void validateProductCount2() {
+		System.out.println("Is Driver null in the test"+ this.getDriver() == null);
+		HomePage homePage = new HomePage(this.getDriver());
+		System.out.println(homePage.appHeader.getDriver() == null);
+		homePage.appHeader.click(homePage.appHeader.mainMenu);
+		System.out.println("Products displayed are:"+ homePage.productSection.getGridItemCount());
+	}
+	
 	
 }

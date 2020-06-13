@@ -1,5 +1,10 @@
 package sbs.applitools.hackathon.framework.basePage;
 
+import org.openqa.selenium.WebDriver;
+
 public class BasePage {
+	
+	protected WebDriver driver;
+	
 
 }
