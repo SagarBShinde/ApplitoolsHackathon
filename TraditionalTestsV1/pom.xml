@@ -86,6 +86,13 @@
             <artifactId>log4j-core</artifactId>
             <version>2.11.2</version>
         </dependency> 
+        
+		<!-- This is the Applitools Selenium Java SDK -->
+		<dependency>
+		 <groupId>com.applitools</groupId>
+		 <artifactId>eyes-selenium-java3</artifactId>
+		 <version>RELEASE</version>
+		</dependency>
 		
 	</dependencies>
   

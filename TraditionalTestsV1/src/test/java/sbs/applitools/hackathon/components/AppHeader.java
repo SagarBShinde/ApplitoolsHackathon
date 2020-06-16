@@ -58,6 +58,16 @@ public class AppHeader extends BaseComponent {
 	
 	@FindBy(how = How.ID , using = "DIV__dropdowndr__48")
 	private WebElement cart;
+	
+	
+	public boolean validateSearch() throws NoSuchFieldException, SecurityException {
+		
+		FindBy f = this.getClass().getDeclaredField("searchBar").getAnnotation(FindBy.class);
+		System.out.println("----------------------------------"+ f.using()+ "----" + f.how());
+		
+		return searchBar.isDisplayed();
+		
+	}
 		
 
 }

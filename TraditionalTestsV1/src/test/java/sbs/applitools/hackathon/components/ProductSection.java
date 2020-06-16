@@ -40,5 +40,10 @@ public class ProductSection extends BaseComponent {
 		return gridItems.size();
 		
 	}
+	
+	public void viewProductDetail(int productIndex) {
+		this.gridItems.get(productIndex).click();
+		
+	}
 
 }

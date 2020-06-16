@@ -25,6 +25,8 @@ public class DriverFactory {
 	public WebDriver setUpDriver() throws FrameworkException {
 		
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver");
+		System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"//drivers//msedgedriver");
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//drivers//geckodriver");
 		
 		WebDriver d;
 		

@@ -20,6 +20,7 @@ public class TestTarget {
 	public DeviceOrientation orientation;
 	public Browser browser;
 	public ViewPort browserSize ;
+	public String visual_attribute_dir;
 	
 
 
