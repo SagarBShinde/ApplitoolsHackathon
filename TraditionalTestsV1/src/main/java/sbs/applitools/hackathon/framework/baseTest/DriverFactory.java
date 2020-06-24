@@ -2,6 +2,8 @@ package sbs.applitools.hackathon.framework.baseTest;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,13 +12,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import sbs.applitools.hackathon.framework.excptions.FrameworkException;
 import sbs.applitools.hackathon.framework.setup.TestTarget;
+import sbs.applitools.hackathon.framework.basePage.BaseComponent;
 import sbs.applitools.hackathon.framework.constants.FrameworkConstants;
 
 
 public class DriverFactory {
 	
-	private TestTarget target;
+	private static final Logger LOG = LogManager.getLogger(DriverFactory.class);
 	
+	private TestTarget target;
 	
 	public DriverFactory(TestTarget target ) {
 		this.target = target;
@@ -68,9 +72,7 @@ public class DriverFactory {
 
 	private void setBrowserSize(WebDriver d) {
 		Dimension browser_size = new Dimension(target.browserSize.width,target.browserSize.height);
-		//Dimension browser_size = new Dimension(500,700);
 		d.manage().window().setSize(browser_size);
-	//	d.manage().window().maximize();
 	} 
 	
 	

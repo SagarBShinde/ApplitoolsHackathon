@@ -1,5 +1,7 @@
 package sbs.applitools.hackathon.framework.setup;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,6 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import sbs.applitools.hackathon.framework.baseTest.DriverFactory;
+import sbs.applitools.hackathon.framework.dataProvider.DataProviderJsonImpl;
 import sbs.applitools.hackathon.framework.excptions.FrameworkException;
 import sbs.applitools.hackathon.framework.setup.device.Device;
 import sbs.applitools.hackathon.framework.utils.propertyHandler;
@@ -22,12 +25,14 @@ public class TestTarget {
 	public ViewPort browserSize ;
 	public String visual_attribute_dir;
 	
-
+	private static final Logger LOG = LogManager.getLogger(TestTarget.class);
 
 public TestTarget(String targetName) {
 	this.targetName = targetName;
 }	
 
+
+// Move the main class to Test Class
 public static void main(String[] args) throws FrameworkException {
 	
 	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver");
@@ -45,25 +50,11 @@ public static void main(String[] args) throws FrameworkException {
 	
 	b.size = browserSize;
 	t.browserSize = browserSize;
-	
-	
-	
-	
-	
-//	t.browser = b;
-//	
-//	t.browser.size.height = 700;
-//	t.browser.size.width = 768;	
-	
-	
 	WebDriver D = new DriverFactory(t).setUpDriver();
 	
 	D.get(propertyHandler.getInstance().getValue("app.v1.url"));
-	System.out.println(D.manage().window().getSize().height);
-	System.out.println(D.manage().window().getSize().width);
-	
-	WebElement e = D.findElement(By.id("NAV__colxlcollg__10"));
-	
+	LOG.debug(String.format("Browser height is:",D.manage().window().getSize().height));
+	LOG.debug(String.format("Browser width is:",D.manage().window().getSize().width));	
 
 }
 

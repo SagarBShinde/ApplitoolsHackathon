@@ -7,8 +7,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
@@ -23,10 +28,11 @@ import sbs.applitools.hackathon.framework.excptions.VisualAttributeException;
 import sbs.applitools.hackathon.framework.setup.TestTarget;
 import sbs.applitools.hackathon.framework.utils.VisualAttribute;
 
-public class BaseComponent {
+public abstract class BaseComponent extends RemoteWebElement{
 	
+	private static final Logger LOG = LogManager.getLogger(BaseComponent.class);
 	public WebDriver driver;
-	//private WebDriverWait wait = new WebDriverWait(this.driver, FrameworkConstants.MAX_EXPLICIT_WAIT);
+	
 	
 	public WebDriver getDriver() {
 		return driver;
@@ -36,24 +42,50 @@ public class BaseComponent {
 		this.driver = driver;
 	}
 	
-	public <T extends BaseComponent> Map<String,String> validateVisualAttributesForElements(T component, String pageName, TestTarget target) throws FactoryException{
+	public abstract void wait_till_load();
+	
+	 public Map<String,String> compareElementVisuals(String pageName, TestTarget target, WebElement element, String elementName) throws FrameworkException{ 
+		 	VisualAttribute v1 = new VisualAttribute(pageName);
+			Map<String,Object> expected_values = v1.getExpectedVisualAttributes(this.getClass().getSimpleName(), "filterBtn", target);
+			Map<String,Object>actual_values = v1.getActualVisualAttributes(element);
+			return VisualAttribute.compareAttributes(expected_values, actual_values);
+	 }
+	
+	
+	
+	
+	// Access the Visual Attribute JSON and returns the expected values for the visual attributes
+	public <T extends BaseComponent> List<Map<String, Object>> getExpectedVisualAttributes(T component, String pageName, TestTarget target) throws IllegalArgumentException, IllegalAccessException, FrameworkException{
 		
-		System.out.println(component.getClass().getDeclaredFields().length);
-		System.out.println(this.getClass().getDeclaredFields().length);
+		LOG.debug(String.format("No of members in the %s component %d", component.getClass().getSimpleName(),component.getClass().getDeclaredFields().length));
+		
+		// Filter all the fields of the component which are WebElements
 		Field[] elements = Arrays.stream(component.getClass().getDeclaredFields())
 								.filter(el -> el.getType()== WebElement.class)
 								.toArray(Field[]::new);
 		
-		System.out.println("--------------------------------------");
-		System.out.println(elements.length);
+		LOG.debug(String.format("Number of WebElements after filtering %d", elements.length));
+		List<Map<String, Object>> fieldsToValidate = new ArrayList<Map<String, Object>>();
+		VisualAttribute v = new VisualAttribute(pageName);
 		
+		/* Iterate through the filtered fields and identify the fields which are present in the JSON and needs to be validated
+		 	Fetch the expected attributes for that element.
+		 	Get the actual attribute for that element and send them to compare method
+		 	Create a comparison result map
+		 */
 		for(Field field:elements ) {			
-			VisualAttribute v = new VisualAttribute(pageName);
-			System.out.println(v.getExpectedVisualAttributes(this.getClass().getSimpleName(), field.getName(), target));
-			
+			if (v.getExpectedVisualAttributes(this.getClass().getSimpleName(), field.getName(), target) != null) {
+				fieldsToValidate.add(v.getExpectedVisualAttributes(this.getClass().getSimpleName(), field.getName(), target));
+			}else {
+				LOG.debug("Did not find expected attributes for the field %s", field.getName());
+			}
 		}
+		LOG.debug(String.format("Total number of fields to validate: %s",fieldsToValidate.size()));
 		
-		return null;		
+		
+		return fieldsToValidate;
+		
+		
 	}
 	
 	protected void click(WebElement element) {
@@ -107,13 +139,16 @@ public class BaseComponent {
 	}
 	
 	protected WebElement waitTilVisible(WebElement element) {
+		getWait().until(ExpectedConditions.visibilityOf(element));	
 		return element;
 		
 	}
 	
 	
 	protected void scrollToElement(WebElement element) {
-		
+		System.out.println(element == null);
+		System.out.println(this.driver == null);
+		((JavascriptExecutor)this.driver).executeScript("arguments[0].scrollIntoView();", element);
 	}
 	
 	private WebDriverWait getWait() {

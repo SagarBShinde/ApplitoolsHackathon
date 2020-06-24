@@ -3,15 +3,25 @@ package sbs.applitools.hackathon.framework.utils;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.openqa.selenium.WebElement;
 
 import com.google.gson.Gson;
 
+import sbs.applitools.hackathon.framework.baseTest.BaseTest;
 import sbs.applitools.hackathon.framework.excptions.FactoryException;
+import sbs.applitools.hackathon.framework.excptions.FrameworkException;
+import sbs.applitools.hackathon.framework.excptions.VisualAttributeException;
 import sbs.applitools.hackathon.framework.setup.TestTarget;
 
 public class VisualAttribute {
@@ -19,45 +29,125 @@ public class VisualAttribute {
 	private String pageName;
 	private TestTarget target;
 	
+	private static final Logger LOG = LogManager.getLogger(VisualAttribute.class);
+	
 	public VisualAttribute(String pageName) {
 		this.pageName = pageName;
 	}
 	
 	
-	public Map<String, Object> getExpectedVisualAttributes(String componentName, String elementName, TestTarget target) throws FactoryException{
+	public Map<String, Object> getExpectedVisualAttributes(String componentName, String elementName, TestTarget target) throws FrameworkException{
 		
 		try {
+		LOG.debug(String.format("Component Name: %s Element Name is : %s Test Target is %s}",componentName,elementName,target.targetName ));
+		LOG.debug(String.format("Visual Attribute JSON File Path: %s", target.visual_attribute_dir + "//"+ this.pageName + ".json"));
 		String visualAttributeJson = new String(Files.readAllBytes(Paths.get(target.visual_attribute_dir + "//"+ this.pageName + ".json")));
-		//System.out.println(visualAttributeJson);
 		JSONUtils jsonUtils =  new JSONUtilsGsonImpl(visualAttributeJson);
 		JSONArray child_elements = jsonUtils.getJSONObject(componentName).getJSONArray("child_elements");
 		
 		for(int i=0; i < child_elements.length(); i++) {
-			System.out.println(child_elements.getJSONObject(i).get("element_name").toString());
-			System.out.println("Element Name is:"+ elementName);
-			System.out.println(child_elements.getJSONObject(i).get("element_name").toString().equalsIgnoreCase(elementName));
-			if (child_elements.getJSONObject(i) != null && child_elements.getJSONObject(i).get("element_name").toString().equalsIgnoreCase(elementName)) {
+			LOG.debug(String.format("Element in the JSOn File is:%s", child_elements.getJSONObject(i).get("element_name")));
+			if (child_elements.getJSONObject(i) != null && child_elements.getJSONObject(i).get("element_name")
+							.toString().equalsIgnoreCase(elementName)) {
+				
 				return jsonUtils.getObject(child_elements.getJSONObject(i).toString(), Map.class);
 				
 			}
-			
 		}
 		
-		throw new FactoryException("Could not find matching child element in JSON for:"+ componentName + ":" + elementName );
-	
-		
-		} catch (Exception e) {
-			e.printStackTrace();
-			throw new FactoryException("Error reading a Visual attributes for:" + componentName + ":" + elementName + "\n" + e.getStackTrace() );
-		  }
-		}
-	
-	public Map<String, Object> getActualVisualAttributes(WebElement el , String[] cssProperties){
+		LOG.debug(String.format("Could not find the attriibutes in the JSON file for: %s",elementName));
 		return null;
+	
+		} catch (IOException e) {
+			throw new FactoryException ("Error reading a JSON file for:" + componentName + ":" + elementName + "\n" + e.getStackTrace() );
+			
+			}
+		}
+	
+	// Returns all the attribues-  Element displayed, Size, Location
+	public Map<String, Object> getActualVisualAttributes(WebElement el , String[] cssProperties){
+		
+		Map<String,Object> actualAttributes = new HashMap<String,Object>();
+		Map<String,Integer> elementLocation = new HashMap<String,Integer>();
+		Map<String,Integer> elementSize = new HashMap<String,Integer>();
+		Map <String,String> actual_css_property = new HashMap<String,String>();
+		
+		actualAttributes.put("isDisplayed", el.isDisplayed());
+		
+		elementLocation.put("X", el.getLocation().getX());
+		elementLocation.put("Y", el.getLocation().getY());
+		actualAttributes.put("element_location", elementLocation);
+		
+		elementSize.put("height", el.getSize().getHeight());
+		elementSize.put("width", el.getSize().getWidth());
+		actualAttributes.put("element_size", elementSize);
+		
+		for (String cssProperty : cssProperties) {
+			actual_css_property.putIfAbsent(cssProperty, el.getCssValue(cssProperty));		
+		}
+		
+		actualAttributes.put("css_properties", actual_css_property);
+		return actualAttributes;
 		
 	}
 	
-	public static void main(String[] args) throws FactoryException {
+	public  Map<String, Object> getActualVisualAttributes(WebElement el){
+		
+		Map<String,Object> actualAttributes = new HashMap<String,Object>();
+		Map<String,Integer> elementLocation = new HashMap<String,Integer>();
+		Map<String,Integer> elementSize = new HashMap<String,Integer>();
+		Map <String,String> actual_css_property = new HashMap<String,String>();
+		
+		actualAttributes.put("isDisplayed", el.isDisplayed());
+		
+		elementLocation.put("X", el.getLocation().getX());
+		elementLocation.put("Y", el.getLocation().getY());
+		actualAttributes.put("element_location", elementLocation);
+		
+		elementSize.put("height", el.getSize().getHeight());
+		elementSize.put("width", el.getSize().getWidth());
+		actualAttributes.put("element_size", elementSize);
+	
+		return actualAttributes;
+		
+	}
+	
+	// Returns only those attributes that are present in Attributes to Fetch
+	@SuppressWarnings("unchecked")
+	public static Map<String, Object> getActualVisualAttributes(Map<String,Object> AttributesToFetch,WebElement el){
+		
+		Map<String,Object> actualAttributes = new HashMap<String,Object>();
+		
+		if (AttributesToFetch.containsKey("isDisplayed")){
+			actualAttributes.put("isDisplayed", el.isDisplayed());
+		}
+		
+		if (AttributesToFetch.containsKey("element_location")) {
+			Map<String,Integer> elementLocation = new HashMap<String,Integer>();
+			elementLocation.put("X", el.getLocation().getX());
+			elementLocation.put("Y", el.getLocation().getY());
+			actualAttributes.put("element_location", elementLocation);
+		}
+		
+		if (AttributesToFetch.containsKey("element_size")) {
+			Map<String,Integer> elementSize = new HashMap<String,Integer>();
+			elementSize.put("height", el.getSize().getHeight());
+			elementSize.put("width", el.getSize().getWidth());
+			actualAttributes.put("element_size", elementSize);
+		}
+		
+		if (AttributesToFetch.containsKey("css_properties")) {
+			Map <String,String> actual_css_property = new HashMap<String,String>();
+			((Map<String,String>)AttributesToFetch.get("css_properties")).keySet().forEach(
+					key -> actual_css_property.put(key, el.getCssValue(key)));
+			
+			actualAttributes.put("css_properties", actual_css_property);
+		}
+				
+		return actualAttributes;	
+	}
+	
+	public static void main(String[] args) throws FrameworkException {
 		
 		TestTarget t1 = new TestTarget("test");
 		t1.visual_attribute_dir = ".//config/visual_attributes//laptop_chrome";
@@ -66,8 +156,99 @@ public class VisualAttribute {
 		Map<String,Object> m1 = v1.getExpectedVisualAttributes("AppHeader", "applitoolsLogo", t1);
 		
 		System.out.println((Map<String,String>)(m1.get("css_properties")));
-		
+				
+	}
+
+	// Start from this.
+	public static Map<String,String> compareAttributes(Map<String, Object> expected_values, Map<String, Object> actual_values) {
+		Map<String,String> ComparisionResult = new HashMap<String,String>();
+		if ((boolean)actual_values.get("isDisplayed")) {
+			
+			if (expected_values.containsKey("isDisplayed")){
+				ComparisionResult.put("isDisplayed", validateVisible((boolean)expected_values.get("isDisplayed"),(boolean)actual_values.get("isDisplayed")));
+			}
+			
+			if (expected_values.containsKey("element_location")){
+				ComparisionResult.put("isDisplayed", validateLocation((Map<String,Integer>)expected_values.get("element_location"),(Map<String,Integer>)actual_values.get("element_location")));
+			}
+			
+			if (expected_values.containsKey("element_size")){
+				ComparisionResult.put("element_size", validateSize((Map<String,Integer>)expected_values.get("element_size"),(Map<String,Integer>)actual_values.get("element_size")));
+			}
+			
+			if (expected_values.containsKey("css_properties")){
+				ComparisionResult.put("css_properties", validateCssProperties((Map<String,String>)expected_values.get("css_properties"),(Map<String,String>)actual_values.get("css_properties")) );
+			}
+
+			
+		}else {
+			ComparisionResult.put("isDisplayed", validateVisible((boolean)expected_values.get("isDisplayed"),(boolean)actual_values.get("isDisplayed")));
 		
 	}
 
+	
+		return ComparisionResult;
+
+	}
+	
+	private static String validateVisible(boolean expected, boolean actual) {
+		if (expected == actual) {
+			return "Pass";
+		}else {
+			return String.format("Failed: expected visibility  %s actual visibility %s", expected,actual);
+		}
+	}
+
+
+	private static String validateSize(Map<String,Integer> exp_size, Map<String,Integer> act_size) {
+		if (exp_size.get("height") == act_size.get("height") && exp_size.get("width") == act_size.get("width")) {
+			
+			return "Pass";
+			
+		}
+
+		return "Failed: expected size  height:" + exp_size.get("height") + "width:" + exp_size.get("width") + "actual size height:" + act_size.get("height") + "width:" + act_size.get("width");
+	}
+
+	private static String validateLocation(Map<String,Integer> exp_loc, Map<String,Integer> act_loc) {
+		if (exp_loc.get("X") == act_loc.get("X") && exp_loc.get("Y") == act_loc.get("Y")) {
+			
+			return "Pass";
+			
+		}
+		return "Failed: expected location  X:" + exp_loc.get("X") + "Y:" + exp_loc.get("Y") + "actual location X:" + act_loc.get("X") + "Y:" + act_loc.get("X");
+		
+	}
+
+
+	private static String validateCssProperties(Map<String,String>exp_prop, Map<String,String> act_prop) {
+		Iterator<String> itr = exp_prop.keySet().iterator();
+		String status =  "";
+		List<String> failed_props = new ArrayList<String>();
+		while(itr.hasNext()) {
+			String prop = itr.next();
+			if (exp_prop.get(prop) == act_prop.get(prop)) {
+				status = "Passed";	
+			}else
+				status  = "Failed";
+				failed_props.add(prop);
+			
+		}
+		
+		if (status == "Passed") {
+			return status;
+		}else {
+			StringBuffer consolidated_status = new StringBuffer();
+			consolidated_status.append("Failed:");
+			failed_props.forEach(prop -> consolidated_status.append(prop).append("expected_value:")
+																		 .append(exp_prop.get(prop))
+																		 .append("actual_value:")
+																		 .append(act_prop.get(prop)));
+			status = consolidated_status.toString();
+			return status;
+		}	
+		
+	}
+	
+	
 }

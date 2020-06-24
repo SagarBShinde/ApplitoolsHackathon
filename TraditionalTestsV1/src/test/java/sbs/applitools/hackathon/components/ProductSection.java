@@ -11,8 +11,14 @@ import sbs.applitools.hackathon.framework.basePage.BaseComponent;
 
 public class ProductSection extends BaseComponent {
 	
-
-
+		
+	public ProductSection(WebDriver driver) {
+		this.setDriver(driver);
+	}
+	
+	
+	@FindBy(how = How.ID , using = "DIV__collg__186") 
+	private WebElement productSectionContainer;
 
 	@FindBy(how = How.ID , using = "DIV__topbanner__187") 
 	private WebElement topProduct;
@@ -29,6 +35,9 @@ public class ProductSection extends BaseComponent {
 	@FindBy(how = How.ID , using = "I__tiviewgrid__202")
 	private WebElement listView; 
 	
+	@FindBy(how = How.ID , using = "A__openfilter__206")
+	private WebElement openFiilter; 
+	
 	@FindBy(how = How.ID , using = "product_grid")
 	private WebElement productGrid; 
 	
@@ -44,6 +53,16 @@ public class ProductSection extends BaseComponent {
 	public void viewProductDetail(int productIndex) {
 		this.gridItems.get(productIndex).click();
 		
+	}
+
+	@Override
+	public void wait_till_load() {
+		waitTilVisible(topProduct);
+		
+	}
+	
+	public WebElement getGridItem(int index) {
+		return gridItems.get(index);
 	}
 
 }

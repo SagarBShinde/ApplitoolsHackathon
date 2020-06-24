@@ -7,15 +7,21 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.ITestContext;
 
+import sbs.applitools.hackathon.framework.baseTest.DriverFactory;
 import sbs.applitools.hackathon.framework.utils.JSONUtils;
 import sbs.applitools.hackathon.framework.utils.JSONUtilsGsonImpl;;
 
 public class DataProviderJsonImpl implements ProvidesData {
-
+	
+	
+	private static final Logger LOG = LogManager.getLogger(DataProviderJsonImpl.class);
+	
 	private static final String DEFAULT_DATA_FILE = System.getProperty("user.dir")+ "//config//testData.json";
 
 	@Override
@@ -43,9 +49,9 @@ public class DataProviderJsonImpl implements ProvidesData {
 			JSONArray parameterArray =(JSONArray) dataArray.get(i);
 			for (int j=0; j< parameterArray.length(); j++) {
 				JSONObject parameterObject= parameterArray.getJSONObject(j);
-				System.out.println("Key is:"+parameterObject.keys().next().toString());
+				LOG.debug("Key is:"+parameterObject.keys().next().toString());
 				String parameterValue= parameterObject.getString(parameterObject.keys().next());
-				System.out.println("Value is:"+parameterValue);
+				LOG.debug("Value is:"+parameterValue);
 				paramList.add(parameterValue);
 				}
 			String[] paramArr = new String[paramList.size()];

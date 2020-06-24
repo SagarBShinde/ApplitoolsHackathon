@@ -1,12 +1,16 @@
 package sbs.applitools.hackathon.framework.baseTest;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
-import java.sql.Driver;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -28,6 +32,7 @@ import sbs.applitools.hackathon.framework.excptions.VisualAttributeException;
 import sbs.applitools.hackathon.framework.setup.TestTarget;
 import sbs.applitools.hackathon.framework.utils.JSONUtils;
 import sbs.applitools.hackathon.framework.utils.JSONUtilsGsonImpl;
+import sbs.applitools.hackathon.framework.utils.TestReporter;
 import sbs.applitools.hackathon.framework.utils.Utils;
 import sbs.applitools.hackathon.framework.utils.VisualAttribute;
 import sbs.applitools.hackathon.framework.utils.propertyHandler;
@@ -44,6 +49,7 @@ public class BaseTest {
 	
 	public TestTarget testTarget;
 	private WebDriver driver;
+	protected TestReporter report;
 	
 	public void setDriver(WebDriver driver) {
 		this.driver = driver;
@@ -56,6 +62,7 @@ public class BaseTest {
 	
 	@BeforeSuite
 	public void methodBeforeSuite() throws FrameworkException {
+		this.report = new TestReporter();
 		LOG.info(propertyHandler.getInstance().getValue("app.v1.url"));
 		
 	
@@ -64,18 +71,18 @@ public class BaseTest {
 	
 	@BeforeClass
 	public void beforeClassMethod() throws FrameworkException {
+		this.report.open();
 		LOG.debug("Initializing Driver.....");
 		this.driver = new DriverFactory(this.testTarget).setUpDriver();
-	//	this.driver.get(propertyHandler.getInstance().getValue("app.v1.url"));
-		this.driver.get(propertyHandler.getInstance().getValue("app.v2.url"));
+		this.driver.get(propertyHandler.getInstance().getValue("app.v1.url"));
 	
 	}
 	
 	@AfterClass
 	public void afterClassMethod() throws FrameworkException {
 		LOG.debug("Closing Driver.....");
-	//	this.getDriver().quit();
-		
+		this.getDriver().quit();
+		this.report.close();
 	
 	}
 	
@@ -108,14 +115,14 @@ public class BaseTest {
 			List<Object> testList = new ArrayList<Object>();
 			for(String testTargetArrayName: testTargets.value()) {
 				TestTarget[] targets = (TestTarget[]) jsonUtil.getObject(jsonUtil.getJSONArray(testTargetArrayName).toString(), TestTarget[].class);
-				System.out.println("Test Target Array Name:"+ testTargetArrayName +" Test Target Array lenght:"+ targets.length);
+				LOG.debug("Test Target Array Name:"+ testTargetArrayName +" Test Target Array lenght:"+ targets.length);
 				for(TestTarget target : targets) {
 					testList.add(this.getClass().getConstructor(TestTarget.class).newInstance(target));	
 				}
 				
 			}
 			
-			System.out.println(testList.toArray().length);
+			LOG.debug(String.format("Length of the Target Array is: %d", testList.toArray().length));
 			return testList.toArray();
 		
 		} catch (FileNotFoundException e) {

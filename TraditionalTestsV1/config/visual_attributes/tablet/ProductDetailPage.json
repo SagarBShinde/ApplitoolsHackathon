@@ -1,0 +1,382 @@
+{
+    "AppHeader" : {
+        "child_elements" : [
+            {
+                "element_name" : "applitoolsLogo",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "mainMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "homeMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "menMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "womenMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "runningMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "trainingMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    },
+    "mainNavBar" : {
+        "child_elements" : [
+            {
+                "element_name" : "searchBar",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "searchInput",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "searchBtn",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "customerToolSection",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "account",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "wishList",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "cart",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    },
+    "productMain" : {
+        "child_elements" : [
+            {
+                "element_name" : "name",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "image",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    },
+    "productOption" : {
+        "child_elements" : [
+            {
+                "element_name" : "size",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "quantity",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "addToCart",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "originalPrice",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "salePrice",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "discount",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    },
+    "productInfo" : {
+        "child_elements" : [
+            {
+                "element_name" : "productId",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "productDescription",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewCount",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewstart_1",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewstart_2",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewstart_3",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewstart_4",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewstart_5",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    }
+}

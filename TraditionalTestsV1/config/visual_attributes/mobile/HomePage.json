@@ -1,0 +1,482 @@
+{
+    "AppHeader" : {
+        "child_elements" : [
+            {
+                "element_name" : "applitoolsLogo",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "mainMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "homeMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "menMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "womenMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "runningMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "trainingMenu",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    },
+    "mainNavBar" : {
+        "child_elements" : [
+            {
+                "element_name" : "searchBar",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "searchInput",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "searchBtn",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "customerToolSection",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "account",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "wishList",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "cart",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    },
+    "productSection" : {
+        "child_elements" : [
+            {
+                "element_name" : "topProduct",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "productViewBar",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "sortDropDown",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "gridView",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "listView",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "openFiilter",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "product_grid",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "product-1",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    },
+    "ColorFilter" : {
+        "child_elements" : [
+            {
+                "element_name" : "blackFiilterSection",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "whiteFiilterSection",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "blueFiilterSection",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "greenFiilterSection",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "yellowFiilterSection",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    },
+    "FilterButtons" : {
+        "child_elements" : [
+            {
+                "element_name" : "filterBtn",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "resetBtn",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    },
+    "ProductInGrid" : {
+        "child_elements" : [
+            {
+                "element_name" : "offRibbon",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "productImage",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "countDown",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "productName",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "salePrice",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "originalPrice",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "wishList",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "addToCompare",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "applitoolsLogo",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    }
+}
