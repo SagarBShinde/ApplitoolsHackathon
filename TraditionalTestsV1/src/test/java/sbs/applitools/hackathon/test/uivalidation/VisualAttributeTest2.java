@@ -18,13 +18,13 @@ import sbs.applitools.hackathon.pages.HomePage;
 
 @Test
 @TestTargetList({"Laptop_all"})
-public class VisualAttributeTest extends BaseTest {
+public class VisualAttributeTest2 extends BaseTest {
 
-	 public VisualAttributeTest(TestTarget target) {
+	 public VisualAttributeTest2(TestTarget target) {
 		    this.testTarget = target;
 		 }
 		    
-	public VisualAttributeTest() {
+	public VisualAttributeTest2() {
 	}
 	
 	

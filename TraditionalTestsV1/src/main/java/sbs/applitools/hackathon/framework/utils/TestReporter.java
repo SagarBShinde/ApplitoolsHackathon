@@ -21,8 +21,18 @@ public class TestReporter {
 	
 	private File reportFile;
 	private BufferedWriter writer;
+	private static TestReporter report = null;
 	
-	public TestReporter() throws FrameworkException {
+	public static TestReporter getInstance() throws FrameworkException {
+		if (report == null) {
+			report = new TestReporter();
+		}
+		return report;
+		
+	}
+	
+	
+	private TestReporter() throws FrameworkException {
 		
 		DateFormat df = new SimpleDateFormat("yyyyMMddhhmmss");
 		String fileName = FrameworkConstants.OUTPUT_DIR + "//report_"+ df.format(new Date())+ ".txt";
@@ -34,7 +44,7 @@ public class TestReporter {
 	public void open() throws ReporterException {
 		
 		 try {
-			this.writer = new BufferedWriter(new FileWriter(this.reportFile));
+			this.writer = new BufferedWriter(new FileWriter(this.reportFile, true));
 		} catch (IOException e) {
 			throw new ReporterException(" Could not open writer for the reporter:"+ e.getStackTrace());
 
@@ -47,7 +57,7 @@ public class TestReporter {
 			this.writer.append("\n");
 			this.writer.append(msg);
 		} catch (IOException e) {
-			throw new ReporterException(" Could not write to the reporter:"+ e.getStackTrace());
+			throw new ReporterException(" Could not write to the reporter:"+ e.getStackTrace() + "\n" + e.getCause());
 		}
 		 
 	}
@@ -55,6 +65,7 @@ public class TestReporter {
 	public void close() throws ReporterException{
 		
 		 try {
+			 System.out.println("----------------Closing Stream---------------------------------");
 			this.writer.close();
 		} catch (IOException e) {
 			throw new ReporterException(" Could not close the reporter:"+ e.getStackTrace());

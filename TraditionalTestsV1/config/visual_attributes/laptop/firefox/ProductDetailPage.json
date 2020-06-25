@@ -175,10 +175,10 @@
             }
         ]
     },
-    "productSection" : {
+    "productMain" : {
         "child_elements" : [
             {
-                "element_name" : "topProduct",
+                "element_name" : "name",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 100,
@@ -190,79 +190,7 @@
                 }
             },
             {
-                "element_name" : "productViewBar",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "sortDropDown",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "gridView",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "listView",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "openFiilter",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "product_grid",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "product-1",
+                "element_name" : "image",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 100,
@@ -275,10 +203,10 @@
             }
         ]
     },
-    "ColorFilter" : {
+    "productOption" : {
         "child_elements" : [
             {
-                "element_name" : "blackFiilterSection",
+                "element_name" : "size",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 100,
@@ -290,7 +218,7 @@
                 }
             },
             {
-                "element_name" : "whiteFiilterSection",
+                "element_name" : "quantity",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 100,
@@ -302,123 +230,7 @@
                 }
             },
             {
-                "element_name" : "blueFiilterSection",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "greenFiilterSection",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "yellowFiilterSection",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            }
-        ]
-    },
-    "FilterButtons" : {
-        "child_elements" : [
-            {
-                "element_name" : "filterBtn",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "resetBtn",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            }
-        ]
-    },
-    "ProductInGrid" : {
-        "child_elements" : [
-            {
-                "element_name" : "offRibbon",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "productImage",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "countDown",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "productName",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "salePrice",
+                "element_name" : "addToCart",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 100,
@@ -442,7 +254,7 @@
                 }
             },
             {
-                "element_name" : "wishList",
+                "element_name" : "salePrice",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 100,
@@ -454,7 +266,23 @@
                 }
             },
             {
-                "element_name" : "addToCompare",
+                "element_name" : "discount",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            }
+        ]
+    },
+    "productInfo" : {
+        "child_elements" : [
+            {
+                "element_name" : "productId",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 100,
@@ -466,7 +294,79 @@
                 }
             },
             {
-                "element_name" : "applitoolsLogo",
+                "element_name" : "productDescription",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewCount",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewstart_1",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewstart_2",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewstart_3",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewstart_4",
+                "isDisplayed" : true,
+                "element_size" : {
+                    "height" : 100,
+                    "width" : 200
+                },
+                "element_location" : {
+                    "X" : 10,
+                    "Y" : 20
+                }
+            },
+            {
+                "element_name" : "reviewstart_5",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 100,

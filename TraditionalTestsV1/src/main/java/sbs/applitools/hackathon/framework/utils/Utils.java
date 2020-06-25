@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -57,6 +59,27 @@ public class Utils {
 		
 		
 		
+	}
+
+	public static Object deriveStatus(ArrayList<String> statusList) {
+		String status = "Fail";
+		if (statusList.isEmpty()) {
+			return "NA";
+		}
+		
+		Iterator<String> itr = statusList.iterator();
+		
+		while(itr.hasNext()) {
+			 String stat = itr.next();
+			 if (stat.equalsIgnoreCase("Pass")){
+				 status = "Pass";
+			 }else {
+				 status = status + stat.substring(4);
+				 
+			 }	
+		}	
+		
+		return status;
 	}
 
 }

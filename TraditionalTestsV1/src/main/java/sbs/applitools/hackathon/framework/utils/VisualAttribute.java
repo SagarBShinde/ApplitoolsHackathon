@@ -169,11 +169,11 @@ public class VisualAttribute {
 			}
 			
 			if (expected_values.containsKey("element_location")){
-				ComparisionResult.put("isDisplayed", validateLocation((Map<String,Integer>)expected_values.get("element_location"),(Map<String,Integer>)actual_values.get("element_location")));
+				ComparisionResult.put("isDisplayed", validateLocation((Map<String,Double>)expected_values.get("element_location"),(Map<String,Integer>)actual_values.get("element_location")));
 			}
 			
 			if (expected_values.containsKey("element_size")){
-				ComparisionResult.put("element_size", validateSize((Map<String,Integer>)expected_values.get("element_size"),(Map<String,Integer>)actual_values.get("element_size")));
+				ComparisionResult.put("element_size", validateSize((Map<String,Double>)expected_values.get("element_size"),(Map<String,Integer>)actual_values.get("element_size")));
 			}
 			
 			if (expected_values.containsKey("css_properties")){
@@ -200,23 +200,23 @@ public class VisualAttribute {
 	}
 
 
-	private static String validateSize(Map<String,Integer> exp_size, Map<String,Integer> act_size) {
-		if (exp_size.get("height") == act_size.get("height") && exp_size.get("width") == act_size.get("width")) {
+	private static String validateSize(Map<String,Double> exp_size, Map<String,Integer> act_size) {
+		if (exp_size.get("height").intValue() == act_size.get("height").intValue() && exp_size.get("width").intValue() == act_size.get("width").intValue()) {
 			
 			return "Pass";
 			
 		}
 
-		return "Failed: expected size  height:" + exp_size.get("height") + "width:" + exp_size.get("width") + "actual size height:" + act_size.get("height") + "width:" + act_size.get("width");
+		return "Fail: expected size  height:" + exp_size.get("height").intValue() + " width:" + exp_size.get("width").intValue() + " actual size height:" + act_size.get("height").intValue() + " width:" + act_size.get("width").intValue();
 	}
 
-	private static String validateLocation(Map<String,Integer> exp_loc, Map<String,Integer> act_loc) {
-		if (exp_loc.get("X") == act_loc.get("X") && exp_loc.get("Y") == act_loc.get("Y")) {
+	private static String validateLocation(Map<String,Double> exp_loc, Map<String,Integer> act_loc) {
+		if (exp_loc.get("X").intValue() == act_loc.get("X").intValue() && exp_loc.get("Y").intValue() == act_loc.get("Y").intValue()) {
 			
 			return "Pass";
 			
 		}
-		return "Failed: expected location  X:" + exp_loc.get("X") + "Y:" + exp_loc.get("Y") + "actual location X:" + act_loc.get("X") + "Y:" + act_loc.get("X");
+		return "Fail: expected location  X:" + exp_loc.get("X").intValue() + " Y:" + exp_loc.get("Y").intValue() + " actual location X:" + act_loc.get("X").intValue() + " Y:" + act_loc.get("Y").intValue();
 		
 	}
 

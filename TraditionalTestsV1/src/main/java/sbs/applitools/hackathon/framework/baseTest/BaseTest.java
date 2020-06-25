@@ -19,8 +19,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Factory;
@@ -28,6 +31,7 @@ import org.testng.annotations.Factory;
 import sbs.applitools.hackathon.framework.dataProvider.TestTargetList;
 import sbs.applitools.hackathon.framework.excptions.FactoryException;
 import sbs.applitools.hackathon.framework.excptions.FrameworkException;
+import sbs.applitools.hackathon.framework.excptions.ReporterException;
 import sbs.applitools.hackathon.framework.excptions.VisualAttributeException;
 import sbs.applitools.hackathon.framework.setup.TestTarget;
 import sbs.applitools.hackathon.framework.utils.JSONUtils;
@@ -49,6 +53,7 @@ public class BaseTest {
 	
 	public TestTarget testTarget;
 	private WebDriver driver;
+	private File reportFile;
 	protected TestReporter report;
 	
 	public void setDriver(WebDriver driver) {
@@ -62,16 +67,21 @@ public class BaseTest {
 	
 	@BeforeSuite
 	public void methodBeforeSuite() throws FrameworkException {
-		this.report = new TestReporter();
 		LOG.info(propertyHandler.getInstance().getValue("app.v1.url"));
 		
-	
+	}	
+	@AfterSuite
+	public void afterSuiteMethod() throws ReporterException  {
+		this.report.close();
 		
 	}
+		
+	
 	
 	@BeforeClass
 	public void beforeClassMethod() throws FrameworkException {
-		this.report.open();
+		this.report = TestReporter.getInstance();
+		//this.report.open();
 		LOG.debug("Initializing Driver.....");
 		this.driver = new DriverFactory(this.testTarget).setUpDriver();
 		this.driver.get(propertyHandler.getInstance().getValue("app.v1.url"));
@@ -82,7 +92,7 @@ public class BaseTest {
 	public void afterClassMethod() throws FrameworkException {
 		LOG.debug("Closing Driver.....");
 		this.getDriver().quit();
-		this.report.close();
+		
 	
 	}
 	
@@ -93,8 +103,20 @@ public class BaseTest {
 		LOG.info(propertyHandler.getInstance().getValue("app.v1.url"));
 	}
 	
+	@BeforeMethod
+	public void beforeMethod() throws FrameworkException {
+		this.report.open();
+	}
+	
+	@AfterMethod
+	public void afterMethod() throws FrameworkException {
+		this.report.close();
+	}
+	
+	
 	@AfterTest
 	public void afterTestMethod() throws FrameworkException {
+	//	this.report.close();
 		
 	}
 	
@@ -135,6 +157,22 @@ public class BaseTest {
 			
 		}	
     
+	}
+	
+	public StringBuilder getReportLine(String testDescription, String locator, TestTarget target) {
+		StringBuilder reportRec = new StringBuilder(testDescription);
+		reportRec.append(",");
+		reportRec.append("DOM ID:" + locator);
+		reportRec.append(",");
+		reportRec.append("Browser:"+this.testTarget.browser.browserName);
+		reportRec.append(",");
+		reportRec.append("Viewport:"+this.testTarget.browserSize.width + "X" + this.testTarget.browserSize.height);
+		reportRec.append(",");
+		reportRec.append("Device:"+this.testTarget.device.deviceName);
+		reportRec.append(",");
+		
+		return reportRec;
+		
 	}
 
 				

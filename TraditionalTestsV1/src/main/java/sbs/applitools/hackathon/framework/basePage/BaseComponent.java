@@ -13,6 +13,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -46,7 +47,7 @@ public abstract class BaseComponent extends RemoteWebElement{
 	
 	 public Map<String,String> compareElementVisuals(String pageName, TestTarget target, WebElement element, String elementName) throws FrameworkException{ 
 		 	VisualAttribute v1 = new VisualAttribute(pageName);
-			Map<String,Object> expected_values = v1.getExpectedVisualAttributes(this.getClass().getSimpleName(), "filterBtn", target);
+			Map<String,Object> expected_values = v1.getExpectedVisualAttributes(this.getClass().getSimpleName(), elementName, target);
 			Map<String,Object>actual_values = v1.getActualVisualAttributes(element);
 			return VisualAttribute.compareAttributes(expected_values, actual_values);
 	 }
@@ -160,10 +161,19 @@ public abstract class BaseComponent extends RemoteWebElement{
 		return wait;
 	}
 	
-	private String getLocator(String elementName) {
+	public String getLocator(String elementName) throws FrameworkException  {
+		
+		try {
+			FindBy locator = this.getClass().getDeclaredField(elementName).getAnnotation(FindBy.class);
+			return locator.using();
+		
+		} catch (NoSuchFieldException | SecurityException e) {
+			LOG.error(String.format("Could not find field for #{elementName}", elementName));
+			throw new FrameworkException(String.format("Could not find field for #{elementName} Error:#{error}", elementName, e.getStackTrace()));
+		}
 		
 		
-		return null;	
+		
 		
 	}
 }
