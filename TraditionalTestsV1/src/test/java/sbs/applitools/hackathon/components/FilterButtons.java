@@ -42,7 +42,6 @@ public class FilterButtons extends BaseComponent {
 	}
 	
 	public Map<String,String> checkfilterBtn(String pageName, TestTarget target) throws FrameworkException{
-		System.out.println("Is filter Button Displayed:"+ this.filterBtn.isDisplayed());
 		return this.compareElementVisuals(pageName, target, this.filterBtn, "filterBtn");
 	
 	}

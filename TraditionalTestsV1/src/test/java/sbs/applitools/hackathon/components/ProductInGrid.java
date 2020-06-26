@@ -1,10 +1,14 @@
 package sbs.applitools.hackathon.components;
 
+import java.util.Map;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import sbs.applitools.hackathon.framework.basePage.BaseComponent;
+import sbs.applitools.hackathon.framework.excptions.FrameworkException;
+import sbs.applitools.hackathon.framework.setup.TestTarget;
 
 //Product in grid in needs to be instantiated in the context of gridItem
 // hence this component is peculiar
@@ -37,14 +41,60 @@ public class ProductInGrid extends BaseComponent {
 		this.originalPrice = product.findElement(By.xpath(".//contains[@id, 'SPAN__oldprice']"));
 		this.wishList = product.findElement(By.xpath(".//contains[@id, 'I__tiheart']"));
 		this.addToCompare = product.findElement(By.xpath(".//contains[@id, 'I__ticontrols']"));
-		this.addToCompare = product.findElement(By.xpath(".//contains[@id, 'I__tishopping']"));
+		this.addToCart = product.findElement(By.xpath(".//contains[@id, 'I__tishopping']"));
 	}
 	
 
 	@Override
 	public void wait_till_load() {
-		// TODO Auto-generated method stub
+		waitTilVisible(productName);
 		
 	}
+	
+	public Map<String,String> checkOffRibbon(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.offRibbon, "offRibbon");
+	
+	}
+	
+	public Map<String,String> checkProductImage(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.productImage, "productImage");
+	
+	}
+	
+	public Map<String,String> checkCountDown(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.countDown, "countDown");
+	
+	}
+	
+	public Map<String,String> checkProductName(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.productName, "productName");
+	
+	}
+	
+	public Map<String,String> checkSalePrice(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.salePrice, "salePrice");
+	
+	}
+	
+	public Map<String,String> checkOriginalPrice(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.originalPrice, "originalPrice");
+	
+	}
+	
+	public Map<String,String> checkWishList(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.wishList, "wishList");
+	
+	}
+	
+	public Map<String,String> checkAddToCompare(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.addToCompare, "addToCompare");
+	
+	}
+	
+	public Map<String,String> checkAddToCart(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.addToCart, "addToCart");
+	
+	}
+
 
 }

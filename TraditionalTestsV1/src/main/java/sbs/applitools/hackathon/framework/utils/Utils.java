@@ -62,7 +62,8 @@ public class Utils {
 	}
 
 	public static Object deriveStatus(ArrayList<String> statusList) {
-		String status = "Fail";
+		//String status = "Fail";
+		String status = "";
 		if (statusList.isEmpty()) {
 			return "NA";
 		}

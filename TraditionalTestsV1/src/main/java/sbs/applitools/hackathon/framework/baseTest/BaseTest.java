@@ -162,14 +162,14 @@ public class BaseTest {
 	public StringBuilder getReportLine(String testDescription, String locator, TestTarget target) {
 		StringBuilder reportRec = new StringBuilder(testDescription);
 		reportRec.append(",");
-		reportRec.append("DOM ID:" + locator);
+		//reportRec.append("DOM ID:" + locator);
+		//reportRec.append(",");
+		reportRec.append("Browser:"+this.testTarget.browser.browserName.toUpperCase());
 		reportRec.append(",");
-		reportRec.append("Browser:"+this.testTarget.browser.browserName);
-		reportRec.append(",");
-		reportRec.append("Viewport:"+this.testTarget.browserSize.width + "X" + this.testTarget.browserSize.height);
-		reportRec.append(",");
-		reportRec.append("Device:"+this.testTarget.device.deviceName);
-		reportRec.append(",");
+//		reportRec.append("Viewport:"+this.testTarget.browserSize.width + "X" + this.testTarget.browserSize.height);
+//		reportRec.append(",");
+//		reportRec.append("Device:"+this.testTarget.device.deviceName);
+//		reportRec.append(",");
 		
 		return reportRec;
 		

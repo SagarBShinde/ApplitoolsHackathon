@@ -5,177 +5,177 @@
                 "element_name" : "applitoolsLogo",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 35,
+                    "width" : 150
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 15,
+                    "Y" : 16
                 }
             },
             {
                 "element_name" : "mainMenu",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 68,
+                    "width" : 580
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 310,
+                    "Y" : 0
                 }
             },
             {
                 "element_name" : "homeMenu",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 68,
+                    "width" : 89
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 310,
+                    "Y" : 0
                 }
             },
             {
                 "element_name" : "menMenu",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 68,
+                    "width" : 80
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 403,
+                    "Y" : 0
                 }
             },
             {
                 "element_name" : "womenMenu",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 68,
+                    "width" : 101
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 487,
+                    "Y" : 0
                 }
             },
             {
                 "element_name" : "runningMenu",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 68,
+                    "width" : 110
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 592,
+                    "Y" : 0
                 }
             },
             {
                 "element_name" : "trainingMenu",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 68,
+                    "width" : 112
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 705,
+                    "Y" : 0
                 }
             }
         ]
     },
-    "mainNavBar" : {
+    "MainNavBar" : {
         "child_elements" : [
             {
                 "element_name" : "searchBar",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 40,
+                    "width" : 580
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 310,
+                    "Y" : 68
                 }
             },
             {
                 "element_name" : "searchInput",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 40,
+                    "width" : 580
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 310,
+                    "Y" : 68
                 }
             },
             {
                 "element_name" : "searchBtn",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 36,
+                    "width" : 40
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 852,
+                    "Y" : 73
                 }
             },
             {
                 "element_name" : "customerToolSection",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 60,
+                    "width" : 138
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 1047,
+                    "Y" : 68
                 }
             },
             {
                 "element_name" : "account",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 60,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 1067,
+                    "Y" : 68
                 }
             },
             {
                 "element_name" : "wishList",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 60,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 1113,
+                    "Y" : 68
                 }
             },
             {
                 "element_name" : "cart",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 60,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 1159,
+                    "Y" : 68
                 }
             }
         ]
     },
-    "productSection" : {
+    "ProductSection" : {
         "child_elements" : [
             {
                 "element_name" : "topProduct",
@@ -281,12 +281,12 @@
                 "element_name" : "blackFiilterSection",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 23,
+                    "width" : 228
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 36,
+                    "Y" : 403
                 }
             },
             {

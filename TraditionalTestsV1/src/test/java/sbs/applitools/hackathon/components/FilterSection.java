@@ -21,7 +21,7 @@ public class FilterSection extends BaseComponent {
 	
 	@Override
 	public void wait_till_load() {
-		// TODO Auto-generated method stub
+		colorFilter.wait_till_load();
 		
 	}
 	

@@ -1,6 +1,7 @@
 package sbs.applitools.hackathon.components;
 
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import sbs.applitools.hackathon.framework.basePage.BaseComponent;
+import sbs.applitools.hackathon.framework.excptions.FrameworkException;
+import sbs.applitools.hackathon.framework.setup.TestTarget;
 
 public class ProductSection extends BaseComponent {
 	
@@ -64,5 +67,41 @@ public class ProductSection extends BaseComponent {
 	public WebElement getGridItem(int index) {
 		return gridItems.get(index);
 	}
+	
+	public Map<String,String> checkTopProduct(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.topProduct, "topProduct");
+	
+	}
+	
+	public Map<String,String> checkProductViewBar(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.productViewBar, "productViewBar");
+	
+	}
+	
+	public Map<String,String> checkSortDropDown(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.sortDropDown, "sortDropDown");
+	
+	}
+	
+	public Map<String,String> checkGridView(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.gridView, "gridView");
+	
+	}
+	
+	public Map<String,String> checkListView(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.listView, "listView");
+	
+	}
+	
+	public Map<String,String> checkOpenFiilter(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.openFiilter, "openFiilter");
+	
+	}
+	
+	public Map<String,String> checkProductGrid(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.productGrid, "productGrid");
+	
+	}
+
 
 }

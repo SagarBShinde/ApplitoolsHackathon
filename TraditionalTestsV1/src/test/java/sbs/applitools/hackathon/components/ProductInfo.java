@@ -1,11 +1,15 @@
 package sbs.applitools.hackathon.components;
 
+import java.util.Map;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import sbs.applitools.hackathon.framework.basePage.BaseComponent;
+import sbs.applitools.hackathon.framework.excptions.FrameworkException;
+import sbs.applitools.hackathon.framework.setup.TestTarget;
 
 public class ProductInfo extends BaseComponent {
 	
@@ -47,6 +51,45 @@ public class ProductInfo extends BaseComponent {
 		
 	}
 	
+	public Map<String,String> checkProductId(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.productId, "productId");
+	
+	}
+	
+	public Map<String,String> checkProductDescription(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.productDescription, "productDescription");
+	
+	}
+	
+	public Map<String,String> checkReviewCount(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.reviewCount, "reviewCount");
+	
+	}
+	
+	public Map<String,String> checkreviewstart_1(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.reviewstart_1, "reviewstart_1");
+	
+	}
+	
+	public Map<String,String> checkreviewstart_2(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.reviewstart_2, "reviewstart_2");
+	
+	}
+	
+	public Map<String,String> checkReviewstart_3(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.reviewstart_3, "reviewstart_3");
+	
+	}
+	
+	public Map<String,String> checkReviewstart_4(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.reviewstart_4, "reviewstart_4");
+	
+	}
+	
+	public Map<String,String> checkReviewstart_5(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.reviewstart_5, "reviewstart_5");
+	
+	}
 	
 	
 	

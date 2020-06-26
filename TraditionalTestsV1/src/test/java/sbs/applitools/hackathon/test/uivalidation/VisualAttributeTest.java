@@ -17,8 +17,8 @@ import sbs.applitools.hackathon.framework.utils.Utils;
 import sbs.applitools.hackathon.pages.HomePage;
 
 @Test
-@TestTargetList({"Laptop_all"})
-public class VisualAttributeTest extends BaseTest {
+@TestTargetList({"Default"})
+public class VisualAttributeTest extends AppliToolsBaseTest {
 
 	 public VisualAttributeTest(TestTarget target) {
 		    this.testTarget = target;
@@ -27,53 +27,194 @@ public class VisualAttributeTest extends BaseTest {
 	public VisualAttributeTest() {
 	}
 	
-	
-	@Test(description = "Validate Filter button on the home page")
-	public void validateFilterBtn() throws FrameworkException {
-		System.out.println("*********************Starting validation test*******************");
-		SoftAssert softAssertion= new SoftAssert();
+	@Test(description = "Validate Applitools Logo on the home page")
+	public void validateApplitoolsLogo() throws FrameworkException {
 		HomePage homePage = new HomePage(this.getDriver());
-		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate filter button, DOM Id:",homePage.filterButtons.getLocator("filterBtn"),this.testTarget );
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate ApplitoolsLogo",homePage.appHeader.getLocator("applitoolsLogo"),this.testTarget );
 		
-		Map<String, String> compareResult = homePage.filterButtons.checkfilterBtn("homePage", this.testTarget);
-		Iterator<String> itr = compareResult.keySet().iterator();
+		Map<String, String> compareResult = homePage.appHeader.checkApplitoolsLogo("homePage", this.testTarget);
 		
-		ArrayList<String> ui_validations =  new ArrayList<String>();
-		
-		while(itr.hasNext()) {
-			String result = itr.next();
-			softAssertion.assertEquals(compareResult.get(result), "Pass");
-			ui_validations.add(compareResult.get(result));
-		}
-		reportRec.append("Status:"+ Utils.deriveStatus(ui_validations));
-		System.out.println(reportRec.toString());
-		report.write(reportRec.toString());
-		softAssertion.assertAll();	
-		System.out.println("*********************Finishing validation test*******************");
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+		reportRec.append("\n");
 	}
 	
-	@Test(description = "Validate Reset button on the home page")
-	public void validateResetBtn() throws FrameworkException {
-		System.out.println("*********************Starting reset test*******************");
-		SoftAssert softAssertion= new SoftAssert();
+	@Test(description = "Validate Main Menu on the home page")
+	public void validateMainMenu() throws FrameworkException {
 		HomePage homePage = new HomePage(this.getDriver());
-		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate Reset button, DOM Id:",homePage.filterButtons.getLocator("resetBtn"),this.testTarget );
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate Main Menu",homePage.appHeader.getLocator("mainMenu"),this.testTarget );
 		
-		Map<String, String> compareResult = homePage.filterButtons.checkResetBtn("homePage", this.testTarget);
-		Iterator<String> itr = compareResult.keySet().iterator();
+		Map<String, String> compareResult = homePage.appHeader.checkMainMenu("homePage", this.testTarget);
 		
-		ArrayList<String> ui_validations =  new ArrayList<String>();
-		
-		while(itr.hasNext()) {
-			String result = itr.next();
-			softAssertion.assertEquals(compareResult.get(result), "Pass");
-			ui_validations.add(compareResult.get(result));
-		}
-		reportRec.append("Status:"+ Utils.deriveStatus(ui_validations));
-		report.write(reportRec.toString());
-		softAssertion.assertAll();
-		System.out.println(reportRec.toString());
-		System.out.println("*********************Finishing reset test*******************");
-	}	
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
 	
+	@Test(description = "Validate Home Menu on the home page")
+	public void validateHomeMenu() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate homeMenu",homePage.appHeader.getLocator("homeMenu"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.appHeader.checkHomeMenu("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	@Test(description = "Validate Men Menu on the home page")
+	public void validateMenMenu() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate menMenu",homePage.appHeader.getLocator("menMenu"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.appHeader.checkMenMenu("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	
+	@Test(description = "Validate Women Menu on the home page")
+	public void validateWomenMenu() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate womenMenu",homePage.appHeader.getLocator("womenMenu"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.appHeader.checkWomenMenu("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	@Test(description = "Validate Running Menu on the home page")
+	public void validateRunningMenu() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate runningMenu",homePage.appHeader.getLocator("runningMenu"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.appHeader.checkRunningMenu("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	@Test(description = "Validate Training Menu on the home page")
+	public void validateTrainingMenu() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate trainingMenu",homePage.appHeader.getLocator("trainingMenu"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.appHeader.checkTrainningMenu("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	@Test(description = "Validate Black Filter section on the home page")
+	public void validateBlackFilterSection() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate BlackFilterSection",homePage.colorFilter.getLocator("blackFiilterSection"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.colorFilter.checkBlackFilterSection("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	@Test(description = "Validate Search Bar on the home page")
+	public void validateSearchBar() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate Search Bar",homePage.mainNavBar.getLocator("searchBar"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.mainNavBar.checkSearchBar("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	@Test(description = "Validate Search Input on the home page")
+	public void validateSearchInput() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate searchInput",homePage.mainNavBar.getLocator("searchInput"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.mainNavBar.checkSearchInput("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	@Test(description = "Validate Search button on the home page")
+	public void validateSearchBtn() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate search button",homePage.mainNavBar.getLocator("searchBtn"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.mainNavBar.checkSearchBtn("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	@Test(description = "Validate Customer Tool Section on the home page")
+	public void validateCustomerToolSection() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate Customer Tool Section",homePage.mainNavBar.getLocator("customerToolSection"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.mainNavBar.checkCustomerToolSection("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	@Test(description = "Validate Account on the home page")
+	public void validateAccount() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate Account",homePage.mainNavBar.getLocator("account"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.mainNavBar.checkAccount("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	
+	@Test(description = "Validate wish list on the home page")
+	public void validateWishList() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate Wish List",homePage.mainNavBar.getLocator("wishList"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.mainNavBar.checkWishList("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	@Test(description = "Validate cart on the home page")
+	public void validateCar() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate Cart",homePage.mainNavBar.getLocator("cart"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.mainNavBar.checkCart("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+//	
+//	@Test(description = "Validate Filter button on the home page")
+//	public void validateApplitoolsLogo() throws FrameworkException {
+//		HomePage homePage = new HomePage(this.getDriver());
+//		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate ApplitoolsLogo",homePage.appHeader.getLocator("applitoolsLogo"),this.testTarget );
+//		
+//		Map<String, String> compareResult = homePage.appHeader.checkApplitoolsLogo("homePage", this.testTarget);
+//		
+//		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+//		softAssert.assertAll();	
+//	}
+//	
+//	@Test(description = "Validate Filter button on the home page")
+//	public void validateApplitoolsLogo() throws FrameworkException {
+//		HomePage homePage = new HomePage(this.getDriver());
+//		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate ApplitoolsLogo",homePage.appHeader.getLocator("applitoolsLogo"),this.testTarget );
+//		
+//		Map<String, String> compareResult = homePage.appHeader.checkApplitoolsLogo("homePage", this.testTarget);
+//		
+//		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+//		softAssert.assertAll();	
+//	}
+		
 }

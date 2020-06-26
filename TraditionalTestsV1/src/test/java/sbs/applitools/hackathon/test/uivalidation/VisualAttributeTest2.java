@@ -18,7 +18,7 @@ import sbs.applitools.hackathon.pages.HomePage;
 
 @Test
 @TestTargetList({"Laptop_all"})
-public class VisualAttributeTest2 extends BaseTest {
+public class VisualAttributeTest2 extends AppliToolsBaseTest {
 
 	 public VisualAttributeTest2(TestTarget target) {
 		    this.testTarget = target;
@@ -27,6 +27,16 @@ public class VisualAttributeTest2 extends BaseTest {
 	public VisualAttributeTest2() {
 	}
 	
+	@Test(description = "Validate Filter button on the home page")
+	public void validateApplitoolsLogo() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate ApplitoolsLogo, DOM Id:",homePage.appHeader.getLocator("applitoolsLogo"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.appHeader.checkApplitoolsLogo("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
 	
 	@Test(description = "Validate Filter button on the home page")
 	public void validateFilterBtn() throws FrameworkException {

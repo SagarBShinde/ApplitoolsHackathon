@@ -1,10 +1,15 @@
 package sbs.applitools.hackathon.productFilter;
 
+import java.util.Map;
+
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+
+import sbs.applitools.hackathon.framework.excptions.FrameworkException;
+import sbs.applitools.hackathon.framework.setup.TestTarget;
 
 public class ColorFilter extends ProductFilter {
 	
@@ -28,6 +33,8 @@ public class ColorFilter extends ProductFilter {
 		waitTilVisible(blackFiilterSection);
 		
 	}
+	
+	
 	
 	
 	
@@ -68,7 +75,30 @@ public class ColorFilter extends ProductFilter {
 		
 	}
 
-
+	public Map<String,String> checkBlackFilterSection(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.blackFiilterSection, "blackFiilterSection");
+	
+	}
+	
+	public Map<String,String> checkWhiteFilterSection(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.whiteFiilterSection, "whiteFiilterSection");
+	
+	}
+	
+	public Map<String,String> checkGreenFilterSection(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.greenFiilterSection, "greenFiilterSection");
+	
+	}
+	
+	public Map<String,String> checkYellowFilterSection(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.yellowFiilterSection, "yellowFiilterSection");
+	
+	}
+	
+	public Map<String,String> checkBlueFilterSection(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.blueFiilterSection, "blueFiilterSection");
+	
+	}
 
 
 	

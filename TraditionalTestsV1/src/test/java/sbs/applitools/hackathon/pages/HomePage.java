@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import sbs.applitools.hackathon.components.AppHeader;
 import sbs.applitools.hackathon.components.FilterButtons;
+import sbs.applitools.hackathon.components.MainNavBar;
 import sbs.applitools.hackathon.components.ProductInGrid;
 import sbs.applitools.hackathon.components.ProductSection;
 import sbs.applitools.hackathon.framework.basePage.BasePage;
@@ -19,6 +20,7 @@ public class HomePage extends BasePage {
 	
 	
 	public AppHeader appHeader;
+	public MainNavBar mainNavBar;
 	public ProductSection productSection;
 	public ColorFilter colorFilter;
 	public TypeFilter typeFilter;
@@ -30,6 +32,7 @@ public class HomePage extends BasePage {
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		this.appHeader = PageFactory.initElements(this.driver, AppHeader.class);
+		this.mainNavBar = PageFactory.initElements(this.driver, MainNavBar.class);
 		this.productSection = PageFactory.initElements(this.driver, ProductSection.class);
 		this.brandFilter = PageFactory.initElements(this.driver, BrandsFilter.class);
 		this.colorFilter = PageFactory.initElements(this.driver, ColorFilter.class);

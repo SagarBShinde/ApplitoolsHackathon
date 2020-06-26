@@ -1,11 +1,15 @@
 package sbs.applitools.hackathon.components;
 
+import java.util.Map;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import sbs.applitools.hackathon.framework.basePage.BaseComponent;
+import sbs.applitools.hackathon.framework.excptions.FrameworkException;
+import sbs.applitools.hackathon.framework.setup.TestTarget;
 
 public class ProductMain extends BaseComponent {
 	
@@ -19,15 +23,25 @@ public class ProductMain extends BaseComponent {
 	
 	
 	@FindBy(how = How.ID , using = "shoe_name") 
-	private WebElement name;
+	private WebElement productName;
 	
 	@FindBy(how = How.ID , using = "shoe_img") 
-	private WebElement image;
+	private WebElement productImage;
 
 	@Override
 	public void wait_till_load() {
-		waitTilVisible(this.name);
+		waitTilVisible(this.productName);
 		
+	}
+	
+	public Map<String,String> checkProductName(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.productName, "productName");
+	
+	}
+	
+	public Map<String,String> checkProductImage(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.productImage, "productImage");
+	
 	}
 
 	

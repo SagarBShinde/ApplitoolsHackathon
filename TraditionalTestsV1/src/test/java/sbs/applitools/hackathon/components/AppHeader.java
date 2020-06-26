@@ -61,22 +61,60 @@ public class AppHeader extends BaseComponent {
 
 	
 	
-	public boolean validateSearchField(String PageName, TestTarget target) throws NoSuchFieldException, SecurityException, FrameworkException {
+	public Map<String, String> checkApplitoolsLogo (String pageName, TestTarget target) throws FrameworkException {
+		return this.compareElementVisuals(pageName, target, this.applitoolsLogo, "applitoolsLogo");
 		
-		FindBy f = this.getClass().getDeclaredField("applitoolsLogo").getAnnotation(FindBy.class);
-		System.out.println("----------------------------------"+ f.using()+ "----" + f.how());
-		VisualAttribute v = new VisualAttribute(PageName);
-		Map<String,Object> expected_values = v.getExpectedVisualAttributes(this.getClass().getSimpleName(), "applitoolsLogo", target);
-		Map<String,Object> actual_values = v.getActualVisualAttributes(expected_values, this.trainingMenu);
-		System.out.println("expected values:" + Utils.mapToString(expected_values));
-		System.out.println("actual values:" + Utils.mapToString(actual_values));
-		Map<String,String> compare = VisualAttribute.compareAttributes(expected_values,actual_values);
-		System.out.println("Comparision result:" + Utils.mapToString(compare));
-		return applitoolsLogo.isDisplayed();
+	}
+	
+	
+	public Map<String, String> checkMainMenu (String pageName, TestTarget target) throws FrameworkException {
+		return this.compareElementVisuals(pageName, target, this.mainMenu, "mainMenu");
+		
+	}
+	
+	public Map<String, String> checkHomeMenu (String pageName, TestTarget target) throws FrameworkException {
+		return this.compareElementVisuals(pageName, target, this.homeMenu, "homeMenu");
+		
+	}
+	
+	public Map<String, String>  checkMenMenu (String pageName, TestTarget target) throws FrameworkException {
+		return this.compareElementVisuals(pageName, target, this.menMenu, "menMenu");
+		
+	}
+	
+	public Map<String, String> checkWomenMenu (String pageName, TestTarget target) throws FrameworkException {
+		return this.compareElementVisuals(pageName, target, this.womenMenu, "womenMenu");
+		
+	}
+	
+	public Map<String, String> checkRunningMenu (String pageName, TestTarget target) throws FrameworkException {
+		return this.compareElementVisuals(pageName, target, this.runningMenu, "runningMenu");
+		
+	}
+	
+	public Map<String, String> checkTrainningMenu (String pageName, TestTarget target) throws FrameworkException {
+		return this.compareElementVisuals(pageName, target, this.trainingMenu, "trainingMenu");
 		
 	}
 
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public void getActualVisualAttributes(List<Map<String, Object>> expectedList) throws FactoryException {
 		Iterator<Map<String, Object>> itr = expectedList.listIterator();
 		while(itr.hasNext()) {

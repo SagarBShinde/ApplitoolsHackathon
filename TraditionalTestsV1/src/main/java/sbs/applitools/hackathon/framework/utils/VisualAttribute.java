@@ -208,6 +208,8 @@ public class VisualAttribute {
 		}
 
 		return "Fail: expected size  height:" + exp_size.get("height").intValue() + " width:" + exp_size.get("width").intValue() + " actual size height:" + act_size.get("height").intValue() + " width:" + act_size.get("width").intValue();
+		//return "height:" + act_size.get("height").intValue() + " width:" + act_size.get("width").intValue();
+		
 	}
 
 	private static String validateLocation(Map<String,Double> exp_loc, Map<String,Integer> act_loc) {
@@ -217,7 +219,8 @@ public class VisualAttribute {
 			
 		}
 		return "Fail: expected location  X:" + exp_loc.get("X").intValue() + " Y:" + exp_loc.get("Y").intValue() + " actual location X:" + act_loc.get("X").intValue() + " Y:" + act_loc.get("Y").intValue();
-		
+		//return "location X:" + act_loc.get("X").intValue() + " Y:" + act_loc.get("Y").intValue();
+
 	}
 
 
