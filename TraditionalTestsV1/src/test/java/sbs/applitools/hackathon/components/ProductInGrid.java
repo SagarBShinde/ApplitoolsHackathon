@@ -33,15 +33,15 @@ public class ProductInGrid extends BaseComponent {
 	
 	
 	public void instantiateProductElements(WebElement product) {
-		this.offRibbon = product.findElement(By.xpath(".//contains[@id, 'SPAN__ribbonoff']"));
-		this.productImage = product.findElement(By.xpath(".//contains[@id, 'IMG__imgfluid']"));
-		this.countDown = product.findElement(By.xpath(".//contains[@id, 'DIV__countdown']"));
-		this.productName = product.findElement(By.xpath(".//contains[@id, 'H3____']"));
-		this.salePrice = product.findElement(By.xpath(".//contains[@id, 'SPAN__newprice']"));
-		this.originalPrice = product.findElement(By.xpath(".//contains[@id, 'SPAN__oldprice']"));
-		this.wishList = product.findElement(By.xpath(".//contains[@id, 'I__tiheart']"));
-		this.addToCompare = product.findElement(By.xpath(".//contains[@id, 'I__ticontrols']"));
-		this.addToCart = product.findElement(By.xpath(".//contains[@id, 'I__tishopping']"));
+		this.offRibbon = product.findElement(By.xpath(".//*[contains(@id, 'SPAN__ribbonoff')]"));
+		this.productImage = product.findElement(By.xpath(".//*[contains(@id, 'IMG__imgfluid')]"));
+		this.countDown = product.findElement(By.xpath(".//*[contains(@id, 'DIV__countdown')]"));
+		this.productName = product.findElement(By.xpath(".//*[contains(@id, 'H3____')]"));
+		this.salePrice = product.findElement(By.xpath(".//*[contains(@id, 'SPAN__newprice')]"));
+		this.originalPrice = product.findElement(By.xpath(".//*[contains(@id, 'SPAN__oldprice')]"));
+		this.wishList = product.findElement(By.xpath(".//*[contains(@id, 'I__tiheart')]"));
+		this.addToCompare = product.findElement(By.xpath(".//*[contains(@id, 'I__ticontrols')]"));
+		this.addToCart = product.findElement(By.xpath(".//*[contains(@id, 'I__tishopping')]"));
 	}
 	
 
@@ -56,13 +56,21 @@ public class ProductInGrid extends BaseComponent {
 	
 	}
 	
+	public void waitTilAccountMenu() {
+		
+		waitTilVisible(this.addToCart);
+	}
+	
 	public Map<String,String> checkProductImage(String pageName, TestTarget target) throws FrameworkException{
+		scrollToElement(this.productName);
 		return this.compareElementVisuals(pageName, target, this.productImage, "productImage");
 	
 	}
-	
+	// TODO: Instead of passing CSS properties array it should be read from visual attribute JSON.
 	public Map<String,String> checkCountDown(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.countDown, "countDown");
+	//	return this.compareElementVisuals(pageName, target, this.countDown, "countDown",["background-color"]);
+		String[] css_properties = new String[] { "background-color", "color"};
+		return this.compareElementVisuals(pageName, target, this.countDown, "countDown",css_properties);
 	
 	}
 	
@@ -72,12 +80,14 @@ public class ProductInGrid extends BaseComponent {
 	}
 	
 	public Map<String,String> checkSalePrice(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.salePrice, "salePrice");
+		String[] css_properties = new String[] { "color", "text-decoration-line"};
+		return this.compareElementVisuals(pageName, target, this.salePrice, "salePrice",css_properties);
 	
 	}
 	
 	public Map<String,String> checkOriginalPrice(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.originalPrice, "originalPrice");
+		String[] css_properties = new String[] { "color", "text-decoration-line"};
+		return this.compareElementVisuals(pageName, target, this.originalPrice, "originalPrice",css_properties);
 	
 	}
 	
@@ -96,5 +106,20 @@ public class ProductInGrid extends BaseComponent {
 	
 	}
 
+	@Override
+	public String getLocator(String elementName) throws FrameworkException {
+		try {
+			//return this.productImage.getAttribute("id");
+			System.out.println(((WebElement) this.getClass().getDeclaredField(elementName).get(this)).getAttribute("id"));
+			return ((WebElement) this.getClass().getDeclaredField(elementName).get(this)).getAttribute("id");
+			
+			//return el.getText();
+		
+		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
+		 // catch (IllegalArgumentException | SecurityException e) {
+			throw new FrameworkException("Could not get locator for:"+ elementName + e.getStackTrace());
+		}
+		
+	}
 
 }

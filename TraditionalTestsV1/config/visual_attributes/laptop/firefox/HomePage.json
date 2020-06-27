@@ -28,6 +28,7 @@
             {
                 "element_name" : "homeMenu",
                 "isDisplayed" : true,
+                "element_text": "HOME",
                 "element_size" : {
                     "height" : 68,
                     "width" : 89
@@ -373,108 +374,120 @@
                 "element_name" : "offRibbon",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 25,
+                    "width" : 45
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 325,
+                    "Y" : 612
                 }
             },
             {
                 "element_name" : "productImage",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 283,
+                    "width" : 283
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 315,
+                    "Y" : 602
                 }
             },
             {
                 "element_name" : "countDown",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 22,
+                    "width" : 100
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
+                    "X" : 411,
+                    "Y" : 858
+                },
+                "css_properties":{
+					"background-color": "rgb(255, 51, 51)",    
+					"color": "rgb(255, 255, 255)"             
+               }
             },
             {
                 "element_name" : "productName",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 16,
+                    "width" : 101
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 406,
+                    "Y" : 904
                 }
             },
             {
                 "element_name" : "salePrice",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 19,
+                    "width" : 49
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
+                    "X" : 406,
+                    "Y" : 925
+                },
+        "css_properties":{
+                	"color": "rgb(0, 77, 218)",
+                	"text-decoration-line": "none"
+               }
             },
             {
                 "element_name" : "originalPrice",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 21,
+                    "width" : 43
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
+                    "X" : 463,
+                    "Y" : 925
+                },
+                "css_properties":{
+                	"color": "rgb(153, 153, 153)",
+                	"text-decoration-line": "line-through"
+               }
+           },
             {
                 "element_name" : "wishList",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 18,
+                    "width" : 18
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 561,
+                    "Y" : 621
                 }
             },
             {
                 "element_name" : "addToCompare",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 18,
+                    "width" : 18
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 561,
+                    "Y" : 662
                 }
             },
             {
-                "element_name" : "applitoolsLogo",
+                "element_name" : "addToCart",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 18,
+                    "width" : 18
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 561,
+                    "Y" : 703
                 }
             }
         ]

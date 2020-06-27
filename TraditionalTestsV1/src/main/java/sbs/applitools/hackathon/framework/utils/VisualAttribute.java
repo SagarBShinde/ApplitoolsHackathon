@@ -55,7 +55,7 @@ public class VisualAttribute {
 			}
 		}
 		
-		LOG.debug(String.format("Could not find the attriibutes in the JSON file for: %s",elementName));
+		LOG.debug(String.format("Could not find the attributes in the JSON file for: %s",elementName));
 		return null;
 	
 		} catch (IOException e) {
@@ -147,6 +147,7 @@ public class VisualAttribute {
 		return actualAttributes;	
 	}
 	
+	//TODO: Remove this
 	public static void main(String[] args) throws FrameworkException {
 		
 		TestTarget t1 = new TestTarget("test");
@@ -230,22 +231,25 @@ public class VisualAttribute {
 		List<String> failed_props = new ArrayList<String>();
 		while(itr.hasNext()) {
 			String prop = itr.next();
-			if (exp_prop.get(prop) == act_prop.get(prop)) {
-				status = "Passed";	
-			}else
-				status  = "Failed";
+			if (exp_prop.get(prop).equalsIgnoreCase(act_prop.get(prop))) {
+				if (status.isEmpty()) {
+					status = "Pass"; 
+					
+				}	
+			}else {
+				status  = "Fail";
 				failed_props.add(prop);
-			
+			}
 		}
 		
-		if (status == "Passed") {
+		if (status == "Pass") {
 			return status;
 		}else {
 			StringBuffer consolidated_status = new StringBuffer();
-			consolidated_status.append("Failed:");
-			failed_props.forEach(prop -> consolidated_status.append(prop).append("expected_value:")
+			consolidated_status.append("Fail:");
+			failed_props.forEach(prop -> consolidated_status.append(prop).append("expected_value: ")
 																		 .append(exp_prop.get(prop))
-																		 .append("actual_value:")
+																		 .append("actual_value: ")
 																		 .append(act_prop.get(prop)));
 			status = consolidated_status.toString();
 			return status;

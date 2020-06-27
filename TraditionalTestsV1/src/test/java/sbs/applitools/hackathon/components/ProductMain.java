@@ -43,6 +43,8 @@ public class ProductMain extends BaseComponent {
 		return this.compareElementVisuals(pageName, target, this.productImage, "productImage");
 	
 	}
+	
+	
 
 	
 }

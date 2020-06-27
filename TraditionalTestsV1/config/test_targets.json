@@ -170,7 +170,7 @@
     "Default" : [
         {
             "targetName" : "laptop_chrome",
-            "visual_attribute_dir" : ".//config/visual_attributes//laptop//firefox",
+            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge",
             "device" : {
                 "deviceName" : "windows_laptop",
                 "deviceType" : "BROWSER_EMULATED",
@@ -180,7 +180,7 @@
             },
             "deviceOrientation" : "POTRAIT",
             "browser" : {
-                "browserName" : "firefox",
+                "browserName" : "chrome",
                 "version" : "v75.0"
             },
             "browserSize" : {

@@ -65,7 +65,16 @@ public class ProductSection extends BaseComponent {
 	}
 	
 	public WebElement getGridItem(int index) {
-		return gridItems.get(index);
+		return gridItems.get(index - 1);
+	}
+	
+	public void hoverOnProduct(int productIndex ) {
+		
+		scrollToElement(this.gridItems.get(productIndex-1));
+		waitTilVisible(this.gridItems.get(productIndex-1));
+		hoverOverElement(gridItems.get(productIndex-1));
+		
+		
 	}
 	
 	public Map<String,String> checkTopProduct(String pageName, TestTarget target) throws FrameworkException{
@@ -82,6 +91,7 @@ public class ProductSection extends BaseComponent {
 		return this.compareElementVisuals(pageName, target, this.sortDropDown, "sortDropDown");
 	
 	}
+	
 	
 	public Map<String,String> checkGridView(String pageName, TestTarget target) throws FrameworkException{
 		return this.compareElementVisuals(pageName, target, this.gridView, "gridView");

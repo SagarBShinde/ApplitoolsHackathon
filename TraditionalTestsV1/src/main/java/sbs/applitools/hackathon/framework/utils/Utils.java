@@ -62,10 +62,10 @@ public class Utils {
 	}
 
 	public static Object deriveStatus(ArrayList<String> statusList) {
-		//String status = "Fail";
 		String status = "";
+		String reason = "";
 		if (statusList.isEmpty()) {
-			return "NA";
+			return "NA" + "Reason: Status Array is Empty";
 		}
 		
 		Iterator<String> itr = statusList.iterator();
@@ -73,14 +73,21 @@ public class Utils {
 		while(itr.hasNext()) {
 			 String stat = itr.next();
 			 if (stat.equalsIgnoreCase("Pass")){
-				 status = "Pass";
+				 if (status.isEmpty()) {
+					 status = "Pass";
+				 }
 			 }else {
-				 status = status + stat.substring(4);
+				 status = "Fail";
+				 reason = reason + stat.substring(4);
 				 
 			 }	
 		}	
+		if (status.equalsIgnoreCase("Pass")){
+			return status;
+		}else {
+			return status + " Reason:" + reason;
+		}
 		
-		return status;
 	}
 
 }

@@ -12,6 +12,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -45,10 +46,19 @@ public abstract class BaseComponent extends RemoteWebElement{
 	
 	public abstract void wait_till_load();
 	
+	// By default only displayed, size and location are checked. If css_properties are to be checked then call overriden method with CSS properties array
+	
 	 public Map<String,String> compareElementVisuals(String pageName, TestTarget target, WebElement element, String elementName) throws FrameworkException{ 
 		 	VisualAttribute v1 = new VisualAttribute(pageName);
 			Map<String,Object> expected_values = v1.getExpectedVisualAttributes(this.getClass().getSimpleName(), elementName, target);
 			Map<String,Object>actual_values = v1.getActualVisualAttributes(element);
+			return VisualAttribute.compareAttributes(expected_values, actual_values);
+	 }
+	 
+	 public Map<String,String> compareElementVisuals(String pageName, TestTarget target, WebElement element, String elementName, String[] cssProperties) throws FrameworkException{ 
+		 	VisualAttribute v1 = new VisualAttribute(pageName);
+			Map<String,Object> expected_values = v1.getExpectedVisualAttributes(this.getClass().getSimpleName(), elementName, target);
+			Map<String,Object>actual_values = v1.getActualVisualAttributes(element,cssProperties);
 			return VisualAttribute.compareAttributes(expected_values, actual_values);
 	 }
 	
@@ -147,9 +157,12 @@ public abstract class BaseComponent extends RemoteWebElement{
 	
 	
 	protected void scrollToElement(WebElement element) {
-		System.out.println(element == null);
-		System.out.println(this.driver == null);
 		((JavascriptExecutor)this.driver).executeScript("arguments[0].scrollIntoView();", element);
+	}
+	
+	protected void hoverOverElement(WebElement element) {
+		Actions actions =  new Actions(this.driver);
+		actions.moveToElement(element).perform();
 	}
 	
 	private WebDriverWait getWait() {
