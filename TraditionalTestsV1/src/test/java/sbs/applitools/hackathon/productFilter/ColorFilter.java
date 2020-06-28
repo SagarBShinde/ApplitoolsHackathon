@@ -14,23 +14,23 @@ import sbs.applitools.hackathon.framework.setup.TestTarget;
 public class ColorFilter extends ProductFilter {
 	
 	@FindBy(how = How.ID , using = "LI____103")
-	private WebElement blackFiilterSection;
+	private WebElement blackFilterSection;
 	
 	@FindBy(how = How.ID , using = "LI____108")
-	private WebElement whiteFiilterSection;
+	private WebElement whiteFilterSection;
 	
 	@FindBy(how = How.ID , using = "LI____113")
-	private WebElement blueFiilterSection;
+	private WebElement blueFilterSection;
 	
 	@FindBy(how = How.ID , using = "LI____118")
-	private WebElement greenFiilterSection;
+	private WebElement greenFilterSection;
 	
 	@FindBy(how = How.ID , using = "DIV__dropdowndr__123")
-	private WebElement yellowFiilterSection;
+	private WebElement yellowFilterSection;
 	
 	@Override
 	public void wait_till_load() {
-		waitTilVisible(blackFiilterSection);
+		waitTilVisible(blackFilterSection);
 		
 	}
 	
@@ -38,9 +38,14 @@ public class ColorFilter extends ProductFilter {
 	
 	
 	
-	public void selectFilterOption(String filterOption) throws Exception {
+	public void selectFilterOption(String filterOption) throws FrameworkException {
 		String filterId = "colors__"+StringUtils.capitalize(filterOption);
-		getFilterSection(filterOption).findElement(By.id(filterId)).click();		
+		try {
+			getFilterSection(filterOption).findElement(By.id(filterId)).click();
+		} catch (Exception e) {
+		
+			throw new FrameworkException("Could not apply filter:"+ e.getStackTrace());
+		}		
 	}
 
 	
@@ -55,19 +60,19 @@ public class ColorFilter extends ProductFilter {
 		switch (color.toLowerCase()) {
 		
 			case "black":
-				return this.blackFiilterSection;
+				return this.blackFilterSection;
 			
 			case "white":
-				return this.whiteFiilterSection;
+				return this.whiteFilterSection;
 			
 			case "green":
-				return this.greenFiilterSection;
+				return this.greenFilterSection;
 			
 			case "yellow":
-				return this.yellowFiilterSection;
+				return this.yellowFilterSection;
 			
 			case "blue":
-				return this.blueFiilterSection;
+				return this.blueFilterSection;
 			
 			default:
 				throw new Exception("Invalid option specified for the filter ");
@@ -76,27 +81,27 @@ public class ColorFilter extends ProductFilter {
 	}
 
 	public Map<String,String> checkBlackFilterSection(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.blackFiilterSection, "blackFiilterSection");
+		return this.compareElementVisuals(pageName, target, this.blackFilterSection, "blackFilterSection");
 	
 	}
 	
 	public Map<String,String> checkWhiteFilterSection(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.whiteFiilterSection, "whiteFiilterSection");
+		return this.compareElementVisuals(pageName, target, this.whiteFilterSection, "whiteFilterSection");
 	
 	}
 	
 	public Map<String,String> checkGreenFilterSection(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.greenFiilterSection, "greenFiilterSection");
+		return this.compareElementVisuals(pageName, target, this.greenFilterSection, "greenFilterSection");
 	
 	}
 	
 	public Map<String,String> checkYellowFilterSection(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.yellowFiilterSection, "yellowFiilterSection");
+		return this.compareElementVisuals(pageName, target, this.yellowFilterSection, "yellowFilterSection");
 	
 	}
 	
 	public Map<String,String> checkBlueFilterSection(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.blueFiilterSection, "blueFiilterSection");
+		return this.compareElementVisuals(pageName, target, this.blueFilterSection, "blueFilterSection");
 	
 	}
 

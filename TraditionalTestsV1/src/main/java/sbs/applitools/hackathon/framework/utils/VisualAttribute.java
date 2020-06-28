@@ -73,6 +73,7 @@ public class VisualAttribute {
 		Map <String,String> actual_css_property = new HashMap<String,String>();
 		
 		actualAttributes.put("isDisplayed", el.isDisplayed());
+		actualAttributes.put("element_text", el.getText());
 		
 		elementLocation.put("X", el.getLocation().getX());
 		elementLocation.put("Y", el.getLocation().getY());
@@ -99,6 +100,7 @@ public class VisualAttribute {
 		Map <String,String> actual_css_property = new HashMap<String,String>();
 		
 		actualAttributes.put("isDisplayed", el.isDisplayed());
+		actualAttributes.put("element_text", el.getText());
 		
 		elementLocation.put("X", el.getLocation().getX());
 		elementLocation.put("Y", el.getLocation().getY());
@@ -120,6 +122,10 @@ public class VisualAttribute {
 		
 		if (AttributesToFetch.containsKey("isDisplayed")){
 			actualAttributes.put("isDisplayed", el.isDisplayed());
+		}
+		
+		if (AttributesToFetch.containsKey("element_text")){
+			actualAttributes.put("isDisplayed", el.getText());
 		}
 		
 		if (AttributesToFetch.containsKey("element_location")) {
@@ -169,8 +175,12 @@ public class VisualAttribute {
 				ComparisionResult.put("isDisplayed", validateVisible((boolean)expected_values.get("isDisplayed"),(boolean)actual_values.get("isDisplayed")));
 			}
 			
+			if (expected_values.containsKey("element_text")){
+				ComparisionResult.put("element_text", validateText((String)expected_values.get("element_text"),(String)actual_values.get("element_text")));
+			}
+			
 			if (expected_values.containsKey("element_location")){
-				ComparisionResult.put("isDisplayed", validateLocation((Map<String,Double>)expected_values.get("element_location"),(Map<String,Integer>)actual_values.get("element_location")));
+				ComparisionResult.put("element_location", validateLocation((Map<String,Double>)expected_values.get("element_location"),(Map<String,Integer>)actual_values.get("element_location")));
 			}
 			
 			if (expected_values.containsKey("element_size")){
@@ -197,6 +207,15 @@ public class VisualAttribute {
 			return "Pass";
 		}else {
 			return String.format("Failed: expected visibility  %s actual visibility %s", expected,actual);
+		}
+	}
+	
+	private static String validateText(String expected, String actual) {
+		System.out.println("----------------------Inside Validate Test-------------------------------------------------------------");
+		if (expected.contentEquals(actual)) {
+			return "Pass";
+		}else {
+			return String.format("Failed: expected text  %s actual text %s", expected,actual);
 		}
 	}
 

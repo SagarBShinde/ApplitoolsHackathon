@@ -31,6 +31,12 @@ public class ProductMain extends BaseComponent {
 	@Override
 	public void wait_till_load() {
 		waitTilVisible(this.productName);
+		waitTilVisible(this.productImage);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 	}
 	

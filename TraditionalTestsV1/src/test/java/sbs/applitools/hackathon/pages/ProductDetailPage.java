@@ -19,7 +19,7 @@ public class ProductDetailPage extends BasePage {
 	public ProductOption productOption;
 	
 	public ProductDetailPage(WebDriver driver) {
-		
+		this.driver = driver;
 		this.appHeader = PageFactory.initElements(this.driver, AppHeader.class);
 		this.mainNavBar = PageFactory.initElements(this.driver, MainNavBar.class);
 		this.productInfo = PageFactory.initElements(this.driver, ProductInfo.class);
@@ -33,6 +33,7 @@ public class ProductDetailPage extends BasePage {
 	@Override
 	public void wait_til_load() {
 		this.productMain.wait_till_load();
+		
 		
 	}
 

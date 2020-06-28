@@ -31,19 +31,19 @@ public class ProductInfo extends BaseComponent {
 	private WebElement reviewCount;
 	
 	@FindBy(how = How.ID , using = "I__iconstarvo__77") 
-	private WebElement reviewstart_1;
+	private WebElement reviewstar_1;
 	
 	@FindBy(how = How.ID , using = "I__iconstarvo__78") 
-	private WebElement reviewstart_2;
+	private WebElement reviewstar_2;
 	
 	@FindBy(how = How.ID , using = "I__iconstarvo__79") 
-	private WebElement reviewstart_3;
+	private WebElement reviewstar_3;
 	
 	@FindBy(how = How.ID , using = "I__iconstarvo__80") 
-	private WebElement reviewstart_4;
+	private WebElement reviewstar_4;
 	
-	@FindBy(how = How.ID , using = "I__iconstarvo__81") 
-	private WebElement reviewstart_5;
+	@FindBy(how = How.ID , using = "I__iconstar__81") 
+	private WebElement reviewstar_5;
 
 	@Override
 	public void wait_till_load() {
@@ -57,37 +57,39 @@ public class ProductInfo extends BaseComponent {
 	}
 	
 	public Map<String,String> checkProductDescription(String pageName, TestTarget target) throws FrameworkException{
+		scrollToElement(this.productDescription);
 		return this.compareElementVisuals(pageName, target, this.productDescription, "productDescription");
 	
 	}
 	
 	public Map<String,String> checkReviewCount(String pageName, TestTarget target) throws FrameworkException{
+		scrollToElement(this.reviewCount);
 		return this.compareElementVisuals(pageName, target, this.reviewCount, "reviewCount");
 	
 	}
 	
-	public Map<String,String> checkreviewstart_1(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.reviewstart_1, "reviewstart_1");
+	public Map<String,String> checkReviewstar_1(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.reviewstar_1, "reviewstar_1");
 	
 	}
 	
-	public Map<String,String> checkreviewstart_2(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.reviewstart_2, "reviewstart_2");
+	public Map<String,String> checkReviewstar_2(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.reviewstar_2, "reviewstar_2");
 	
 	}
 	
-	public Map<String,String> checkReviewstart_3(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.reviewstart_3, "reviewstart_3");
+	public Map<String,String> checkReviewstar_3(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.reviewstar_3, "reviewstar_3");
 	
 	}
 	
-	public Map<String,String> checkReviewstart_4(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.reviewstart_4, "reviewstart_4");
+	public Map<String,String> checkReviewstar_4(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.reviewstar_4, "reviewstar_4");
 	
 	}
 	
-	public Map<String,String> checkReviewstart_5(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.reviewstart_5, "reviewstart_5");
+	public Map<String,String> checkReviewstar_5(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.reviewstar_5, "reviewstar_5");
 	
 	}
 	

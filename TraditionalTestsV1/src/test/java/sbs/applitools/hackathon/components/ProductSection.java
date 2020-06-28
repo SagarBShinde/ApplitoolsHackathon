@@ -11,6 +11,7 @@ import org.openqa.selenium.support.How;
 import sbs.applitools.hackathon.framework.basePage.BaseComponent;
 import sbs.applitools.hackathon.framework.excptions.FrameworkException;
 import sbs.applitools.hackathon.framework.setup.TestTarget;
+import sbs.applitools.hackathon.pages.ProductDetailPage;
 
 public class ProductSection extends BaseComponent {
 	
@@ -33,13 +34,13 @@ public class ProductSection extends BaseComponent {
 	private WebElement sortDropDown;
 	
 	@FindBy(how = How.ID , using = "I__tiviewgrid__202")
-	private WebElement gridView; 
+	private WebElement gridViewBtn; 
 	
-	@FindBy(how = How.ID , using = "I__tiviewgrid__202")
-	private WebElement listView; 
+	@FindBy(how = How.ID , using = "I__tiviewlist__204")
+	private WebElement listViewBtn; 
 	
 	@FindBy(how = How.ID , using = "A__openfilter__206")
-	private WebElement openFiilter; 
+	private WebElement openFilterBtn; 
 	
 	@FindBy(how = How.ID , using = "product_grid")
 	private WebElement productGrid; 
@@ -68,6 +69,14 @@ public class ProductSection extends BaseComponent {
 		return gridItems.get(index - 1);
 	}
 	
+	public ProductDetailPage selectItem(int index) {
+		waitTilVisible(gridItems.get(index-1));
+		gridItems.get(index - 1).click();
+		ProductDetailPage productDetailPage = new ProductDetailPage(this.getDriver());
+		productDetailPage.wait_til_load();
+		return productDetailPage;
+	}
+	
 	public void hoverOnProduct(int productIndex ) {
 		
 		scrollToElement(this.gridItems.get(productIndex-1));
@@ -75,6 +84,12 @@ public class ProductSection extends BaseComponent {
 		hoverOverElement(gridItems.get(productIndex-1));
 		
 		
+	}
+	
+	public void openFilter() {
+		if(this.openFilterBtn.isDisplayed()) {
+			this.openFilterBtn.click();
+		}
 	}
 	
 	public Map<String,String> checkTopProduct(String pageName, TestTarget target) throws FrameworkException{
@@ -93,18 +108,18 @@ public class ProductSection extends BaseComponent {
 	}
 	
 	
-	public Map<String,String> checkGridView(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.gridView, "gridView");
+	public Map<String,String> checkGridViewBtn(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.gridViewBtn, "gridViewBtn");
 	
 	}
 	
-	public Map<String,String> checkListView(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.listView, "listView");
+	public Map<String,String> checkListViewBtn(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.listViewBtn, "listViewBtn");
 	
 	}
 	
-	public Map<String,String> checkOpenFiilter(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.openFiilter, "openFiilter");
+	public Map<String,String> checkOpenFilterBtn(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.openFilterBtn, "openFilterBtn");
 	
 	}
 	

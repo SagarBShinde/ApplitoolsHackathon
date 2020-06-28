@@ -48,6 +48,11 @@ public class HomePage extends BasePage {
 		
 	}	
 	
+	public void applyColorFilter(String color) throws Exception {
+		this.productSection.openFilter();
+		this.colorFilter.selectFilterOption(color);
+		this.filterButtons.applyFilter();
+	}
 	
 
 	

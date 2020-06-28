@@ -148,7 +148,7 @@
     "Tablet_chrome" : [
         {
             "targetName" : "tablet_chrome",
-            "visual_attribute_dir" : ".//config/visual_attributes//tablet",
+            "visual_attribute_dir" : ".//config/visual_attributes//tablet//chrome_and_edge",
             "device" : {
                 "deviceName" : "windows_laptop",
                 "deviceType" : "BROWSER_EMULATED",
@@ -169,8 +169,8 @@
     ],
     "Default" : [
         {
-            "targetName" : "laptop_chrome",
-            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge",
+            "targetName" : "firefox",
+            "visual_attribute_dir" : ".//config/visual_attributes//laptop//firefox",
             "device" : {
                 "deviceName" : "windows_laptop",
                 "deviceType" : "BROWSER_EMULATED",
@@ -180,7 +180,7 @@
             },
             "deviceOrientation" : "POTRAIT",
             "browser" : {
-                "browserName" : "chrome",
+                "browserName" : "firefox",
                 "version" : "v75.0"
             },
             "browserSize" : {

@@ -20,11 +20,11 @@ public class ProductOption extends BaseComponent {
 	@FindBy(how = How.ID , using = "DIV__collg__86") 
 	private WebElement ProductOptionContainer;
 	
-	@FindBy(how = How.ID , using = "SELECTselect-one__wide__93") 
+	@FindBy(how = How.XPATH , using = "//*[@class = 'nice-select wide']")
 	private WebElement sizeDropDown;
 	
 	@FindBy(how = How.ID , using = "quantity_1") 
-	private WebElement quantityDropDown;
+	private WebElement quantityInput;
 	
 	@FindBy(how = How.ID , using = "A__btn__114") 
 	private WebElement addToCartBtn;
@@ -49,8 +49,8 @@ public class ProductOption extends BaseComponent {
 	
 	}
 	
-	public Map<String,String> checkQuantityDropDown(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.quantityDropDown, "quantityDropDown");
+	public Map<String,String> checkQuantityInput(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.quantityInput, "quantityInput");
 	
 	}
 	
