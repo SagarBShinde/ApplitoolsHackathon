@@ -81,7 +81,6 @@ public class BaseTest {
 	@BeforeClass
 	public void beforeClassMethod() throws FrameworkException {
 		this.report = TestReporter.getInstance();
-		//this.report.open();
 		LOG.debug("Initializing Driver.....");
 		this.driver = new DriverFactory(this.testTarget).setUpDriver();
 		this.driver.get(propertyHandler.getInstance().getValue("app.v1.url"));
@@ -116,7 +115,7 @@ public class BaseTest {
 	
 	@AfterTest
 	public void afterTestMethod() throws FrameworkException {
-	//	this.report.close();
+		this.report.close();
 		
 	}
 	
@@ -127,10 +126,8 @@ public class BaseTest {
     public Object[] factMethod() throws FrameworkException {
 		LOG.info(propertyHandler.getInstance().getValue("app.v1.url"));
 		try {
-			LOG.debug("In the factory method");
-			InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream("test_targets.json");		
+			LOG.debug("In the factory method");		
 			String targetJson = Utils.readFile(System.getProperty("user.dir")+"//config//test_targets.json");
-			//LOG.debug("The target JSON is {}", targetJson);
 			JSONUtils jsonUtil =  new JSONUtilsGsonImpl(targetJson);
 			
 			TestTargetList testTargets = this.getClass().getAnnotation(TestTargetList.class);

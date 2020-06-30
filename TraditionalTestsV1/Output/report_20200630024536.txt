@@ -1,0 +1,46 @@
+
+Task: 1, Test Name: Validate Account,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate cart icon,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Add to compare icon,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate ApplitoolsLogo,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate BlackFilterSection,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate count down,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Customer Tool Section,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Grid View,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate homeMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate List View Button,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Main Menu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate menMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Cart,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate original price,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product grid,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product image,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product name,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product view bar,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate runningMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate sale price,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Search Bar,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate search button,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate searchInput,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Top Product,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate trainingMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Wish List,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate wish list icon,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate womenMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product Name,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product Image,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product Image,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review count,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review star_1 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review star_2 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review star_3 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review star_2 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review star_5 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Add To Cart Button ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product discount  ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product original price ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review star_5 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product quantity input ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Size drop down ,Browser:CHROME,Status:Pass
