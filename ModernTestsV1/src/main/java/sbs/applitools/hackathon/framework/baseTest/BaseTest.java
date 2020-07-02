@@ -114,13 +114,12 @@ public class BaseTest {
 		this.report = TestReporter.getInstance();
 		LOG.debug("Initializing Driver.....");
 		this.driver = new DriverFactory(defaultBrowser).setUpDriver();
-		this.driver.get(propertyHandler.getInstance().getValue("app.v1.url"));
 		
 		this.config = new Configuration();
 		this.config.setApiKey(propertyHandler.getInstance().getValue("applitools.sbs.api.key"));
 		LOG.debug("API Key is set..");
 		
-		this.config.setBatch(new BatchInfo("Ultrafast Batch-7"));
+		this.config.setBatch(new BatchInfo(propertyHandler.getInstance().getValue("config.applitools.batchName")));
 		
 		this.runner = new VisualGridRunner(10);
 		this.eyes = new Eyes(runner);	
@@ -128,6 +127,7 @@ public class BaseTest {
 		this.testTargets = getTestTargets();
 		LOG.debug("No. of Test Targets to execute test against:"+ this.testTargets.length);
 		addBrowsers();
+		LOG.debug("No. of Configurations added:"+ config.getBrowsersInfo().size());
 		eyes.setConfiguration(config);
 		LOG.debug("Test configuration is complete..");
 	
@@ -138,15 +138,7 @@ public class BaseTest {
 	public void afterClassMethod() throws FrameworkException {
 		LOG.debug("Closing Driver.....");
 		this.getDriver().quit();
-		LOG.debug("Closing Applitools Eyes...");
-		try {
-	          this.eyes.close();
-	          LOG.debug("Eyes are closed......");
-	      } catch (Exception e) {
-	          throw new FrameworkException("Could not close Applittols eye... Abort will be attempted" + e.getStackTrace());
-	      }finally {
-	          eyes.abortIfNotClosed();
-	      }
+	    eyes.abortIfNotClosed();
 		LOG.debug("Test is concluded...");
 	  }
 		
@@ -156,19 +148,17 @@ public class BaseTest {
 	public void beforeMethod() throws FrameworkException {
 		LOG.debug("Opening Test report for writting....");
 		this.report.open();
+		this.driver.get(propertyHandler.getInstance().getValue("app.v1.url"));
 	}
 	
 	@AfterMethod
 	public void afterMethod() throws FrameworkException {
 		LOG.debug("Closing Test report....");
 		this.report.close();
+	  
 	}
 	
-	
-	@AfterTest
-	public void afterTestMethod() throws FrameworkException {
-		
-	}
+
 	
 	/* Returns the consolidated list of Test targets for the given test by reading the 
 	 * the annotation value @TestTargetList

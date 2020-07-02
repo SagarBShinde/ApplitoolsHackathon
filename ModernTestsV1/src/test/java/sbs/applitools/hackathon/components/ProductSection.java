@@ -63,6 +63,7 @@ public class ProductSection extends BaseComponent {
 	@Override
 	public void wait_till_load() {
 		waitTilVisible(topProduct);
+		waitTilVisible(gridItems.get(0));
 		
 	}
 	

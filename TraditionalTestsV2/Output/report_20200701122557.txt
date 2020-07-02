@@ -1,0 +1,17 @@
+
+Task: 1, Test Name: Validate Account,Browser:CHROME,Status:Fail Reason:: expected location  X:681 Y:51 actual location X:635 Y:52
+Task: 1, Test Name: Validate ApplitoolsLogo,Browser:CHROME,Status:Fail Reason:: expected location  X:15 Y:15 actual location X:15 Y:16
+Task: 1, Test Name: Validate BlackFilterSection,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Customer Tool Section,Browser:CHROME,Status:Fail Reason:: expected size  height:60 width:112 actual size height:60 width:138: expected location  X:641 Y:51 actual location X:615 Y:52
+Task: 1, Test Name: Validate homeMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Main Menu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate menMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product grid,Browser:CHROME,Status:Fail Reason:: expected location  X:10 Y:585 actual location X:10 Y:586
+Task: 1, Test Name: Validate runningMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Search Bar,Browser:CHROME,Status:Fail Reason:: expected location  X:202 Y:51 actual location X:202 Y:52
+Task: 1, Test Name: Validate search button,Browser:CHROME,Status:Fail Reason:: expected location  X:532 Y:56 actual location X:532 Y:57
+Task: 1, Test Name: Validate searchInput,Browser:CHROME,Status:Fail Reason:: expected location  X:202 Y:51 actual location X:202 Y:52
+Task: 1, Test Name: Validate Sort Drop Down,Browser:CHROME,Status:Fail Reason:: expected location  X:57 Y:527 actual location X:57 Y:528
+Task: 1, Test Name: Validate trainingMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Wish List,Browser:CHROME,Status:Fail Reason:: expected location  X:1113 Y:68 actual location X:681 Y:52ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate womenMenu,Browser:CHROME,Status:Pass
