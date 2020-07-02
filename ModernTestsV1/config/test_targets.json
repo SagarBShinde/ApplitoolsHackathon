@@ -114,7 +114,7 @@
             },
             "orientation" : "POTRAIT",
             "browser" : {
-                "browserName" : "chrome",
+                "browserName" : "firefox",
                 "version" : "v75.0"
             },
             "browserSize" : {

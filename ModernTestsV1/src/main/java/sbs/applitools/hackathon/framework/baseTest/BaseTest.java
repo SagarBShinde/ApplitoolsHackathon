@@ -99,10 +99,10 @@ public class BaseTest {
 	@AfterSuite
 	public void afterSuiteMethod() throws ReporterException  {
 		LOG.info("FINISHING TEST EXCUTION.................");
-		this.report.close();
-		LOG.debug("Closed report...");
-		this.eyes.abortIfNotClosed();
-		LOG.debug("Eyes closed...");
+//		this.report.close();
+//		LOG.debug("Closed report...");
+//		this.eyes.abortIfNotClosed();
+//		LOG.debug("Eyes closed...");
 		
 	}
 		

@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Practice Suite">
-  <test name="Task-1">
+<suite name="AppliTools Suite">
+  <test name="AppliTools_Hackathon_Test">
       <parameter name="default_browser" value="chrome"> </parameter>
       <classes>
-      	<class name="sbs.applitools.hackathon.test.uivalidation.Task1">
+      	<class name="sbs.applitools.hackathon.test.uivalidation.AppliToolsHackathon">
       	</class>
       </classes>
   </test> <!-- Test --> 
-<!--    
-  <test name="Test Basics 2">    
-    <classes>
-      <class name="sbs.applitools.hackathon.test.uivalidation.VisualAttributeTest2"/>
-    </classes>
-     
-  </test> Test -->
 </suite> <!-- Suite -->

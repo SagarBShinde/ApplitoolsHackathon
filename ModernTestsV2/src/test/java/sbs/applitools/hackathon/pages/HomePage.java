@@ -17,6 +17,8 @@ import sbs.applitools.hackathon.productFilter.ColorFilter;
 import sbs.applitools.hackathon.productFilter.PriceFilter;
 import sbs.applitools.hackathon.productFilter.TypeFilter;
 
+
+
 public class HomePage extends BasePage {
 	
 	

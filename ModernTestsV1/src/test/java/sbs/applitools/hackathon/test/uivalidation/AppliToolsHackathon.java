@@ -25,7 +25,7 @@ import sbs.applitools.hackathon.pages.HomePage;
 
 
 @TestTargetList({"Laptop_all", "Tablet_all", "Mobile_chrome"})
-public class Task1 extends AppliToolsBaseTest{
+public class AppliToolsHackathon extends AppliToolsBaseTest{
 	
 
 	@Test(priority = 0)
