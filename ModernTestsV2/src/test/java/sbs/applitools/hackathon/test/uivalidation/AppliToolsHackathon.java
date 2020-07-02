@@ -13,7 +13,7 @@ import sbs.applitools.hackathon.framework.setup.TestTargetList;
 import sbs.applitools.hackathon.pages.HomePage;
 
 @TestTargetList({"Laptop_all", "Tablet_all", "Mobile_chrome"})
-public class AppliToolsHackathon extends BaseTest{
+public class AppliToolsHackathon extends AppliToolsBaseTest{
 	
 
 	@Test(priority = 0)
