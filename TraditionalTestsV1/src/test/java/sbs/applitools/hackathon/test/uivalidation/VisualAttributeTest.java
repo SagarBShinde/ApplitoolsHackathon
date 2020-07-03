@@ -18,7 +18,7 @@ import sbs.applitools.hackathon.framework.utils.Utils;
 import sbs.applitools.hackathon.pages.HomePage;
 
 @Test
-@TestTargetList({"Tablet_chrome"})
+@TestTargetList({"Laptop_all","Tablet_all","Mobile_chrome"})
 public class VisualAttributeTest extends AppliToolsBaseTest {
 
 	 public VisualAttributeTest(TestTarget target) {
@@ -142,12 +142,23 @@ public class VisualAttributeTest extends AppliToolsBaseTest {
 		softAssert.assertAll();	
 	}
 	
-	@Test(description = "Validate Search button on the home page")
-	public void validateSearchBtn() throws FrameworkException {
+	@Test(description = "Validate Search button on the home page for Laptop and Tablet")
+	public void validatesearchBtnWeb() throws FrameworkException {
 		HomePage homePage = new HomePage(this.getDriver());
-		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate search button",homePage.mainNavBar.getLocator("searchBtn"),this.testTarget );
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate search button",homePage.mainNavBar.getLocator("searchBtnWeb"),this.testTarget );
 		
-		Map<String, String> compareResult = homePage.mainNavBar.checkSearchBtn("homePage", this.testTarget);
+		Map<String, String> compareResult = homePage.mainNavBar.checksearchBtnWeb("homePage", this.testTarget);
+		
+		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
+		softAssert.assertAll();	
+	}
+	
+	@Test(description = "Validate Search button on the home page for Mobile")
+	public void validatesearchBtnMob() throws FrameworkException {
+		HomePage homePage = new HomePage(this.getDriver());
+		StringBuilder reportRec = this.getReportLine("Task: 1, Test Name: Validate search button",homePage.mainNavBar.getLocator("searchBtnMob"),this.testTarget );
+		
+		Map<String, String> compareResult = homePage.mainNavBar.checksearchBtnMob("homePage", this.testTarget);
 		
 		SoftAssert softAssert = this.runUIValidationForElement(compareResult, reportRec);
 		softAssert.assertAll();	
@@ -321,7 +332,7 @@ public class VisualAttributeTest extends AppliToolsBaseTest {
 		softAssert.assertAll();	
 	}
 	
-	@Test(description = "Validate sale price for the first product on the grid on the home page")
+	@Test(description = "Validate original price for the first product on the grid on the home page")
 	public void validateOriginalPrice() throws FrameworkException {
 		HomePage homePage = new HomePage(this.getDriver());
 		

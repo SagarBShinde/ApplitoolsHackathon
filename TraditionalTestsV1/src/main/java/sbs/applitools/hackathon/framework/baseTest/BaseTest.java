@@ -53,7 +53,6 @@ public class BaseTest {
 	
 	public TestTarget testTarget;
 	private WebDriver driver;
-	private File reportFile;
 	protected TestReporter report;
 	
 	public void setDriver(WebDriver driver) {

@@ -115,7 +115,7 @@
                 }
             },
             {
-                "element_name" : "searchBtn",
+                "element_name" : "searchBtnWeb",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 36,
@@ -125,6 +125,10 @@
                     "X" : 852,
                     "Y" : 73
                 }
+            },
+            {
+                "element_name" : "searchBtnMob",
+                "isDisplayed" : false
             },
             {
                 "element_name" : "customerToolSection",

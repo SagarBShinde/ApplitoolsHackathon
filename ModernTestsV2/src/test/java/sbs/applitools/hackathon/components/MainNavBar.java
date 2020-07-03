@@ -28,7 +28,7 @@ public class MainNavBar extends BaseComponent {
 	private WebElement searchInput;
 	
 	@FindBy(how = How.ID , using = "BUTTONsubmit____43")
-	private WebElement searchBtn;
+	private WebElement searchBtnWeb;
 	
 	@FindBy(how = How.ID , using = "UL__toptools__46")
 	private WebElement customerToolSection;
@@ -58,8 +58,8 @@ public class MainNavBar extends BaseComponent {
 	
 	}
 	
-	public Map<String,String> checkSearchBtn(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.searchBtn, "searchBtn");
+	public Map<String,String> checksearchBtnWeb(String pageName, TestTarget target) throws FrameworkException{
+		return this.compareElementVisuals(pageName, target, this.searchBtnWeb, "searchBtnWeb");
 	
 	}
 	

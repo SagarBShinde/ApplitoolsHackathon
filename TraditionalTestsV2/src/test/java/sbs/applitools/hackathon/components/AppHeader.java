@@ -13,8 +13,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
-
 import sbs.applitools.hackathon.framework.basePage.BaseComponent;
 import sbs.applitools.hackathon.framework.excptions.FactoryException;
 import sbs.applitools.hackathon.framework.excptions.FrameworkException;

@@ -34,7 +34,7 @@ public class ProductInGrid extends BaseComponent {
 	
 	public void instantiateProductElements(WebElement product) {
 		this.offRibbon = product.findElement(By.xpath(".//*[contains(@id, 'SPAN__ribbonoff')]"));
-		this.productImage = product.findElement(By.xpath(".//*[contains(@id, 'IMG__imgfluid')]"));
+		this.productImage = product.findElement(By.xpath(".//*[contains(@id, 'product_')]"));
 		this.countDown = product.findElement(By.xpath(".//*[contains(@id, 'DIV__countdown')]"));
 		this.productName = product.findElement(By.xpath(".//*[contains(@id, 'H3____')]"));
 		this.salePrice = product.findElement(By.xpath(".//*[contains(@id, 'SPAN__newprice')]"));
@@ -57,8 +57,13 @@ public class ProductInGrid extends BaseComponent {
 	}
 	
 	public void waitTilAccountMenu() {
+		try {
+			Thread.sleep(2500);
+		} catch (InterruptedException e) {
+			System.out.println("Wait interrupted");
+		}
 		
-		waitTilVisible(this.addToCart);
+	//	waitTilVisible(this.addToCart);
 	}
 	
 	public Map<String,String> checkProductImage(String pageName, TestTarget target) throws FrameworkException{

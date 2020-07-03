@@ -114,7 +114,7 @@
                 }
             },
             {
-                "element_name" : "searchBtn",
+                "element_name" : "searchBtnWeb",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 100,
@@ -183,11 +183,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 28,
-                    "width" : 1170
+                    "width" : 670
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 159
+                    "Y" : 130
                 }
             },
             {
@@ -195,11 +195,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 350,
-                    "width" : 770
+                    "width" : 670
                 },
                 "element_location" : {
-                    "X" : 215,
-                    "Y" : 217
+                    "X" : 15,
+                    "Y" : 188
                 }
             }
         ]
@@ -211,11 +211,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 38,
-                    "width" : 178
+                    "width" : 320
                 },
                 "element_location" : {
-                    "X" : 1006,
-                    "Y" : 657
+                    "X" : 365,
+                    "Y" : 768
                 }
             },
             {
@@ -226,8 +226,8 @@
                     "width" : 40
                 },
                 "element_location" : {
-                    "X" : 1075,
-                    "Y" : 696
+                    "X" : 505,
+                    "Y" : 807
                 }
             },
             {
@@ -238,8 +238,8 @@
                     "width" : 121
                 },
                 "element_location" : {
-                    "X" : 1063,
-                    "Y" : 761
+                    "X" : 563,
+                    "Y" : 872
                 }
             },
             {
@@ -250,8 +250,8 @@
                     "width" : 50
                 },
                 "element_location" : {
-                    "X" : 826,
-                    "Y" : 771
+                    "X" : 184,
+                    "Y" : 882
                 }
             },
             {
@@ -262,8 +262,8 @@
                     "width" : 50
                 },
                 "element_location" : {
-                    "X" : 772,
-                    "Y" : 773
+                    "X" : 131,
+                    "Y" : 884
                 }
             },
             {
@@ -274,8 +274,8 @@
                     "width" : 87
                 },
                 "element_location" : {
-                    "X" : 889,
-                    "Y" : 772
+                    "X" : 248,
+                    "Y" : 883
                 }
             }
         ]
@@ -291,7 +291,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 698
+                    "Y" : 669
                 }
             },
             {
@@ -315,7 +315,7 @@
                 },
                 "element_location" : {
                     "X" : 105,
-                    "Y" : 659
+                    "Y" : 630
                 }
             },
             {
@@ -327,7 +327,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 659
+                    "Y" : 630
                 }
             },
             {
@@ -339,7 +339,7 @@
                 },
                 "element_location" : {
                     "X" : 33,
-                    "Y" : 659
+                    "Y" : 630
                 }
             },
             {
@@ -351,7 +351,7 @@
                 },
                 "element_location" : {
                     "X" : 51,
-                    "Y" : 659
+                    "Y" : 630
                 }
             },
             {
@@ -363,7 +363,7 @@
                 },
                 "element_location" : {
                     "X" : 69,
-                    "Y" : 659
+                    "Y" : 630
                 }
             },
             {
@@ -375,7 +375,7 @@
                 },
                 "element_location" : {
                     "X" : 87,
-                    "Y" : 659
+                    "Y" : 630
                 }
             }
         ]

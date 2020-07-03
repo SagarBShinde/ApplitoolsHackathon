@@ -1,0 +1,16 @@
+
+Task: 1, Test Name: Validate Product Name,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product Image,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product Image,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review count,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review star_1 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review star_2 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review star_3 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review star_2 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product review star_5 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Add To Cart Button ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product discount  ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product original price ,Browser:CHROME,Status:Fail Reason:: expected location  X:218 Y:895 actual location X:184 Y:882
+Task: 1, Test Name: Validate Product review star_5 ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Product quantity input ,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Size drop down ,Browser:CHROME,Status:Pass

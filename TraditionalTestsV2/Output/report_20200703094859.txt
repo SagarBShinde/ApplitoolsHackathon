@@ -1,0 +1,32 @@
+
+Task: 1, Test Name: Validate Account,Browser:CHROME,Status:Fail Reason:: expected location  X:681 Y:52 actual location X:635 Y:52
+Task: 1, Test Name: Validate cart icon,Browser:CHROME,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate Add to compare icon,Browser:CHROME,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate ApplitoolsLogo,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate BlackFilterSection,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate count down,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Customer Tool Section,Browser:CHROME,Status:Fail Reason:: expected size  height:60 width:112 actual size height:60 width:138: expected location  X:641 Y:52 actual location X:615 Y:52
+Task: 1, Test Name: Validate Grid View,Browser:CHROME,Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate homeMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate List View Button,Browser:CHROME,Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Main Menu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate menMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Cart,Browser:CHROME,Status:Fail Reason:: expected location  X:638 Y:527 actual location X:603 Y:528
+Task: 1, Test Name: Validate original price,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product grid,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product image,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product name,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product view bar,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate runningMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate sale price,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Search Bar,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate searchInput,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Top Product,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate trainingMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Wish List,Browser:CHROME,Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate wish list icon,Browser:CHROME,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate womenMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate search button,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate search button,Browser:CHROME,Status:Pass

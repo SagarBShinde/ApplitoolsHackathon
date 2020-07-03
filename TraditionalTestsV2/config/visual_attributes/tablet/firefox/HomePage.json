@@ -5,8 +5,8 @@
                 "element_name" : "applitoolsLogo",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 35,
-                    "width" : 150
+                    "height" : 21,
+                    "width" : 738
                 },
                 "element_location" : {
                     "X" : 15,
@@ -15,7 +15,7 @@
             },
             {
                 "element_name" : "mainMenu",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
                     "width" : 580
@@ -27,11 +27,10 @@
             },
             {
                 "element_name" : "homeMenu",
-                "isDisplayed" : true,
-                "element_text": "HOME",
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
-                    "width" : 89
+                    "width" : 90
                 },
                 "element_location" : {
                     "X" : 310,
@@ -40,10 +39,10 @@
             },
             {
                 "element_name" : "menMenu",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
-                    "width" : 80
+                    "width" : 81
                 },
                 "element_location" : {
                     "X" : 403,
@@ -52,7 +51,7 @@
             },
             {
                 "element_name" : "womenMenu",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
                     "width" : 101
@@ -64,7 +63,7 @@
             },
             {
                 "element_name" : "runningMenu",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
                     "width" : 110
@@ -76,10 +75,10 @@
             },
             {
                 "element_name" : "trainingMenu",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
-                    "width" : 112
+                    "width" : 113
                 },
                 "element_location" : {
                     "X" : 705,
@@ -95,11 +94,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 40,
-                    "width" : 580
+                    "width" : 364
                 },
                 "element_location" : {
-                    "X" : 310,
-                    "Y" : 68
+                    "X" : 202,
+                    "Y" : 52
                 }
             },
             {
@@ -107,35 +106,39 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 40,
-                    "width" : 580
+                    "width" : 364
                 },
                 "element_location" : {
-                    "X" : 310,
-                    "Y" : 68
+                    "X" : 202,
+                    "Y" : 52
                 }
             },
             {
-                "element_name" : "searchBtn",
+                "element_name" : "searchBtnWeb",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 36,
-                    "width" : 40
+                    "height" : 38,
+                    "width" : 36
                 },
                 "element_location" : {
-                    "X" : 852,
-                    "Y" : 73
+                    "X" : 532,
+                    "Y" : 57
                 }
+            },
+            {
+                "element_name" : "searchBtnMob",
+                "isDisplayed" : false
             },
             {
                 "element_name" : "customerToolSection",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 60,
-                    "width" : 138
+                    "width" : 112
                 },
                 "element_location" : {
-                    "X" : 1047,
-                    "Y" : 68
+                    "X" : 641,
+                    "Y" : 52
                 }
             },
             {
@@ -146,21 +149,13 @@
                     "width" : 26
                 },
                 "element_location" : {
-                    "X" : 1067,
-                    "Y" : 68
+                    "X" : 681,
+                    "Y" : 52
                 }
             },
             {
                 "element_name" : "wishList",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 60,
-                    "width" : 26
-                },
-                "element_location" : {
-                    "X" : 1113,
-                    "Y" : 68
-                }
+                "isDisplayed" : false
             },
             {
                 "element_name" : "cart",
@@ -183,11 +178,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 350,
-                    "width" : 870
+                    "width" : 738
                 },
                 "element_location" : {
-                    "X" : 315,
-                    "Y" : 159
+                    "X" : 15,
+                    "Y" : 143
                 }
             },
             {
@@ -195,11 +190,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 25,
-                    "width" : 840
+                    "width" : 708
                 },
                 "element_location" : {
-                    "X" : 330,
-                    "Y" : 544
+                    "X" : 30,
+                    "Y" : 528
                 }
             },
             {
@@ -207,60 +202,44 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 25,
-                    "width" : 176
+                    "width" : 168
                 },
                 "element_location" : {
-                    "X" : 357,
-                    "Y" : 544
+                    "X" : 57,
+                    "Y" : 528
                 }
             },
             {
                 "element_name" : "gridViewBtn",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 16,
-                    "width" : 16
-                },
-                "element_location" : {
-                    "X" : 1129,
-                    "Y" : 549
-                }
+                "isDisplayed" : false
             },
             {
                 "element_name" : "listViewBtn",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 16,
-                    "width" : 16
-                },
-                "element_location" : {
-                    "X" : 1154,
-                    "Y" : 549
-                }
+                "isDisplayed" : false
             },
             {
                 "element_name" : "openFilterBtn",
-                "isDisplayed" : false,
+                "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 25,
+                    "width" : 59
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 638,
+                    "Y" : 527
                 }
             },
             {
                 "element_name" : "productGrid",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 1110,
-                    "width" : 880
+                    "height" : 1117,
+                    "width" : 748
                 },
                 "element_location" : {
-                    "X" : 310,
-                    "Y" : 602
-               }
+                    "X" : 10,
+                    "Y" : 586
+                }
             },
             {
                 "element_name" : "product-1",
@@ -280,14 +259,14 @@
         "child_elements" : [
             {
                 "element_name" : "blackFilterSection",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 23,
                     "width" : 228
                 },
                 "element_location" : {
                     "X" : 36,
-                    "Y" : 403
+                    "Y" : 400
                 }
             },
             {
@@ -378,20 +357,20 @@
                     "width" : 45
                 },
                 "element_location" : {
-                    "X" : 325,
-                    "Y" : 612
+                    "X" : 25,
+                    "Y" : 596
                 }
             },
             {
                 "element_name" : "productImage",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 283,
-                    "width" : 283
+                    "height" : 239,
+                    "width" : 239
                 },
                 "element_location" : {
-                    "X" : 315,
-                    "Y" : 602
+                    "X" : 15,
+                    "Y" : 586
                 }
             },
             {
@@ -402,12 +381,12 @@
                     "width" : 100
                 },
                 "element_location" : {
-                    "X" : 411,
-                    "Y" : 858
+                    "X" : 89,
+                    "Y" : 798
                 },
                 "css_properties":{
-					"background-color": "rgb(255, 51, 51)",    
-					"color": "rgb(255, 255, 255)"             
+					"background-color": "rgba(255, 51, 51, 1)",    
+					"color": "rgba(255, 255, 255, 1)"             
                }
             },
             {
@@ -418,8 +397,8 @@
                     "width" : 101
                 },
                 "element_location" : {
-                    "X" : 406,
-                    "Y" : 904
+                    "X" : 84,
+                    "Y" : 844
                 }
             },
             {
@@ -427,14 +406,14 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 19,
-                    "width" : 49
+                    "width" : 50
                 },
                 "element_location" : {
-                    "X" : 406,
-                    "Y" : 925
+                    "X" : 84,
+                    "Y" : 865
                 },
         "css_properties":{
-                	"color": "rgb(0, 77, 218)",
+                	"color": "rgba(0, 77, 218, 1)",
                 	"text-decoration-line": "none"
                }
             },
@@ -443,14 +422,14 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 21,
-                    "width" : 43
+                    "width" : 44
                 },
                 "element_location" : {
-                    "X" : 463,
-                    "Y" : 925
+                    "X" : 140,
+                    "Y" : 865
                 },
                 "css_properties":{
-                	"color": "rgb(153, 153, 153)",
+                	"color": "rgba(153, 153, 153, 1)",
                 	"text-decoration-line": "line-through"
                }
            },
@@ -462,8 +441,8 @@
                     "width" : 18
                 },
                 "element_location" : {
-                    "X" : 561,
-                    "Y" : 621
+                    "X" : 89,
+                    "Y" : 900
                 }
             },
             {
@@ -474,8 +453,8 @@
                     "width" : 18
                 },
                 "element_location" : {
-                    "X" : 561,
-                    "Y" : 662
+                    "X" : 125,
+                    "Y" : 900
                 }
             },
             {
@@ -486,8 +465,8 @@
                     "width" : 18
                 },
                 "element_location" : {
-                    "X" : 561,
-                    "Y" : 703
+                    "X" : 161,
+                    "Y" : 900
                 }
             }
         ]

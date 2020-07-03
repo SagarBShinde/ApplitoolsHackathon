@@ -1,0 +1,17 @@
+TODO List
+- Integrate the WebDriver Manager
+- Integrate reporter
+- Maven Parent Child project
+- Managing waits
+
+
+Changes
+Navbar changes
+Filter section disappears
+Filter button appears
+Bottom menu items gets stacked up
+Main Product image gets reszied
+Heart sign disappears
+Applifashio gets repositioned
+Add unit tests for Framework
+product howver over does not work in the new app

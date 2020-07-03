@@ -5,17 +5,17 @@
                 "element_name" : "applitoolsLogo",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 35,
-                    "width" : 150
+                    "height" : 21,
+                    "width" : 670
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 16
+                    "Y" : 15
                 }
             },
             {
                 "element_name" : "mainMenu",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
                     "width" : 580
@@ -27,7 +27,7 @@
             },
             {
                 "element_name" : "homeMenu",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
                     "width" : 90
@@ -39,7 +39,7 @@
             },
             {
                 "element_name" : "menMenu",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
                     "width" : 81
@@ -51,7 +51,7 @@
             },
             {
                 "element_name" : "womenMenu",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
                     "width" : 101
@@ -63,7 +63,7 @@
             },
             {
                 "element_name" : "runningMenu",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
                     "width" : 110
@@ -75,7 +75,7 @@
             },
             {
                 "element_name" : "trainingMenu",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 68,
                     "width" : 113
@@ -91,67 +91,71 @@
         "child_elements" : [
             {
                 "element_name" : "searchBar",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 40,
-                    "width" : 580
+                    "width" : 364
                 },
                 "element_location" : {
-                    "X" : 310,
-                    "Y" : 68
+                    "X" : 202,
+                    "Y" : 51
                 }
             },
             {
                 "element_name" : "searchInput",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 40,
-                    "width" : 580
+                    "width" : 364
                 },
                 "element_location" : {
-                    "X" : 310,
-                    "Y" : 68
+                    "X" : 202,
+                    "Y" : 51
                 }
             },
             {
-                "element_name" : "searchBtn",
+                "element_name" : "searchBtnMob",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 38,
-                    "width" : 36
+                    "height" : 28,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 856,
-                    "Y" : 73
+                    "X" : 15,
+                    "Y" : 61
                 }
+            },
+            {
+                "element_name" : "searchBtnWeb",
+                "isDisplayed" : false
             },
             {
                 "element_name" : "customerToolSection",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 60,
-                    "width" : 138
+                    "height" : 0,
+                    "width" : 670
                 },
                 "element_location" : {
-                    "X" : 1047,
-                    "Y" : 68
+                    "X" : 15,
+                    "Y" : 61
                 }
             },
             {
                 "element_name" : "account",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 60,
+                    "height" : 28,
                     "width" : 26
                 },
                 "element_location" : {
-                    "X" : 1067,
-                    "Y" : 68
+                    "X" : 613,
+                    "Y" : 61
                 }
             },
             {
                 "element_name" : "wishList",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 60,
                     "width" : 26
@@ -181,12 +185,12 @@
                 "element_name" : "topProduct",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 350,
-                    "width" : 870
+                    "height" : 200,
+                    "width" : 670
                 },
                 "element_location" : {
-                    "X" : 315,
-                    "Y" : 159
+                    "X" : 15,
+                    "Y" : 130
                 }
             },
             {
@@ -194,11 +198,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 25,
-                    "width" : 840
+                    "width" : 640
                 },
                 "element_location" : {
-                    "X" : 330,
-                    "Y" : 544
+                    "X" : 30,
+                    "Y" : 365
                 }
             },
             {
@@ -209,13 +213,13 @@
                     "width" : 168
                 },
                 "element_location" : {
-                    "X" : 357,
-                    "Y" : 544
+                    "X" : 57,
+                    "Y" : 365
                 }
             },
             {
                 "element_name" : "gridViewBtn",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 16,
                     "width" : 16
@@ -227,7 +231,7 @@
             },
             {
                 "element_name" : "listViewBtn",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 16,
                     "width" : 16
@@ -239,26 +243,26 @@
             },
             {
                 "element_name" : "openFilterBtn",
-                "isDisplayed" : false,
+                "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 25,
+                    "width" : 16
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 629,
+                    "Y" : 365
                 }
             },
             {
                 "element_name" : "productGrid",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 1111,
-                    "width" : 880
+                    "height" : 2315,
+                    "width" : 680
                 },
                 "element_location" : {
-                    "X" : 310,
-                    "Y" : 602
+                    "X" : 10,
+                    "Y" : 423
                 }
             },
             {
@@ -279,7 +283,7 @@
         "child_elements" : [
             {
                 "element_name" : "blackFilterSection",
-                "isDisplayed" : true,
+                "isDisplayed" : false,
                 "element_size" : {
                     "height" : 23,
                     "width" : 228
@@ -377,20 +381,20 @@
                     "width" : 45
                 },
                 "element_location" : {
-                    "X" : 325,
-                    "Y" : 612
+                    "X" : 25,
+                    "Y" : 433
                 }
             },
             {
                 "element_name" : "productImage",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 283,
-                    "width" : 283
+                    "height" : 330,
+                    "width" : 330
                 },
                 "element_location" : {
-                    "X" : 315,
-                    "Y" : 602
+                    "X" : 15,
+                    "Y" : 423
                 }
             },
             {
@@ -401,8 +405,8 @@
                     "width" : 100
                 },
                 "element_location" : {
-                    "X" : 411,
-                    "Y" : 858
+                    "X" : 135,
+                    "Y" : 726
                 },
                 "css_properties":{
 					"background-color": "rgba(255, 51, 51, 1)",    
@@ -414,11 +418,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 16,
-                    "width" : 101
+                    "width" : 102
                 },
                 "element_location" : {
-                    "X" : 406,
-                    "Y" : 904
+                    "X" : 129,
+                    "Y" : 772
                 }
             },
             {
@@ -429,8 +433,8 @@
                     "width" : 50
                 },
                 "element_location" : {
-                    "X" : 406,
-                    "Y" : 925
+                    "X" : 129,
+                    "Y" : 793
                 },
         "css_properties":{
                 	"color": "rgba(0, 77, 218, 1)",
@@ -445,8 +449,8 @@
                     "width" : 44
                 },
                 "element_location" : {
-                    "X" : 462,
-                    "Y" : 925
+                    "X" : 186,
+                    "Y" : 793
                 },
                 "css_properties":{
                 	"color": "rgba(153, 153, 153, 1)",
@@ -461,8 +465,8 @@
                     "width" : 18
                 },
                 "element_location" : {
-                    "X" : 561,
-                    "Y" : 621
+                    "X" : 135,
+                    "Y" : 829
                 }
             },
             {
@@ -473,8 +477,8 @@
                     "width" : 18
                 },
                 "element_location" : {
-                    "X" : 561,
-                    "Y" : 662
+                    "X" : 171,
+                    "Y" : 829
                 }
             },
             {
@@ -485,8 +489,8 @@
                     "width" : 18
                 },
                 "element_location" : {
-                    "X" : 561,
-                    "Y" : 703
+                    "X" : 207,
+                    "Y" : 829
                 }
             }
         ]

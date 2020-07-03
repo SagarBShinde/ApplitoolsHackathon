@@ -56,11 +56,6 @@ public class ProductInGrid extends BaseComponent {
 	
 	}
 	
-	public void waitTilAccountMenu() {
-		
-		waitTilVisible(this.addToCart);
-	}
-	
 	public WebElement getSelectedProduct() {
 		return this.productImage;
 	}
@@ -127,3 +122,15 @@ public class ProductInGrid extends BaseComponent {
 	}
 
 }
+
+/*
+ * 	public void waitTilAccountMenu() {
+		try {
+			this.getDriver().wait(2000);
+		} catch (InterruptedException e) {
+			
+			System.out.println("Account menu in product is not visible");
+		}
+	}
+ */
+  

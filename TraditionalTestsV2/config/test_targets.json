@@ -2,15 +2,15 @@
     "Laptop_all" : [
         {
             "targetName" : "laptop_chrome",
-            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge",
+            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge_chromium",
             "device" : {
                 "deviceName" : "windows_laptop",
-                "deviceType" : "BROWSER_EMULATED",
-                "platform" : "WINDOWS",
+                "deviceType" : "LAPTOP",
+                "platform" : "WIN",
                 "os" : "windows_10",
                 "os_version" : "windows_10"
             },
-            "deviceOrientation" : "POTRAIT",
+            "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "Chrome",
                 "version" : "v75.0"
@@ -21,18 +21,18 @@
             }
         },
         {
-            "targetName" : "laptop_edge",
-            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge",
+            "targetName" : "laptop_edge_chromium",
+            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge_chromium",
             "device" : {
                 "deviceName" : "windows_laptop",
-                "deviceType" : "BROWSER_EMULATED",
-                "platform" : "WINDOWS",
+                "deviceType" : "LAPTOP",
+                "platform" : "WIN",
                 "os" : "windows_10",
                 "os_version" : "windows_10"
             },
-            "deviceOrientation" : "POTRAIT",
+            "orientation" : "POTRAIT",
             "browser" : {
-                "browserName" : "edge",
+                "browserName" : "edge_chromium",
                 "version" : "v75.0"
             },
             "browserSize" : {
@@ -45,12 +45,12 @@
             "visual_attribute_dir" : ".//config/visual_attributes//laptop//firefox",
             "device" : {
                 "deviceName" : "windows_laptop",
-                "deviceType" : "BROWSER_EMULATED",
-                "platform" : "WINDOWS",
+                "deviceType" : "LAPTOP",
+                "platform" : "MAC",
                 "os" : "windows_10",
                 "os_version" : "windows_10"
             },
-            "deviceOrientation" : "POTRAIT",
+            "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "firefox",
                 "version" : "v75.0"
@@ -64,15 +64,15 @@
     "Tablet_all" : [
         {
             "targetName" : "tablet_chrome",
-            "visual_attribute_dir" : ".//config/visual_attributes//tablet",
+            "visual_attribute_dir" : ".//config/visual_attributes//tablet//chrome_and_edge_chromium",
             "device" : {
                 "deviceName" : "windows_laptop",
-                "deviceType" : "BROWSER_EMULATED",
-                "platform" : "WINDOWS",
+                "deviceType" : "LAPTOP",
+                "platform" : "WIN",
                 "os" : "windows_10",
                 "os_version" : "windows_10"
             },
-            "deviceOrientation" : "POTRAIT",
+            "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "Chrome",
                 "version" : "v75.0"
@@ -83,18 +83,18 @@
             }
         },
         {
-            "targetName" : "tablet_edge",
-            "visual_attribute_dir" : ".//config/visual_attributes//tablet",
+            "targetName" : "tablet_edge_chromium",
+            "visual_attribute_dir" : ".//config/visual_attributes//tablet//chrome_and_edge_chromium",
             "device" : {
                 "deviceName" : "windows_laptop",
-                "deviceType" : "BROWSER_EMULATED",
-                "platform" : "WINDOWS",
+                "deviceType" : "LAPTOP",
+                "platform" : "MAC",
                 "os" : "windows_10",
                 "os_version" : "windows_10"
             },
-            "deviceOrientation" : "POTRAIT",
+            "orientation" : "POTRAIT",
             "browser" : {
-                "browserName" : "edge",
+                "browserName" : "edge_chromium",
                 "version" : "v75.0"
             },
             "browserSize" : {
@@ -104,17 +104,17 @@
         },
         {
             "targetName" : "tablet_firefox",
-            "visual_attribute_dir" : ".//config/visual_attributes//tablet",
+            "visual_attribute_dir" : ".//config/visual_attributes//tablet//firefox",
             "device" : {
                 "deviceName" : "windows_laptop",
-                "deviceType" : "BROWSER_EMULATED",
-                "platform" : "WINDOWS",
+                "deviceType" : "LAPTOP",
+                "platform" : "MAC",
                 "os" : "windows_10",
                 "os_version" : "windows_10"
             },
-            "deviceOrientation" : "POTRAIT",
+            "orientation" : "POTRAIT",
             "browser" : {
-                "browserName" : "chrome",
+                "browserName" : "firefox",
                 "version" : "v75.0"
             },
             "browserSize" : {
@@ -125,16 +125,16 @@
     ],
     "Mobile_chrome" : [
         {
-            "targetName" : "laptop_chrome",
-            "visual_attribute_dir" : ".//config/visual_attributes//mobile",
+            "targetName" : "mobile_chrome",
+            "visual_attribute_dir" : ".//config/visual_attributes//mobile//chrome",
             "device" : {
-                "deviceName" : "windows_laptop",
-                "deviceType" : "BROWSER_EMULATED",
-                "platform" : "WINDOWS",
+                "deviceName" : "iPhone X",
+                "deviceType" : "MOBILE",
+                "platform" : "iOS",
                 "os" : "windows_10",
-                "os_version" : "windows_10"
+                "os_version" : "xxxx"
             },
-            "deviceOrientation" : "POTRAIT",
+            "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "Chrome",
                 "version" : "v75.0"
@@ -148,17 +148,39 @@
     "Tablet_chrome" : [
         {
             "targetName" : "tablet_chrome",
-            "visual_attribute_dir" : ".//config/visual_attributes//tablet//chrome_and_edge",
+            "visual_attribute_dir" : ".//config/visual_attributes//tablet//chrome_and_edge_chromium",
             "device" : {
                 "deviceName" : "windows_laptop",
-                "deviceType" : "BROWSER_EMULATED",
-                "platform" : "WINDOWS",
+                "deviceType" : "LAPTOP",
+                "platform" : "WIN",
                 "os" : "windows_10",
                 "os_version" : "windows_10"
             },
-            "deviceOrientation" : "POTRAIT",
+            "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "Chrome",
+                "version" : "v75.0"
+            },
+            "browserSize" : {
+                "height" : 700,
+                "width" : 768
+            }
+        }
+    ],
+        "Tablet_firefox" : [
+        {
+            "targetName" : "tablet_firfox",
+            "visual_attribute_dir" : ".//config/visual_attributes//tablet//firefox",
+            "device" : {
+                "deviceName" : "windows_laptop",
+                "deviceType" : "TABLET",
+                "platform" : "WIN",
+                "os" : "windows_10",
+                "os_version" : "windows_10"
+            },
+            "orientation" : "POTRAIT",
+            "browser" : {
+                "browserName" : "firefox",
                 "version" : "v75.0"
             },
             "browserSize" : {
@@ -170,15 +192,15 @@
     "Default" : [
         {
             "targetName" : "chrome",
-            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge",
+            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge_chromium",
             "device" : {
                 "deviceName" : "windows_laptop",
-                "deviceType" : "BROWSER_EMULATED",
-                "platform" : "WINDOWS",
+                "deviceType" : "LAPTOP",
+                "platform" : "MAC",
                 "os" : "windows_10",
                 "os_version" : "windows_10"
             },
-            "deviceOrientation" : "POTRAIT",
+            "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "chrome",
                 "version" : "v75.0"

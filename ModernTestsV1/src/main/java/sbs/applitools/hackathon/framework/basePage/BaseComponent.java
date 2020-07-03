@@ -150,7 +150,7 @@ public abstract class BaseComponent{
 	}
 	
 	protected WebElement waitTilVisible(WebElement element) {
-		getWait().until(ExpectedConditions.visibilityOf(element));	
+	//	getWait().until(ExpectedConditions.visibilityOf(element));	
 		return element;
 		
 	}

@@ -53,7 +53,6 @@ public class BaseTest {
 	
 	public TestTarget testTarget;
 	private WebDriver driver;
-	private File reportFile;
 	protected TestReporter report;
 	
 	public void setDriver(WebDriver driver) {
@@ -67,7 +66,7 @@ public class BaseTest {
 	
 	@BeforeSuite
 	public void methodBeforeSuite() throws FrameworkException {
-		LOG.info(propertyHandler.getInstance().getValue("app.url"));
+		LOG.info(propertyHandler.getInstance().getValue("app.v2.url"));
 		
 	}	
 	@AfterSuite
@@ -83,7 +82,7 @@ public class BaseTest {
 		this.report = TestReporter.getInstance();
 		LOG.debug("Initializing Driver.....");
 		this.driver = new DriverFactory(this.testTarget).setUpDriver();
-		this.driver.get(propertyHandler.getInstance().getValue("app.url"));
+		this.driver.get(propertyHandler.getInstance().getValue("app.v2.url"));
 	
 	}
 	
@@ -99,7 +98,7 @@ public class BaseTest {
 	@BeforeTest
 	public void initDriver() throws FrameworkException {
 		
-		LOG.info(propertyHandler.getInstance().getValue("app.url"));
+		LOG.info(propertyHandler.getInstance().getValue("app.v2.url"));
 	}
 	
 	@BeforeMethod
@@ -124,7 +123,7 @@ public class BaseTest {
 	
 	@Factory
     public Object[] factMethod() throws FrameworkException {
-		LOG.info(propertyHandler.getInstance().getValue("app.url"));
+		LOG.info(propertyHandler.getInstance().getValue("app.v2.url"));
 		try {
 			LOG.debug("In the factory method");		
 			String targetJson = Utils.readFile(System.getProperty("user.dir")+"//config//test_targets.json");

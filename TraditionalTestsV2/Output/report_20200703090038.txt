@@ -1,0 +1,94 @@
+
+Task: 1, Test Name: Validate Account,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate Account,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Account,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate cart icon,Browser:EDGE_CHROMIUM,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon,Browser:CHROME,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon,Browser:FIREFOX,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate Add to compare icon,Browser:EDGE_CHROMIUM,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate Add to compare icon,Browser:CHROME,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate Add to compare icon,Browser:FIREFOX,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate ApplitoolsLogo,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate ApplitoolsLogo,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate ApplitoolsLogo,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate BlackFilterSection,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate BlackFilterSection,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate BlackFilterSection,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate count down,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate count down,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate count down,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate Customer Tool Section,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate Customer Tool Section,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Customer Tool Section,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate Grid View,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate Grid View,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Grid View,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate homeMenu,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate homeMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate homeMenu,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate List View Button,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate List View Button,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate List View Button,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate Main Menu,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate Main Menu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Main Menu,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate menMenu,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate menMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate menMenu,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate Cart,Browser:EDGE_CHROMIUM,Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Cart,Browser:CHROME,Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Cart,Browser:FIREFOX,Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate original price,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate original price,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate original price,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate product grid,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate product grid,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product grid,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate product image,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate product image,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product image,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate product name,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate product name,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product name,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate product view bar,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate product view bar,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate product view bar,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate runningMenu,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate runningMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate runningMenu,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate sale price,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate sale price,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate sale price,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate Search Bar,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate Search Bar,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Search Bar,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate searchInput,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate searchInput,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate searchInput,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate Top Product,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate Top Product,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Top Product,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate trainingMenu,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate trainingMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate trainingMenu,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate Wish List,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate Wish List,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate Wish List,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate wish list icon,Browser:EDGE_CHROMIUM,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate wish list icon,Browser:CHROME,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate wish list icon,Browser:FIREFOX,Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate womenMenu,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate womenMenu,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate womenMenu,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate search button,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate search button,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate search button,Browser:FIREFOX,Status:Pass
+Task: 1, Test Name: Validate search button,Browser:EDGE_CHROMIUM,Status:Pass
+Task: 1, Test Name: Validate search button,Browser:CHROME,Status:Pass
+Task: 1, Test Name: Validate search button,Browser:FIREFOX,Status:Pass

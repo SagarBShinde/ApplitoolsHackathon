@@ -114,7 +114,7 @@
                 }
             },
             {
-                "element_name" : "searchBtn",
+                "element_name" : "searchBtnWeb",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 100,

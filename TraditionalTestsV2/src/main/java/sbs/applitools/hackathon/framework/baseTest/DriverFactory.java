@@ -49,7 +49,7 @@ public class DriverFactory {
 			setTimeOuts(d);
 			break;
 		
-		case "edge":
+		case "edge_chromium":
 			d = new EdgeDriver();
 			setBrowserSize(d);
 			setTimeOuts(d);

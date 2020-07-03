@@ -18,7 +18,7 @@ import sbs.applitools.hackathon.pages.HomePage;
 import sbs.applitools.hackathon.pages.ProductDetailPage;
 
 @Test
-@TestTargetList({"Tablet_chrome"})
+@TestTargetList({"Laptop_all","Tablet_all","Mobile_chrome"})
 public class VisualAttributeTest2 extends AppliToolsBaseTest {
 	
 

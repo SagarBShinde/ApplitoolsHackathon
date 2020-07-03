@@ -24,22 +24,22 @@ public class ProductSection extends BaseComponent {
 	@FindBy(how = How.ID , using = "DIV__collg__186") 
 	private WebElement productSectionContainer;
 
-	@FindBy(how = How.ID , using = "DIV__topbanner__187") 
+	@FindBy(how = How.ID , using = "DIV__topbanner__188") 
 	private WebElement topProduct;
 	
-	@FindBy(how = How.ID , using = "UL__clearfix__191") 
+	@FindBy(how = How.ID , using = "UL__clearfix__192") 
 	private WebElement productViewBar;
 	
 	@FindBy(how = How.ID , using = "sort") 
 	private WebElement sortDropDown;
 	
-	@FindBy(how = How.ID , using = "I__tiviewgrid__202")
+	@FindBy(how = How.ID , using = "I__tiviewgrid__203")
 	private WebElement gridViewBtn; 
 	
-	@FindBy(how = How.ID , using = "I__tiviewlist__204")
+	@FindBy(how = How.ID , using = "I__tiviewlist__205")
 	private WebElement listViewBtn; 
 	
-	@FindBy(how = How.ID , using = "A__openfilter__206")
+	@FindBy(how = How.ID , using = "A__openfilter__207")
 	private WebElement openFilterBtn; 
 	
 	@FindBy(how = How.ID , using = "product_grid")

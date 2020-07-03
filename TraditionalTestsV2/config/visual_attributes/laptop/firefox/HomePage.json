@@ -10,7 +10,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 16
+                    "Y" : 17
                 }
             },
             {
@@ -22,7 +22,7 @@
                 },
                 "element_location" : {
                     "X" : 310,
-                    "Y" : 0
+                    "Y" : 1
                 }
             },
             {
@@ -35,7 +35,7 @@
                 },
                 "element_location" : {
                     "X" : 310,
-                    "Y" : 0
+                    "Y" : 1
                 }
             },
             {
@@ -47,7 +47,7 @@
                 },
                 "element_location" : {
                     "X" : 403,
-                    "Y" : 0
+                    "Y" : 1
                 }
             },
             {
@@ -59,7 +59,7 @@
                 },
                 "element_location" : {
                     "X" : 487,
-                    "Y" : 0
+                    "Y" : 1
                 }
             },
             {
@@ -71,7 +71,7 @@
                 },
                 "element_location" : {
                     "X" : 592,
-                    "Y" : 0
+                    "Y" : 1
                 }
             },
             {
@@ -83,7 +83,7 @@
                 },
                 "element_location" : {
                     "X" : 705,
-                    "Y" : 0
+                    "Y" : 1
                 }
             }
         ]
@@ -99,7 +99,7 @@
                 },
                 "element_location" : {
                     "X" : 310,
-                    "Y" : 68
+                    "Y" : 69
                 }
             },
             {
@@ -111,11 +111,11 @@
                 },
                 "element_location" : {
                     "X" : 310,
-                    "Y" : 68
+                    "Y" : 69
                 }
             },
             {
-                "element_name" : "searchBtn",
+                "element_name" : "searchBtnWeb",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 36,
@@ -123,8 +123,12 @@
                 },
                 "element_location" : {
                     "X" : 852,
-                    "Y" : 73
+                    "Y" : 74
                 }
+            },
+            {
+                "element_name" : "searchBtnMob",
+                "isDisplayed" : false
             },
             {
                 "element_name" : "customerToolSection",
@@ -135,7 +139,7 @@
                 },
                 "element_location" : {
                     "X" : 1047,
-                    "Y" : 68
+                    "Y" : 69
                 }
             },
             {
@@ -147,7 +151,7 @@
                 },
                 "element_location" : {
                     "X" : 1067,
-                    "Y" : 68
+                    "Y" : 69
                 }
             },
             {
@@ -159,7 +163,7 @@
                 },
                 "element_location" : {
                     "X" : 1113,
-                    "Y" : 68
+                    "Y" : 69
                 }
             },
             {
@@ -187,7 +191,7 @@
                 },
                 "element_location" : {
                     "X" : 315,
-                    "Y" : 159
+                    "Y" : 160
                 }
             },
             {
@@ -199,7 +203,7 @@
                 },
                 "element_location" : {
                     "X" : 330,
-                    "Y" : 544
+                    "Y" : 545
                 }
             },
             {
@@ -211,7 +215,7 @@
                 },
                 "element_location" : {
                     "X" : 357,
-                    "Y" : 544
+                    "Y" : 545
                 }
             },
             {
@@ -223,7 +227,7 @@
                 },
                 "element_location" : {
                     "X" : 1129,
-                    "Y" : 549
+                    "Y" : 550
                 }
             },
             {
@@ -235,20 +239,12 @@
                 },
                 "element_location" : {
                     "X" : 1154,
-                    "Y" : 549
+                    "Y" : 550
                 }
             },
             {
                 "element_name" : "openFilterBtn",
-                "isDisplayed" : false,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
+                "isDisplayed" : false
             },
             {
                 "element_name" : "productGrid",
@@ -259,7 +255,7 @@
                 },
                 "element_location" : {
                     "X" : 310,
-                    "Y" : 602
+                    "Y" : 603
                }
             },
             {
@@ -287,7 +283,7 @@
                 },
                 "element_location" : {
                     "X" : 36,
-                    "Y" : 403
+                    "Y" : 404
                 }
             },
             {
@@ -379,7 +375,7 @@
                 },
                 "element_location" : {
                     "X" : 325,
-                    "Y" : 612
+                    "Y" : 613
                 }
             },
             {
@@ -391,7 +387,7 @@
                 },
                 "element_location" : {
                     "X" : 315,
-                    "Y" : 602
+                    "Y" : 603
                 }
             },
             {
@@ -403,7 +399,7 @@
                 },
                 "element_location" : {
                     "X" : 411,
-                    "Y" : 858
+                    "Y" : 859
                 },
                 "css_properties":{
 					"background-color": "rgb(255, 51, 51)",    
@@ -419,7 +415,7 @@
                 },
                 "element_location" : {
                     "X" : 406,
-                    "Y" : 904
+                    "Y" : 905
                 }
             },
             {
@@ -431,7 +427,7 @@
                 },
                 "element_location" : {
                     "X" : 406,
-                    "Y" : 925
+                    "Y" : 926
                 },
         "css_properties":{
                 	"color": "rgb(0, 77, 218)",
@@ -447,7 +443,7 @@
                 },
                 "element_location" : {
                     "X" : 463,
-                    "Y" : 925
+                    "Y" : 926
                 },
                 "css_properties":{
                 	"color": "rgb(153, 153, 153)",
