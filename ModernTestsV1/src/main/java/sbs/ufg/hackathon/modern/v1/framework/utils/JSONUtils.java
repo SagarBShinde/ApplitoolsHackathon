@@ -1,9 +1,6 @@
 package sbs.ufg.hackathon.modern.v1.framework.utils;
 
 
-import java.util.Map;
-import java.util.Set;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 

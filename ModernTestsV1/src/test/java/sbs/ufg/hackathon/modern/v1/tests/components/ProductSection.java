@@ -1,7 +1,6 @@
 package sbs.ufg.hackathon.modern.v1.tests.components;
 
 import java.util.List;
-import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,8 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import sbs.ufg.hackathon.modern.v1.framework.basePage.BaseComponent;
-import sbs.ufg.hackathon.modern.v1.framework.excptions.FrameworkException;
-import sbs.ufg.hackathon.modern.v1.framework.setup.TestTarget;
 import sbs.ufg.hackathon.modern.v1.tests.pages.ProductDetailPage;
 
 public class ProductSection extends BaseComponent {
@@ -92,42 +89,6 @@ public class ProductSection extends BaseComponent {
 		if(this.openFilterBtn.isDisplayed()) {
 			this.openFilterBtn.click();
 		}
-	}
-	
-	public Map<String,String> checkTopProduct(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.topProduct, "topProduct");
-	
-	}
-	
-	public Map<String,String> checkProductViewBar(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.productViewBar, "productViewBar");
-	
-	}
-	
-	public Map<String,String> checkSortDropDown(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.sortDropDown, "sortDropDown");
-	
-	}
-	
-	
-	public Map<String,String> checkGridViewBtn(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.gridViewBtn, "gridViewBtn");
-	
-	}
-	
-	public Map<String,String> checkListViewBtn(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.listViewBtn, "listViewBtn");
-	
-	}
-	
-	public Map<String,String> checkOpenFilterBtn(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.openFilterBtn, "openFilterBtn");
-	
-	}
-	
-	public Map<String,String> checkProductGrid(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.productGrid, "productGrid");
-	
 	}
 
 

@@ -79,33 +79,6 @@ public class ColorFilter extends ProductFilter {
 		}
 		
 	}
-
-	public Map<String,String> checkBlackFilterSection(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.blackFilterSection, "blackFilterSection");
-	
-	}
-	
-	public Map<String,String> checkWhiteFilterSection(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.whiteFilterSection, "whiteFilterSection");
-	
-	}
-	
-	public Map<String,String> checkGreenFilterSection(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.greenFilterSection, "greenFilterSection");
-	
-	}
-	
-	public Map<String,String> checkYellowFilterSection(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.yellowFilterSection, "yellowFilterSection");
-	
-	}
-	
-	public Map<String,String> checkBlueFilterSection(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.blueFilterSection, "blueFilterSection");
-	
-	}
-
-
 	
 
 }

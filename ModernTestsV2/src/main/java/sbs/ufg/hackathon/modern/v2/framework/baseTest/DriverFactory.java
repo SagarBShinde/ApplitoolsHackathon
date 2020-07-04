@@ -10,10 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import sbs.ufg.hackathon.modern.v2.framework.basePage.BaseComponent;
 import sbs.ufg.hackathon.modern.v2.framework.constants.FrameworkConstants;
 import sbs.ufg.hackathon.modern.v2.framework.excptions.FrameworkException;
-import sbs.ufg.hackathon.modern.v2.framework.setup.TestTarget;
 
 
 public class DriverFactory {

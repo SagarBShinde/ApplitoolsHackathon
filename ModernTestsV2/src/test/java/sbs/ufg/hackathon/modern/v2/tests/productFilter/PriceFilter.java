@@ -1,7 +1,5 @@
 package sbs.ufg.hackathon.modern.v2.tests.productFilter;
 
-import org.apache.commons.lang3.StringUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -30,12 +28,6 @@ public class PriceFilter {
 	public int getMatchCount(String filterOption) throws NumberFormatException, Exception {
 		throw  new  Exception("Functionality not implemented");	
 	
-	}
-	
-	private WebElement getFilterSection(String color) throws Exception {
-		
-		throw  new  Exception("Functionality not implemented");
-		
 	}
 	
 

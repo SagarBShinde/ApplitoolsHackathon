@@ -17,7 +17,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import sbs.ufg.hackathon.modern.v2.framework.basePage.BasePage;
 import sbs.ufg.hackathon.modern.v2.framework.excptions.FrameworkException;
 
 public class Utils {

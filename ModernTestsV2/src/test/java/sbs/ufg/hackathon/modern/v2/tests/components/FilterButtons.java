@@ -1,17 +1,11 @@
 package sbs.ufg.hackathon.modern.v2.tests.components;
 
-import java.util.Map;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import sbs.ufg.hackathon.modern.v2.framework.basePage.BaseComponent;
-import sbs.ufg.hackathon.modern.v2.framework.excptions.FactoryException;
-import sbs.ufg.hackathon.modern.v2.framework.excptions.FrameworkException;
-import sbs.ufg.hackathon.modern.v2.framework.setup.TestTarget;
-import sbs.ufg.hackathon.modern.v2.framework.utils.VisualAttribute;
 
 public class FilterButtons extends BaseComponent {
 	
@@ -40,17 +34,6 @@ public class FilterButtons extends BaseComponent {
 		click(this.filterBtn);
 		
 	}
-	
-	public Map<String,String> checkfilterBtn(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.filterBtn, "filterBtn");
-	
-	}
-	
-	public Map<String,String> checkResetBtn(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.resetBtn, "resetBtn");
-	
-	}
-	
 	
 
 }

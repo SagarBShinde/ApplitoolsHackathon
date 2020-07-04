@@ -1,38 +1,18 @@
 package sbs.ufg.hackathon.modern.v1.framework.baseTest;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.reflect.InvocationTargetException;
-import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Factory;
 import org.testng.annotations.Parameters;
 
 import com.applitools.eyes.BatchInfo;
@@ -40,30 +20,21 @@ import com.applitools.eyes.TestResultContainer;
 import com.applitools.eyes.selenium.BrowserType;
 import com.applitools.eyes.selenium.Configuration;
 import com.applitools.eyes.selenium.Eyes;
-import com.applitools.eyes.selenium.fluent.Target;
 import com.applitools.eyes.visualgrid.model.DeviceName;
 import com.applitools.eyes.visualgrid.model.ScreenOrientation;
 import com.applitools.eyes.visualgrid.services.VisualGridRunner;
 
-import sbs.ufg.hackathon.modern.v1.framework.constants.*;
 import sbs.ufg.hackathon.modern.v1.framework.excptions.FactoryException;
 import sbs.ufg.hackathon.modern.v1.framework.excptions.FrameworkException;
 import sbs.ufg.hackathon.modern.v1.framework.excptions.ReporterException;
-import sbs.ufg.hackathon.modern.v1.framework.excptions.VisualAttributeException;
-import sbs.ufg.hackathon.modern.v1.framework.setup.Browser;
 import sbs.ufg.hackathon.modern.v1.framework.setup.TestTarget;
 import sbs.ufg.hackathon.modern.v1.framework.setup.TestTargetList;
-import sbs.ufg.hackathon.modern.v1.framework.setup.device.DeviceOrientation;
 import sbs.ufg.hackathon.modern.v1.framework.setup.device.DeviceType;
 import sbs.ufg.hackathon.modern.v1.framework.utils.JSONUtils;
 import sbs.ufg.hackathon.modern.v1.framework.utils.JSONUtilsGsonImpl;
 import sbs.ufg.hackathon.modern.v1.framework.utils.TestReporter;
 import sbs.ufg.hackathon.modern.v1.framework.utils.Utils;
-import sbs.ufg.hackathon.modern.v1.framework.utils.VisualAttribute;
 import sbs.ufg.hackathon.modern.v1.framework.utils.propertyHandler;
-
-import com.applitools.eyes.TestResults;
-import com.applitools.eyes.TestResultsSummary;
 
 
 public class BaseTest {
@@ -99,10 +70,6 @@ public class BaseTest {
 	@AfterSuite
 	public void afterSuiteMethod() throws ReporterException  {
 		LOG.info("FINISHING TEST EXCUTION.................");
-//		this.report.close();
-//		LOG.debug("Closed report...");
-//		this.eyes.abortIfNotClosed();
-//		LOG.debug("Eyes closed...");
 		
 	}
 		
@@ -194,22 +161,6 @@ public class BaseTest {
 		}	
     
 	}
-	
-//	public StringBuilder getReportLine(String testDescription, String locator, TestTarget target) {
-////		StringBuilder reportRec = new StringBuilder(testDescription);
-////		reportRec.append(",");
-////		//reportRec.append("DOM ID:" + locator);
-////		//reportRec.append(",");
-////		reportRec.append("Browser:"+this.testTarget.browser.browserName.toUpperCase());
-////		reportRec.append(",");
-//////		reportRec.append("Viewport:"+this.testTarget.browserSize.width + "X" + this.testTarget.browserSize.height);
-//////		reportRec.append(",");
-//////		reportRec.append("Device:"+this.testTarget.device.deviceName);
-//////		reportRec.append(",");
-//		
-//	//	return reportRec;
-//		
-//	}
     
 	// Only iPhone X is supported are the moment. Modify this code to accept any device given in the Target JSON
 	private void addBrowsers() throws FrameworkException {
@@ -242,14 +193,6 @@ public class BaseTest {
 		}
 		
 		
-	}
-	@DataProvider (name = "testTargetProvider")
-	public Object[][]  testTargetProvider(){
-		Object[][] dataArray =  new Object[this.testTargets.length][1];
-		for(int i=0; i < this.testTargets.length; i++ ) {
-			dataArray[i][0] = this.testTargets[i];
-		}
-		return dataArray;
 	}
 				
 }

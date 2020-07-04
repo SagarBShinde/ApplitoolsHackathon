@@ -1,8 +1,6 @@
 package sbs.ufg.hackathon.modern.v2.tests.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import sbs.ufg.hackathon.modern.v2.framework.basePage.BasePage;

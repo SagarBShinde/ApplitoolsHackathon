@@ -1,15 +1,11 @@
 package sbs.ufg.hackathon.modern.v1.tests.components;
 
-import java.util.Map;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import sbs.ufg.hackathon.modern.v1.framework.basePage.BaseComponent;
-import sbs.ufg.hackathon.modern.v1.framework.excptions.FrameworkException;
-import sbs.ufg.hackathon.modern.v1.framework.setup.TestTarget;
 
 public class ProductOption extends BaseComponent {
 	
@@ -42,36 +38,6 @@ public class ProductOption extends BaseComponent {
 	public void wait_till_load() {
 		waitTilVisible(addToCartBtn);
 		
-	}
-	
-	public Map<String,String> checkSizeDropDown(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.sizeDropDown, "sizeDropDown");
-	
-	}
-	
-	public Map<String,String> checkQuantityInput(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.quantityInput, "quantityInput");
-	
-	}
-	
-	public Map<String,String> checkAddToCartBtn(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.addToCartBtn, "addToCartBtn");
-	
-	}
-	
-	public Map<String,String> checkOriginalPrice(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.originalPrice, "originalPrice");
-	
-	}
-	
-	public Map<String,String> checkSalePrice(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.salePrice, "salePrice");
-	
-	}
-	
-	public Map<String,String> checkDiscount(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.discount, "discount");
-	
 	}
 
 }

@@ -1,11 +1,10 @@
 package sbs.ufg.hackathon.modern.v1.framework.basePage;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.Arrays;
+import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
+
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Stream;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,23 +12,12 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import sbs.ufg.hackathon.modern.v1.framework.constants.FrameworkConstants;
-import sbs.ufg.hackathon.modern.v1.framework.excptions.FactoryException;
 import sbs.ufg.hackathon.modern.v1.framework.excptions.FrameworkException;
-import sbs.ufg.hackathon.modern.v1.framework.excptions.VisualAttributeException;
-import sbs.ufg.hackathon.modern.v1.framework.setup.TestTarget;
-import sbs.ufg.hackathon.modern.v1.framework.utils.VisualAttribute;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
-import static org.openqa.selenium.support.ui.ExpectedConditions.invisibilityOf;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfAllElements;
 
 public abstract class BaseComponent{
 	
@@ -47,58 +35,6 @@ public abstract class BaseComponent{
 	
 	public abstract void wait_till_load();
 	
-	// By default only displayed, size and location are checked. If css_properties are to be checked then call overriden method with CSS properties array
-	
-	 public Map<String,String> compareElementVisuals(String pageName, TestTarget target, WebElement element, String elementName) throws FrameworkException{ 
-		 	VisualAttribute v1 = new VisualAttribute(pageName);
-			Map<String,Object> expected_values = v1.getExpectedVisualAttributes(this.getClass().getSimpleName(), elementName, target);
-			Map<String,Object>actual_values = v1.getActualVisualAttributes(element);
-			return VisualAttribute.compareAttributes(expected_values, actual_values);
-	 }
-	 
-	 public Map<String,String> compareElementVisuals(String pageName, TestTarget target, WebElement element, String elementName, String[] cssProperties) throws FrameworkException{ 
-		 	VisualAttribute v1 = new VisualAttribute(pageName);
-			Map<String,Object> expected_values = v1.getExpectedVisualAttributes(this.getClass().getSimpleName(), elementName, target);
-			Map<String,Object>actual_values = v1.getActualVisualAttributes(element,cssProperties);
-			return VisualAttribute.compareAttributes(expected_values, actual_values);
-	 }
-	
-	
-	
-	
-	// Access the Visual Attribute JSON and returns the expected values for the visual attributes
-	public <T extends BaseComponent> List<Map<String, Object>> getExpectedVisualAttributes(T component, String pageName, TestTarget target) throws IllegalArgumentException, IllegalAccessException, FrameworkException{
-		
-		LOG.debug(String.format("No of members in the %s component %d", component.getClass().getSimpleName(),component.getClass().getDeclaredFields().length));
-		
-		// Filter all the fields of the component which are WebElements
-		Field[] elements = Arrays.stream(component.getClass().getDeclaredFields())
-								.filter(el -> el.getType()== WebElement.class)
-								.toArray(Field[]::new);
-		
-		LOG.debug(String.format("Number of WebElements after filtering %d", elements.length));
-		List<Map<String, Object>> fieldsToValidate = new ArrayList<Map<String, Object>>();
-		VisualAttribute v = new VisualAttribute(pageName);
-		
-		/* Iterate through the filtered fields and identify the fields which are present in the JSON and needs to be validated
-		 	Fetch the expected attributes for that element.
-		 	Get the actual attribute for that element and send them to compare method
-		 	Create a comparison result map
-		 */
-		for(Field field:elements ) {			
-			if (v.getExpectedVisualAttributes(this.getClass().getSimpleName(), field.getName(), target) != null) {
-				fieldsToValidate.add(v.getExpectedVisualAttributes(this.getClass().getSimpleName(), field.getName(), target));
-			}else {
-				LOG.debug("Did not find expected attributes for the field %s", field.getName());
-			}
-		}
-		LOG.debug(String.format("Total number of fields to validate: %s",fieldsToValidate.size()));
-		
-		
-		return fieldsToValidate;
-		
-		
-	}
 	
 	protected void click(WebElement element) {
 		getWait().until(elementToBeClickable(element))

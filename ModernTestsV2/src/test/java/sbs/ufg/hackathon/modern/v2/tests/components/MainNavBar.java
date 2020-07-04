@@ -1,15 +1,11 @@
 package sbs.ufg.hackathon.modern.v2.tests.components;
 
-import java.util.Map;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import sbs.ufg.hackathon.modern.v2.framework.basePage.BaseComponent;
-import sbs.ufg.hackathon.modern.v2.framework.excptions.FrameworkException;
-import sbs.ufg.hackathon.modern.v2.framework.setup.TestTarget;
 
 public class MainNavBar extends BaseComponent {
 	
@@ -46,41 +42,6 @@ public class MainNavBar extends BaseComponent {
 	public void wait_till_load() {
 		waitTilVisible(this.cart);
 		
-	}
-	
-	public Map<String,String> checkSearchBar(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.searchBar, "searchBar");
-	
-	}
-	
-	public Map<String,String> checkSearchInput(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.searchInput, "searchInput");
-	
-	}
-	
-	public Map<String,String> checksearchBtnWeb(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.searchBtnWeb, "searchBtnWeb");
-	
-	}
-	
-	public Map<String,String> checkCustomerToolSection(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.customerToolSection, "customerToolSection");
-	
-	}
-	
-	public Map<String,String> checkAccount(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.account, "account");
-	
-	}
-	
-	public Map<String,String> checkWishList(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.wishList, "wishList");
-	
-	}
-	
-	public Map<String,String> checkCart(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.cart, "cart");
-	
 	}
 	
 	

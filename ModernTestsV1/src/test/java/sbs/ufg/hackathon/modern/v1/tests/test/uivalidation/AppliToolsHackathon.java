@@ -1,30 +1,20 @@
 package sbs.ufg.hackathon.modern.v1.tests.test.uivalidation;
 
 import org.openqa.selenium.By;
-import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import com.applitools.eyes.RectangleSize;
-import com.applitools.eyes.TestResultContainer;
-import com.applitools.eyes.TestResults;
 import com.applitools.eyes.selenium.fluent.Target;
 import com.applitools.eyes.triggers.MouseAction;
-import com.applitools.eyes.visualgrid.model.DeviceName;
 
 import sbs.ufg.hackathon.modern.v1.framework.baseTest.BaseTest;
 import sbs.ufg.hackathon.modern.v1.framework.excptions.FrameworkException;
-import sbs.ufg.hackathon.modern.v1.framework.excptions.ReporterException;
-import sbs.ufg.hackathon.modern.v1.framework.excptions.UnsupportedTestTargetException;
-import sbs.ufg.hackathon.modern.v1.framework.setup.TestTarget;
 import sbs.ufg.hackathon.modern.v1.framework.setup.TestTargetList;
-import sbs.ufg.hackathon.modern.v1.framework.setup.device.DeviceType;
 import sbs.ufg.hackathon.modern.v1.tests.pages.HomePage;
 
 
 @TestTargetList({"Laptop_all", "Tablet_all", "Mobile_chrome"})
-public class AppliToolsHackathon extends AppliToolsBaseTest{
+public class AppliToolsHackathon extends BaseTest{
 	
 
 	@Test(priority = 0)

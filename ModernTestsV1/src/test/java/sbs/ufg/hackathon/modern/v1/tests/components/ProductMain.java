@@ -1,15 +1,11 @@
 package sbs.ufg.hackathon.modern.v1.tests.components;
 
-import java.util.Map;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import sbs.ufg.hackathon.modern.v1.framework.basePage.BaseComponent;
-import sbs.ufg.hackathon.modern.v1.framework.excptions.FrameworkException;
-import sbs.ufg.hackathon.modern.v1.framework.setup.TestTarget;
 
 public class ProductMain extends BaseComponent {
 	
@@ -40,17 +36,5 @@ public class ProductMain extends BaseComponent {
 		
 	}
 	
-	public Map<String,String> checkProductName(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.productName, "productName");
-	
-	}
-	
-	public Map<String,String> checkProductImage(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.productImage, "productImage");
-	
-	}
-	
-	
-
 	
 }

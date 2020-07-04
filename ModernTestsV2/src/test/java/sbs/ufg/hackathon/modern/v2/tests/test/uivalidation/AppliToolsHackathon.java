@@ -13,7 +13,7 @@ import sbs.ufg.hackathon.modern.v2.framework.setup.TestTargetList;
 import sbs.ufg.hackathon.modern.v2.tests.pages.HomePage;
 
 @TestTargetList({"Laptop_all", "Tablet_all", "Mobile_chrome"})
-public class AppliToolsHackathon extends AppliToolsBaseTest{
+public class AppliToolsHackathon extends BaseTest{
 	
 
 	@Test(priority = 0)
