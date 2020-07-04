@@ -118,6 +118,12 @@
             <version>2.11.2</version>
         </dependency> 
         
+        <dependency>
+    		<groupId>io.github.bonigarcia</groupId>
+    		<artifactId>webdrivermanager</artifactId>
+    		<version>4.0.0</version>
+		</dependency>
+        
 		<!-- This is the Applitools Selenium Java SDK -->
 		<dependency>
 		 <groupId>com.applitools</groupId>

@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import sbs.ufg.hackathon.modern.v2.framework.constants.FrameworkConstants;
 import sbs.ufg.hackathon.modern.v2.framework.excptions.FrameworkException;
 
@@ -26,9 +27,6 @@ public class DriverFactory {
 
 	public WebDriver setUpDriver() throws FrameworkException {
 		
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver");
-		System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"//drivers//msedgedriver");
-		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//drivers//geckodriver");
 		
 		WebDriver d;
 		
@@ -36,18 +34,21 @@ public class DriverFactory {
 		switch(defaultBrowser.toLowerCase()) {
 		
 		case "chrome":
+			WebDriverManager.chromedriver().setup();
 			d = new ChromeDriver();
 			setBrowserSize(d);
 			setTimeOuts(d);
 			break;
 		
 		case "firefox":
+			WebDriverManager.firefoxdriver().setup();
 			d = new FirefoxDriver();
 			setBrowserSize(d);
 			setTimeOuts(d);
 			break;
 		
 		case "edge_chromium":
+			WebDriverManager.edgedriver().setup();
 			d = new EdgeDriver();
 			setBrowserSize(d);
 			setTimeOuts(d);

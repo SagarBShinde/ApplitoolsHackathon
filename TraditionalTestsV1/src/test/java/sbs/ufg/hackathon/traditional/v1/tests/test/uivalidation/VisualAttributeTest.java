@@ -1,20 +1,14 @@
 package sbs.ufg.hackathon.traditional.v1.tests.test.uivalidation;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Map;
 
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import net.bytebuddy.asm.Advice.This;
-import sbs.ufg.hackathon.traditional.v1.framework.baseTest.BaseTest;
 import sbs.ufg.hackathon.traditional.v1.framework.dataProvider.TestTargetList;
 import sbs.ufg.hackathon.traditional.v1.framework.excptions.FrameworkException;
 import sbs.ufg.hackathon.traditional.v1.framework.setup.TestTarget;
-import sbs.ufg.hackathon.traditional.v1.framework.utils.Utils;
 import sbs.ufg.hackathon.traditional.v1.tests.pages.HomePage;
 
 @Test
