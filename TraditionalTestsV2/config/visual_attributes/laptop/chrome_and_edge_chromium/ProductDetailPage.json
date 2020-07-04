@@ -187,7 +187,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 159
+                    "Y" : 160
                 }
             },
             {
@@ -199,9 +199,12 @@
                 },
                 "element_location" : {
                     "X" : 215,
-                    "Y" : 217
+                    "Y" : 218
+                },
+              "css_properties":{
+                	"background-image" : "-webkit-image-set(url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\") 1x, url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\") 2x)"
                 }
-            }
+           }
         ]
     },
     "ProductOption" : {
@@ -215,7 +218,7 @@
                 },
                 "element_location" : {
                     "X" : 1006,
-                    "Y" : 657
+                    "Y" : 658
                 }
             },
             {
@@ -227,7 +230,7 @@
                 },
                 "element_location" : {
                     "X" : 1075,
-                    "Y" : 696
+                    "Y" : 697
                 }
             },
             {
@@ -239,7 +242,7 @@
                 },
                 "element_location" : {
                     "X" : 1063,
-                    "Y" : 761
+                    "Y" : 762
                 }
             },
             {
@@ -251,12 +254,13 @@
                 },
                 "element_location" : {
                     "X" : 826,
-                    "Y" : 771
+                    "Y" : 772
                 }
             },
             {
                 "element_name" : "salePrice",
                 "isDisplayed" : true,
+                "element_text" : "$33.00",
                 "element_size" : {
                     "height" : 19,
                     "width" : 50
@@ -275,7 +279,7 @@
                 },
                 "element_location" : {
                     "X" : 889,
-                    "Y" : 772
+                    "Y" : 773
                 }
             }
         ]
@@ -292,8 +296,11 @@
                 "element_location" : {
                     "X" : 15,
                     "Y" : 698
+                },
+               "css_properties":{
+                	"color": "rgb(68, 68, 68)"
                 }
-            },
+           	},
             {
                 "element_name" : "productDescription",
                 "isDisplayed" : true,
@@ -315,7 +322,7 @@
                 },
                 "element_location" : {
                     "X" : 105,
-                    "Y" : 659
+                    "Y" : 660
                 }
             },
             {
@@ -327,7 +334,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 659
+                    "Y" : 660
                 }
             },
             {
@@ -339,7 +346,7 @@
                 },
                 "element_location" : {
                     "X" : 33,
-                    "Y" : 659
+                    "Y" : 660
                 }
             },
             {
@@ -351,7 +358,7 @@
                 },
                 "element_location" : {
                     "X" : 51,
-                    "Y" : 659
+                    "Y" : 660
                 }
             },
             {
@@ -363,7 +370,7 @@
                 },
                 "element_location" : {
                     "X" : 69,
-                    "Y" : 659
+                    "Y" : 660
                 }
             },
             {
@@ -375,7 +382,7 @@
                 },
                 "element_location" : {
                     "X" : 87,
-                    "Y" : 659
+                    "Y" : 660
                 }
             }
         ]

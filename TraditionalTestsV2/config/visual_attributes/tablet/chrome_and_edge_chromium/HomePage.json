@@ -117,11 +117,11 @@
                 "element_name" : "searchBtnWeb",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 36,
-                    "width" : 40
+                    "height" : 38,
+                    "width" : 36
                 },
                 "element_location" : {
-                    "X" : 528,
+                    "X" : 532,
                     "Y" : 57
                 }
             },
@@ -202,7 +202,7 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 25,
-                    "width" : 176
+                    "width" : 168
                 },
                 "element_location" : {
                     "X" : 57,
@@ -233,7 +233,7 @@
                 "element_name" : "productGrid",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 1116,
+                    "height" : 1117,
                     "width" : 748
                 },
                 "element_location" : {
@@ -385,8 +385,8 @@
                     "Y" : 798
                 },
                 "css_properties":{
-					"background-color": "rgb(255, 51, 51)",    
-					"color": "rgb(255, 255, 255)"             
+					"background-color": "rgba(255, 51, 51, 1)",    
+					"color": "rgba(255, 255, 255, 1)"             
                }
             },
             {
@@ -406,14 +406,14 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 19,
-                    "width" : 49
+                    "width" : 50
                 },
                 "element_location" : {
                     "X" : 84,
                     "Y" : 865
                 },
         "css_properties":{
-                	"color": "rgb(0, 77, 218)",
+                	"color": "rgba(0, 77, 218, 1)",
                 	"text-decoration-line": "none"
                }
             },
@@ -422,14 +422,14 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 21,
-                    "width" : 43
+                    "width" : 44
                 },
                 "element_location" : {
-                    "X" : 141,
+                    "X" : 140,
                     "Y" : 865
                 },
                 "css_properties":{
-                	"color": "rgb(153, 153, 153)",
+                	"color": "rgba(153, 153, 153, 1)",
                 	"text-decoration-line": "line-through"
                }
            },

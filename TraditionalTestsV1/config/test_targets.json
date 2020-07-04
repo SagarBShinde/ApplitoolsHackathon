@@ -83,7 +83,7 @@
             }
         },
         {
-            "targetName" : "tablet_edge_chromium",
+            "targetName" : "Tablet_edge_chromium",
             "visual_attribute_dir" : ".//config/visual_attributes//tablet//chrome_and_edge_chromium",
             "device" : {
                 "deviceName" : "windows_laptop",
@@ -190,6 +190,72 @@
         }
     ],
     "Default" : [
+        {
+            "targetName" : "firefox",
+            "visual_attribute_dir" : ".//config/visual_attributes//laptop//firefox",
+            "device" : {
+                "deviceName" : "windows_laptop",
+                "deviceType" : "LAPTOP",
+                "platform" : "MAC",
+                "os" : "windows_10",
+                "os_version" : "windows_10"
+            },
+            "orientation" : "POTRAIT",
+            "browser" : {
+                "browserName" : "firefox",
+                "version" : "v75.0"
+            },
+            "browserSize" : {
+                "height" : 700,
+                "width" : 1200
+            }
+        }
+    ],
+        "Laptop_chrome" : [
+        {
+            "targetName" : "chrome",
+            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge_chromium",
+            "device" : {
+                "deviceName" : "windows_laptop",
+                "deviceType" : "LAPTOP",
+                "platform" : "MAC",
+                "os" : "windows_10",
+                "os_version" : "windows_10"
+            },
+            "orientation" : "POTRAIT",
+            "browser" : {
+                "browserName" : "chrome",
+                "version" : "v75.0"
+            },
+            "browserSize" : {
+                "height" : 700,
+                "width" : 1200
+            }
+        }
+    ],
+            "Laptop_edge" : [
+        {
+            "targetName" : "edge",
+            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge_chromium",
+            "device" : {
+                "deviceName" : "windows_laptop",
+                "deviceType" : "LAPTOP",
+                "platform" : "MAC",
+                "os" : "windows_10",
+                "os_version" : "windows_10"
+            },
+            "orientation" : "POTRAIT",
+            "browser" : {
+                "browserName" : "edge_chromium",
+                "version" : "v75.0"
+            },
+            "browserSize" : {
+                "height" : 700,
+                "width" : 1200
+            }
+        }
+    ],
+     "Laptop_firefox" : [
         {
             "targetName" : "firefox",
             "visual_attribute_dir" : ".//config/visual_attributes//laptop//firefox",

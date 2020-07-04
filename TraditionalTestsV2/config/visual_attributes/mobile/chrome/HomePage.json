@@ -10,7 +10,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 15
+                    "Y" : 16
                 }
             },
             {
@@ -91,27 +91,11 @@
         "child_elements" : [
             {
                 "element_name" : "searchBar",
-                "isDisplayed" : false,
-                "element_size" : {
-                    "height" : 40,
-                    "width" : 364
-                },
-                "element_location" : {
-                    "X" : 202,
-                    "Y" : 51
-                }
+                "isDisplayed" : false
             },
             {
                 "element_name" : "searchInput",
-                "isDisplayed" : false,
-                "element_size" : {
-                    "height" : 40,
-                    "width" : 364
-                },
-                "element_location" : {
-                    "X" : 202,
-                    "Y" : 51
-                }
+                "isDisplayed" : false
             },
             {
                 "element_name" : "searchBtnMob",
@@ -137,8 +121,8 @@
                     "width" : 670
                 },
                 "element_location" : {
-                    "X" : 15,
-                    "Y" : 61
+                    "X" : 355,
+                    "Y" : 62
                 }
             },
             {
@@ -150,20 +134,12 @@
                 },
                 "element_location" : {
                     "X" : 613,
-                    "Y" : 61
+                    "Y" : 62
                 }
             },
             {
                 "element_name" : "wishList",
-                "isDisplayed" : false,
-                "element_size" : {
-                    "height" : 60,
-                    "width" : 26
-                },
-                "element_location" : {
-                    "X" : 1113,
-                    "Y" : 68
-                }
+                "isDisplayed" : false
             },
             {
                 "element_name" : "cart",
@@ -190,7 +166,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 130
+                    "Y" : 131
                 }
             },
             {
@@ -202,7 +178,7 @@
                 },
                 "element_location" : {
                     "X" : 30,
-                    "Y" : 365
+                    "Y" : 366
                 }
             },
             {
@@ -214,32 +190,16 @@
                 },
                 "element_location" : {
                     "X" : 57,
-                    "Y" : 365
+                    "Y" : 366
                 }
             },
             {
                 "element_name" : "gridViewBtn",
-                "isDisplayed" : false,
-                "element_size" : {
-                    "height" : 16,
-                    "width" : 16
-                },
-                "element_location" : {
-                    "X" : 1129,
-                    "Y" : 549
-                }
+                "isDisplayed" : false
             },
             {
                 "element_name" : "listViewBtn",
-                "isDisplayed" : false,
-                "element_size" : {
-                    "height" : 16,
-                    "width" : 16
-                },
-                "element_location" : {
-                    "X" : 1154,
-                    "Y" : 549
-                }
+                "isDisplayed" : false
             },
             {
                 "element_name" : "openFilterBtn",
@@ -250,7 +210,7 @@
                 },
                 "element_location" : {
                     "X" : 629,
-                    "Y" : 365
+                    "Y" : 366
                 }
             },
             {
@@ -262,7 +222,7 @@
                 },
                 "element_location" : {
                     "X" : 10,
-                    "Y" : 423
+                    "Y" : 424
                 }
             },
             {
@@ -382,7 +342,7 @@
                 },
                 "element_location" : {
                     "X" : 25,
-                    "Y" : 433
+                    "Y" : 434
                 }
             },
             {
@@ -394,7 +354,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 423
+                    "Y" : 424
                 }
             },
             {
@@ -406,7 +366,7 @@
                 },
                 "element_location" : {
                     "X" : 135,
-                    "Y" : 726
+                    "Y" : 727
                 },
                 "css_properties":{
 					"background-color": "rgba(255, 51, 51, 1)",    
@@ -422,7 +382,7 @@
                 },
                 "element_location" : {
                     "X" : 129,
-                    "Y" : 772
+                    "Y" : 773
                 }
             },
             {
@@ -434,7 +394,7 @@
                 },
                 "element_location" : {
                     "X" : 129,
-                    "Y" : 793
+                    "Y" : 794
                 },
         "css_properties":{
                 	"color": "rgba(0, 77, 218, 1)",
@@ -450,7 +410,7 @@
                 },
                 "element_location" : {
                     "X" : 186,
-                    "Y" : 793
+                    "Y" : 794
                 },
                 "css_properties":{
                 	"color": "rgba(153, 153, 153, 1)",

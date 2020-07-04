@@ -151,15 +151,7 @@
             },
             {
                 "element_name" : "wishList",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
+                "isDisplayed" : false
             },
             {
                 "element_name" : "cart",
@@ -187,7 +179,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 142
+                    "Y" : 143
                 }
             },
             {
@@ -199,9 +191,12 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 200
+                    "Y" : 201
+                },
+               	"css_properties":{
+                	"background-image" : "-webkit-image-set(url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\") 1x, url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\") 2x)"
                 }
-            }
+           	}
         ]
     },
     "ProductOption" : {
@@ -215,7 +210,7 @@
                 },
                 "element_location" : {
                     "X" : 399,
-                    "Y" : 780
+                    "Y" : 781
                 }
             },
             {
@@ -227,7 +222,7 @@
                 },
                 "element_location" : {
                     "X" : 556,
-                    "Y" : 819
+                    "Y" : 820
                 }
             },
             {
@@ -251,19 +246,20 @@
                 },
                 "element_location" : {
                     "X" : 218,
-                    "Y" : 894
+                    "Y" : 895
                 }
             },
             {
                 "element_name" : "salePrice",
+                "element_text" : "$33.00",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 19,
                     "width" : 50
                 },
                 "element_location" : {
-                    "X" : 165,
-                    "Y" : 896
+                    "X" : 187,
+                    "Y" : 897
                 }
             },
             {
@@ -275,7 +271,7 @@
                 },
                 "element_location" : {
                     "X" : 282,
-                    "Y" : 895
+                    "Y" : 896
                 }
             }
         ]
@@ -291,8 +287,11 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 681
-                }
+                    "Y" : 682
+                },
+                "css_properties":{
+                	"color" : "rgb(68, 68, 68)"
+            	}
             },
             {
                 "element_name" : "productDescription",
@@ -315,7 +314,7 @@
                 },
                 "element_location" : {
                     "X" : 105,
-                    "Y" : 642
+                    "Y" : 643
                 }
             },
             {
@@ -327,7 +326,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 642
+                    "Y" : 643
                 }
             },
             {
@@ -339,7 +338,7 @@
                 },
                 "element_location" : {
                     "X" : 33,
-                    "Y" : 642
+                    "Y" : 643
                 }
             },
             {
@@ -351,7 +350,7 @@
                 },
                 "element_location" : {
                     "X" : 51,
-                    "Y" : 642
+                    "Y" : 643
                 }
             },
             {
@@ -363,7 +362,7 @@
                 },
                 "element_location" : {
                     "X" : 69,
-                    "Y" : 642
+                    "Y" : 643
                 }
             },
             {
@@ -375,7 +374,7 @@
                 },
                 "element_location" : {
                     "X" : 87,
-                    "Y" : 642
+                    "Y" : 643
                 }
             }
         ]

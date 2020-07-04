@@ -87,7 +87,7 @@
             }
         ]
     },
-    "mainNavBar" : {
+    "MainNavBar" : {
         "child_elements" : [
             {
                 "element_name" : "searchBar",
@@ -141,24 +141,24 @@
                 "element_name" : "account",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 60,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 1067,
+                    "Y" : 68
                 }
             },
             {
                 "element_name" : "wishList",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 60,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 1113,
+                    "Y" : 68
                 }
             },
             {
@@ -200,6 +200,9 @@
                 "element_location" : {
                     "X" : 215,
                     "Y" : 217
+                },
+             "css_properties":{
+                	"background-image" : "url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\")"
                 }
             }
         ]
@@ -245,6 +248,7 @@
             {
                 "element_name" : "originalPrice",
                 "isDisplayed" : true,
+                "element_text" : "$48.00",
                 "element_size" : {
                     "height" : 24,
                     "width" : 50
@@ -252,11 +256,16 @@
                 "element_location" : {
                     "X" : 826,
                     "Y" : 771
-                }
-            },
+                },
+               "css_properties":{
+                	"color": "rgba(153, 153, 153, 1)",
+                	"text-decoration-line": "line-through"
+               }
+           },
             {
                 "element_name" : "salePrice",
                 "isDisplayed" : true,
+                "element_text" : "$33.00",
                 "element_size" : {
                     "height" : 19,
                     "width" : 50
@@ -264,7 +273,11 @@
                 "element_location" : {
                     "X" : 772,
                     "Y" : 773
-                }
+                },
+            "css_properties":{
+                	"color": "rgba(0, 77, 218, 1)",
+                	"text-decoration-line": "none"
+               }
             },
             {
                 "element_name" : "discount",
@@ -292,6 +305,9 @@
                 "element_location" : {
                     "X" : 15,
                     "Y" : 698
+                },
+              "css_properties":{
+                	"color": "rgba(68, 68, 68, 1)"
                 }
             },
             {

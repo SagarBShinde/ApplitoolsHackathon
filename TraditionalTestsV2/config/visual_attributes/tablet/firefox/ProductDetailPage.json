@@ -187,7 +187,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 142
+                    "Y" : 143
                 }
             },
             {
@@ -199,7 +199,10 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 201
+                    "Y" : 202
+                },
+                "css_properties":{
+                	"background-image" : "url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\")"
                 }
             }
         ]
@@ -215,7 +218,7 @@
                 },
                 "element_location" : {
                     "X" : 399,
-                    "Y" : 781
+                    "Y" : 782
                 }
             },
             {
@@ -227,7 +230,7 @@
                 },
                 "element_location" : {
                     "X" : 556,
-                    "Y" : 820
+                    "Y" : 821
                 }
             },
             {
@@ -251,19 +254,20 @@
                 },
                 "element_location" : {
                     "X" : 218,
-                    "Y" : 895
+                    "Y" : 896
                 }
             },
             {
                 "element_name" : "salePrice",
                 "isDisplayed" : true,
-                "element_size" : {
+                "element_text" : "$33.00",
+               	"element_size" : {
                     "height" : 19,
                     "width" : 49
                 },
                 "element_location" : {
                     "X" : 165,
-                    "Y" : 897
+                    "Y" : 898
                 }
             },
             {
@@ -275,7 +279,7 @@
                 },
                 "element_location" : {
                     "X" : 282,
-                    "Y" : 896
+                    "Y" : 897
                 }
             }
         ]
@@ -291,7 +295,10 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 682
+                    "Y" : 683
+                },
+                "css_properties":{
+                	"color": "rgb(68, 68, 68)"
                 }
             },
             {
@@ -315,7 +322,7 @@
                 },
                 "element_location" : {
                     "X" : 105,
-                    "Y" : 643
+                    "Y" : 644
                 }
             },
             {
@@ -327,7 +334,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 643
+                    "Y" : 644
                 }
             },
             {
@@ -339,7 +346,7 @@
                 },
                 "element_location" : {
                     "X" : 33,
-                    "Y" : 643
+                    "Y" : 644
                 }
             },
             {
@@ -351,7 +358,7 @@
                 },
                 "element_location" : {
                     "X" : 51,
-                    "Y" : 643
+                    "Y" : 644
                 }
             },
             {
@@ -363,7 +370,7 @@
                 },
                 "element_location" : {
                     "X" : 69,
-                    "Y" : 643
+                    "Y" : 644
                 }
             },
             {
@@ -375,7 +382,7 @@
                 },
                 "element_location" : {
                     "X" : 87,
-                    "Y" : 643
+                    "Y" : 644
                 }
             }
         ]

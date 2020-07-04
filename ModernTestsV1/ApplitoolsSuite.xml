@@ -4,7 +4,7 @@
   <test name="AppliTools_Hackathon_Test">
       <parameter name="default_browser" value="chrome"> </parameter>
       <classes>
-      	<class name="sbs.applitools.hackathon.test.uivalidation.AppliToolsHackathon">
+      	<class name="sbs.ufg.hackathon.modern.v1.tests.test.uivalidation.AppliToolsHackathon">
       	</class>
       </classes>
   </test> <!-- Test --> 

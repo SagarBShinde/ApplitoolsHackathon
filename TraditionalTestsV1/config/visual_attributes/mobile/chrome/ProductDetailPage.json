@@ -87,7 +87,7 @@
             }
         ]
     },
-    "mainNavBar" : {
+    "MainNavBar" : {
         "child_elements" : [
             {
                 "element_name" : "searchBar",
@@ -141,24 +141,24 @@
                 "element_name" : "account",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 28,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 613,
+                    "Y" : 61
                 }
             },
             {
                 "element_name" : "wishList",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 28,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 613,
+                    "Y" : 61
                 }
             },
             {
@@ -200,6 +200,9 @@
                 "element_location" : {
                     "X" : 15,
                     "Y" : 188
+                },
+             "css_properties":{
+                	"background-image" : "url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\")"
                 }
             }
         ]
@@ -252,7 +255,11 @@
                 "element_location" : {
                     "X" : 184,
                     "Y" : 882
-                }
+                },
+             "css_properties":{
+                	"color": "rgba(153, 153, 153, 1)",
+                	"text-decoration-line": "line-through"
+               }
             },
             {
                 "element_name" : "salePrice",
@@ -264,7 +271,11 @@
                 "element_location" : {
                     "X" : 131,
                     "Y" : 884
-                }
+                },
+            "css_properties":{
+                	"color": "rgba(0, 77, 218, 1)",
+                	"text-decoration-line": "none"
+               }
             },
             {
                 "element_name" : "discount",
@@ -292,6 +303,9 @@
                 "element_location" : {
                     "X" : 15,
                     "Y" : 669
+                },
+            "css_properties":{
+                	"color": "rgba(68, 68, 68, 1)"
                 }
             },
             {

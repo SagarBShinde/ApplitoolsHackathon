@@ -1,0 +1,16 @@
+
+Task: 1, Test Name: Validate Product Name,Browser:FIREFOX,Status:Fail Reason:: expected location  X:15 Y:142 actual location X:15 Y:143
+Task: 1, Test Name: Validate Product Image,Browser:FIREFOX,Status:Fail Reason:: expected location  X:15 Y:682 actual location X:15 Y:683
+Task: 1, Test Name: Validate Product Image,Browser:FIREFOX,Status:Fail Reason:: expected location  X:15 Y:201 actual location X:15 Y:202
+Task: 1, Test Name: Validate Product review count,Browser:FIREFOX,Status:Fail Reason:: expected location  X:105 Y:643 actual location X:75 Y:644
+Task: 1, Test Name: Validate Product review star_1 ,Browser:FIREFOX,Status:Fail Reason:: expected location  X:15 Y:643 actual location X:15 Y:644
+Task: 1, Test Name: Validate Product review star_2 ,Browser:FIREFOX,Status:Fail Reason:: expected location  X:33 Y:643 actual location X:33 Y:644
+Task: 1, Test Name: Validate Product review star_3 ,Browser:FIREFOX,Status:Fail Reason:: expected location  X:51 Y:643 actual location X:51 Y:644
+Task: 1, Test Name: Validate Product review star_2 ,Browser:FIREFOX,Status:Fail Reason:: expected location  X:69 Y:643 actual location X:69 Y:644
+Task: 1, Test Name: Validate Product review star_5 ,Browser:FIREFOX,Status:Fail Reason:: expected location  X:87 Y:643 actual location X:87 Y:644
+Task: 1, Test Name: Validate Add To Cart Button ,Browser:FIREFOX,Status:Fail Reason:: expected location  X:631 Y:885 actual location X:631 Y:836
+Task: 1, Test Name: Validate product discount  ,Browser:FIREFOX,Status:Fail Reason:: expected location  X:282 Y:896 actual location X:282 Y:897
+Task: 1, Test Name: Validate Product original price ,Browser:FIREFOX,Status:Fail Reason:: expected location  X:218 Y:895 actual location X:218 Y:896
+Task: 1, Test Name: Validate Product review star_5 ,Browser:FIREFOX,Status:Fail Reason:: expected size  height:19 width:49 actual size height:19 width:27: expected location  X:165 Y:897 actual location X:187 Y:898
+Task: 1, Test Name: Validate Product quantity input ,Browser:FIREFOX,Status:Fail Reason:: expected location  X:556 Y:820 actual location X:556 Y:821
+Task: 1, Test Name: Validate Size drop down ,Browser:FIREFOX,Status:Fail Reason:: expected location  X:399 Y:781 actual location X:399 Y:782

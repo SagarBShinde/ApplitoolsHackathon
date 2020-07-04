@@ -187,7 +187,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 159
+                    "Y" : 160
                 }
             },
             {
@@ -199,8 +199,11 @@
                 },
                 "element_location" : {
                     "X" : 215,
-                    "Y" : 218
-                }
+                    "Y" : 219
+                },
+                "css_properties":{
+					"background-image":	"url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\")"
+               }
             }
         ]
     },
@@ -215,7 +218,7 @@
                 },
                 "element_location" : {
                     "X" : 1006,
-                    "Y" : 658
+                    "Y" : 659
                 }
             },
             {
@@ -227,7 +230,7 @@
                 },
                 "element_location" : {
                     "X" : 1075,
-                    "Y" : 697
+                    "Y" : 698
                 }
             },
             {
@@ -239,7 +242,7 @@
                 },
                 "element_location" : {
                     "X" : 1063,
-                    "Y" : 762
+                    "Y" : 763
                 }
             },
             {
@@ -251,11 +254,12 @@
                 },
                 "element_location" : {
                     "X" : 826,
-                    "Y" : 772
+                    "Y" : 773
                 }
             },
             {
                 "element_name" : "salePrice",
+                "element_text" : "$33.00",
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 19,
@@ -263,7 +267,7 @@
                 },
                 "element_location" : {
                     "X" : 772,
-                    "Y" : 774
+                    "Y" : 775
                 }
             },
             {
@@ -275,7 +279,7 @@
                 },
                 "element_location" : {
                     "X" : 889,
-                    "Y" : 773
+                    "Y" : 774
                 }
             }
         ]
@@ -291,9 +295,13 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 698
-                }
-            },
+                    "Y" : 699
+                },
+            "css_properties":{
+				"color": "rgb(68, 68, 68)"            
+               }
+                
+           	},
             {
                 "element_name" : "productDescription",
                 "isDisplayed" : true,
@@ -315,7 +323,7 @@
                 },
                 "element_location" : {
                     "X" : 105,
-                    "Y" : 660
+                    "Y" : 661
                 }
             },
             {
@@ -327,7 +335,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 660
+                    "Y" : 661
                 }
             },
             {
@@ -339,7 +347,7 @@
                 },
                 "element_location" : {
                     "X" : 33,
-                    "Y" : 660
+                    "Y" : 661
                 }
             },
             {
@@ -351,7 +359,7 @@
                 },
                 "element_location" : {
                     "X" : 51,
-                    "Y" : 660
+                    "Y" : 661
                 }
             },
             {
@@ -363,7 +371,7 @@
                 },
                 "element_location" : {
                     "X" : 69,
-                    "Y" : 660
+                    "Y" : 661
                 }
             },
             {
@@ -375,7 +383,7 @@
                 },
                 "element_location" : {
                     "X" : 87,
-                    "Y" : 660
+                    "Y" : 661
                 }
             }
         ]
