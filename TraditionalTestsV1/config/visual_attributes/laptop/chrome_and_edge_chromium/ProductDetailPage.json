@@ -1,142 +1,6 @@
 {
-    "AppHeader" : {
-        "child_elements" : [
-            {
-                "element_name" : "applitoolsLogo",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "mainMenu",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "homeMenu",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "menMenu",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "womenMenu",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "runningMenu",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "trainingMenu",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            }
-        ]
-    },
     "MainNavBar" : {
         "child_elements" : [
-            {
-                "element_name" : "searchBar",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "searchInput",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "searchBtnWeb",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
-            {
-                "element_name" : "customerToolSection",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
-            },
             {
                 "element_name" : "account",
                 "isDisplayed" : true,
@@ -160,18 +24,6 @@
                     "X" : 1113,
                     "Y" : 68
                 }
-            },
-            {
-                "element_name" : "cart",
-                "isDisplayed" : true,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
             }
         ]
     },
@@ -187,7 +39,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 159
+                    "Y" : 131
                 }
             },
             {

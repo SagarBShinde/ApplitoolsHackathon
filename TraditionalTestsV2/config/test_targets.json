@@ -1,19 +1,41 @@
 {
+    "Default" : [
+        {
+            "targetName" : "firefox",
+            "visual_attribute_dir" : ".//config/visual_attributes//laptop//firefox",
+            "device" : {
+                "deviceName" : "MacBookPro",
+                "deviceType" : "LAPTOP",
+                "platform" : "MAC",
+                "os" : "macOS Mojave",
+                "os_version" : "10.14.5 (18F132)"
+            },
+            "orientation" : "POTRAIT",
+            "browser" : {
+                "browserName" : "firefox",
+                "version" : "v78.0.1 (64-bit)"
+            },
+            "browserSize" : {
+                "height" : 700,
+                "width" : 1200
+            }
+        }
+    ],
     "Laptop_all" : [
         {
             "targetName" : "laptop_chrome",
             "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge_chromium",
             "device" : {
-                "deviceName" : "windows_laptop",
+                "deviceName" : "MacBookPro",
                 "deviceType" : "LAPTOP",
-                "platform" : "WIN",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
+                "platform" : "MAC",
+                "os" : "macOS Mojave",
+                "os_version" : "10.14.5 (18F132)"
             },
             "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "Chrome",
-                "version" : "v75.0"
+                "version" : "v83.0.4103.116 (Official Build) (64-bit)"
             },
             "browserSize" : {
                 "height" : 700,
@@ -24,16 +46,16 @@
             "targetName" : "laptop_edge_chromium",
             "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge_chromium",
             "device" : {
-                "deviceName" : "windows_laptop",
+                "deviceName" : "MacBookPro",
                 "deviceType" : "LAPTOP",
-                "platform" : "WIN",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
+                "platform" : "MAC",
+                "os" : "macOS Mojave",
+                "os_version" : "10.14.5 (18F132)"
             },
             "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "edge_chromium",
-                "version" : "v75.0"
+                "version" : "v83.0.478.58 (Official build) (64-bit)"
             },
             "browserSize" : {
                 "height" : 700,
@@ -44,16 +66,16 @@
             "targetName" : "laptop_firefox",
             "visual_attribute_dir" : ".//config/visual_attributes//laptop//firefox",
             "device" : {
-                "deviceName" : "windows_laptop",
+                "deviceName" : "MacBookPro",
                 "deviceType" : "LAPTOP",
                 "platform" : "MAC",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
+                "os" : "macOS Mojave",
+                "os_version" : "10.14.5 (18F132)"
             },
             "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "firefox",
-                "version" : "v75.0"
+                "version" : "v78.0.1 (64-bit)"
             },
             "browserSize" : {
                 "height" : 700,
@@ -66,16 +88,16 @@
             "targetName" : "tablet_chrome",
             "visual_attribute_dir" : ".//config/visual_attributes//tablet//chrome_and_edge_chromium",
             "device" : {
-                "deviceName" : "windows_laptop",
+                "deviceName" : "MacBookPro",
                 "deviceType" : "LAPTOP",
-                "platform" : "WIN",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
+                "platform" : "MAC",
+                "os" : "macOS Mojave",
+                "os_version" : "10.14.5 (18F132)"
             },
             "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "Chrome",
-                "version" : "v75.0"
+                "version" : "v83.0.4103.116 (Official Build) (64-bit)"
             },
             "browserSize" : {
                 "height" : 700,
@@ -83,19 +105,19 @@
             }
         },
         {
-            "targetName" : "tablet_edge_chromium",
+            "targetName" : "Tablet_edge_chromium",
             "visual_attribute_dir" : ".//config/visual_attributes//tablet//chrome_and_edge_chromium",
             "device" : {
-                "deviceName" : "windows_laptop",
+                "deviceName" : "MacBookPro",
                 "deviceType" : "LAPTOP",
                 "platform" : "MAC",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
+                "os" : "macOS Mojave",
+                "os_version" : "v10.14.5 (18F132)"
             },
             "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "edge_chromium",
-                "version" : "v75.0"
+                "version" : "v83.0.478.58 (Official build) (64-bit)"
             },
             "browserSize" : {
                 "height" : 700,
@@ -106,16 +128,16 @@
             "targetName" : "tablet_firefox",
             "visual_attribute_dir" : ".//config/visual_attributes//tablet//firefox",
             "device" : {
-                "deviceName" : "windows_laptop",
+                "deviceName" : "MacBookPro",
                 "deviceType" : "LAPTOP",
                 "platform" : "MAC",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
+                "os" : "macOS Mojave",
+                "os_version" : "10.14.5 (18F132)"
             },
             "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "firefox",
-                "version" : "v75.0"
+                "version" : "v78.0.1 (64-bit)"
             },
             "browserSize" : {
                 "height" : 700,
@@ -131,17 +153,17 @@
                 "deviceName" : "iPhone X",
                 "deviceType" : "MOBILE",
                 "platform" : "iOS",
-                "os" : "windows_10",
-                "os_version" : "xxxx"
+                "os" : "iOS",
+                "os_version" : "13.4.1."
             },
             "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "Chrome",
-                "version" : "v75.0"
+                "version" : "v83.0.4103.116 (Official Build) (64-bit)"
             },
             "browserSize" : {
-                "height" : 500,
-                "width" : 700
+                "height" : 700,
+                "width" : 500
             }
         }
     ],
@@ -150,16 +172,16 @@
             "targetName" : "tablet_chrome",
             "visual_attribute_dir" : ".//config/visual_attributes//tablet//chrome_and_edge_chromium",
             "device" : {
-                "deviceName" : "windows_laptop",
+                "deviceName" : "MacBookPro",
                 "deviceType" : "LAPTOP",
-                "platform" : "WIN",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
+                "platform" : "MAC",
+                "os" : "macOS Mojave",
+                "os_version" : "10.14.5 (18F132)"
             },
             "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "Chrome",
-                "version" : "v75.0"
+                "version" : "v83.0.4103.116 (Official Build) (64-bit)"
             },
             "browserSize" : {
                 "height" : 700,
@@ -172,60 +194,38 @@
             "targetName" : "tablet_firfox",
             "visual_attribute_dir" : ".//config/visual_attributes//tablet//firefox",
             "device" : {
-                "deviceName" : "windows_laptop",
-                "deviceType" : "TABLET",
-                "platform" : "WIN",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
-            },
-            "orientation" : "POTRAIT",
-            "browser" : {
-                "browserName" : "firefox",
-                "version" : "v75.0"
-            },
-            "browserSize" : {
-                "height" : 700,
-                "width" : 768
-            }
-        }
-    ],
-            "Tablet_edge" : [
-        {
-            "targetName" : "tablet_edge",
-            "visual_attribute_dir" : ".//config/visual_attributes//tablet//chrome_and_edge_chromium",
-            "device" : {
-                "deviceName" : "windows_laptop",
-                "deviceType" : "TABLET",
-                "platform" : "WIN",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
-            },
-            "orientation" : "POTRAIT",
-            "browser" : {
-                "browserName" : "firefox",
-                "version" : "v75.0"
-            },
-            "browserSize" : {
-                "height" : 700,
-                "width" : 768
-            }
-        }
-    ],
-    "Default" : [
-        {
-            "targetName" : "chrome",
-            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge_chromium",
-            "device" : {
-                "deviceName" : "windows_laptop",
+                "deviceName" : "MacBookPro",
                 "deviceType" : "LAPTOP",
                 "platform" : "MAC",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
+                "os" : "macOS Mojave",
+                "os_version" : "10.14.5 (18F132)"
+            },
+            "orientation" : "POTRAIT",
+            "browser" : {
+                "browserName" : "firefox",
+                "version" : "v78.0.1 (64-bit)"
+            },
+            "browserSize" : {
+                "height" : 700,
+                "width" : 768
+            }
+        }
+    ],
+        "Laptop_chrome" : [
+        {
+            "targetName" : "laptop_chrome",
+            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge_chromium",
+            "device" : {
+                "deviceName" : "MacBookPro",
+                "deviceType" : "LAPTOP",
+                "platform" : "MAC",
+                "os" : "macOS Mojave",
+                "os_version" : "10.14.5 (18F132)"
             },
             "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "chrome",
-                "version" : "v75.0"
+                "version" : "v83.0.4103.116 (Official Build) (64-bit)"
             },
             "browserSize" : {
                 "height" : 700,
@@ -233,70 +233,48 @@
             }
         }
     ],
-     "Laptop_chrome" : [
+            "Laptop_edge" : [
         {
-            "targetName" : "laptop_chrome",
+            "targetName" : "laptop_edge",
             "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge_chromium",
             "device" : {
-                "deviceName" : "windows_laptop",
+                "deviceName" : "MacBookPro",
                 "deviceType" : "LAPTOP",
-                "platform" : "WIN",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
+                "platform" : "MAC",
+                "os" : "macOS Mojave",
+                "os_version" : "10.14.5 (18F132)"
             },
             "orientation" : "POTRAIT",
             "browser" : {
-                "browserName" : "Chrome",
-                "version" : "v75.0"
+                "browserName" : "edge_chromium",
+                "version" : "v83.0.478.58 (Official build) (64-bit)"
             },
             "browserSize" : {
                 "height" : 700,
                 "width" : 1200
             }
         }
-       ],
-            "Laptop_firefox" : [
+    ],
+     "Laptop_firefox" : [
         {
             "targetName" : "laptop_firefox",
             "visual_attribute_dir" : ".//config/visual_attributes//laptop//firefox",
             "device" : {
-                "deviceName" : "windows_laptop",
+                "deviceName" : "MacBookPro",
                 "deviceType" : "LAPTOP",
-                "platform" : "WIN",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
+                "platform" : "MAC",
+                "os" : "macOS Mojave",
+                "os_version" : "10.14.5 (18F132)"
             },
             "orientation" : "POTRAIT",
             "browser" : {
                 "browserName" : "firefox",
-                "version" : "v75.0"
+                "version" : "v78.0.1 (64-bit)"
             },
             "browserSize" : {
                 "height" : 700,
                 "width" : 1200
             }
         }
-       ],
-            "Laptop_edge" : [
-        {
-            "targetName" : "laptop_chrome",
-            "visual_attribute_dir" : ".//config/visual_attributes//laptop//chrome_and_edge_chromium",
-            "device" : {
-                "deviceName" : "windows_laptop",
-                "deviceType" : "LAPTOP",
-                "platform" : "WIN",
-                "os" : "windows_10",
-                "os_version" : "windows_10"
-            },
-            "orientation" : "POTRAIT",
-            "browser" : {
-                "browserName" : "Edge",
-                "version" : "v75.0"
-            },
-            "browserSize" : {
-                "height" : 700,
-                "width" : 1200
-            }
-        }
-       ]
+    ]
 }

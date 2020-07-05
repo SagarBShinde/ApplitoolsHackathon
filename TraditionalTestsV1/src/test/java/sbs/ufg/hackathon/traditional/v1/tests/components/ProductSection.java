@@ -55,6 +55,7 @@ public class ProductSection extends BaseComponent {
 	}
 	
 	public void viewProductDetail(int productIndex) {
+		scrollToElement(this.gridItems.get(productIndex));
 		this.gridItems.get(productIndex).click();
 		
 	}
@@ -70,6 +71,7 @@ public class ProductSection extends BaseComponent {
 	}
 	
 	public ProductDetailPage selectItem(int index) {
+		
 		waitTilVisible(gridItems.get(index-1));
 		gridItems.get(index - 1).click();
 		ProductDetailPage productDetailPage = new ProductDetailPage(this.getDriver());

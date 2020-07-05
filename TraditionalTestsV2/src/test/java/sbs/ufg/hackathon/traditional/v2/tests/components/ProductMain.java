@@ -51,6 +51,11 @@ public class ProductMain extends BaseComponent {
 	
 	}
 	
+	public String getProductName() {
+		return this.productName.getText();
+		
+	}
+	
 	
 
 	

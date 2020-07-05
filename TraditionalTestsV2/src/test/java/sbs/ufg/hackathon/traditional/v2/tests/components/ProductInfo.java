@@ -51,6 +51,7 @@ public class ProductInfo extends BaseComponent {
 		
 	}
 	
+	
 	public Map<String,String> checkProductId(String pageName, TestTarget target) throws FrameworkException{
 		String[] css_properties = new String[] { "color"};
 		return this.compareElementVisuals(pageName, target, this.productId, "productId", css_properties);

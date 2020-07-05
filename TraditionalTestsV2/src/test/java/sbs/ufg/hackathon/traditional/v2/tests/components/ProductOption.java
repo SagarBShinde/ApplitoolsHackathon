@@ -2,10 +2,12 @@ package sbs.ufg.hackathon.traditional.v2.tests.components;
 
 import java.util.Map;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.Select;
 
 import sbs.ufg.hackathon.traditional.v2.framework.basePage.BaseComponent;
 import sbs.ufg.hackathon.traditional.v2.framework.excptions.FrameworkException;
@@ -44,6 +46,14 @@ public class ProductOption extends BaseComponent {
 		
 	}
 	
+	public String getQuantityInputDefaultValue() {
+		return quantityInput.getAttribute("value").trim();
+	}
+	
+	public String getSizeDropDownDefaultValue() {
+		return this.driver.findElement(By.id("DIV__customsele__92")).findElement(By.xpath(".//span[@class='current']")).getText();
+	}
+	
 	public Map<String,String> checkSizeDropDown(String pageName, TestTarget target) throws FrameworkException{
 		return this.compareElementVisuals(pageName, target, this.sizeDropDown, "sizeDropDown");
 	
@@ -60,12 +70,14 @@ public class ProductOption extends BaseComponent {
 	}
 	
 	public Map<String,String> checkOriginalPrice(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.originalPrice, "originalPrice");
+		String[] cssProperties = new String[] {"color","text-decoration-line"};
+		return this.compareElementVisuals(pageName, target, this.originalPrice, "originalPrice",cssProperties);
 	
 	}
 	
 	public Map<String,String> checkSalePrice(String pageName, TestTarget target) throws FrameworkException{
-		return this.compareElementVisuals(pageName, target, this.salePrice, "salePrice");
+		String[] cssProperties = new String[] {"color","text-decoration-line"};
+		return this.compareElementVisuals(pageName, target, this.salePrice, "salePrice",cssProperties);
 	
 	}
 	

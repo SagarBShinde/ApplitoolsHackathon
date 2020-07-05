@@ -145,7 +145,7 @@
                     "width" : 26
                 },
                 "element_location" : {
-                    "X" : 613,
+                    "X" : 413,
                     "Y" : 61
                 }
             },
@@ -157,7 +157,7 @@
                     "width" : 26
                 },
                 "element_location" : {
-                    "X" : 613,
+                    "X" : 413,
                     "Y" : 61
                 }
             },
@@ -183,11 +183,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 28,
-                    "width" : 670
+                    "width" : 470
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 130
+                    "Y" : 133
                 }
             },
             {
@@ -195,7 +195,7 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 350,
-                    "width" : 670
+                    "width" : 470
                 },
                 "element_location" : {
                     "X" : 15,
@@ -214,11 +214,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 38,
-                    "width" : 320
+                    "width" : 220
                 },
                 "element_location" : {
-                    "X" : 365,
-                    "Y" : 768
+                    "X" : 265,
+                    "Y" : 780
                 }
             },
             {
@@ -229,8 +229,8 @@
                     "width" : 40
                 },
                 "element_location" : {
-                    "X" : 505,
-                    "Y" : 807
+                    "X" : 355,
+                    "Y" : 819
                 }
             },
             {
@@ -241,8 +241,8 @@
                     "width" : 121
                 },
                 "element_location" : {
-                    "X" : 563,
-                    "Y" : 872
+                    "X" : 363,
+                    "Y" : 884
                 }
             },
             {
@@ -253,8 +253,8 @@
                     "width" : 50
                 },
                 "element_location" : {
-                    "X" : 184,
-                    "Y" : 882
+                    "X" : 84,
+                    "Y" : 894
                 },
              "css_properties":{
                 	"color": "rgba(153, 153, 153, 1)",
@@ -269,8 +269,8 @@
                     "width" : 50
                 },
                 "element_location" : {
-                    "X" : 131,
-                    "Y" : 884
+                    "X" : 31,
+                    "Y" : 896
                 },
             "css_properties":{
                 	"color": "rgba(0, 77, 218, 1)",
@@ -285,8 +285,8 @@
                     "width" : 87
                 },
                 "element_location" : {
-                    "X" : 248,
-                    "Y" : 883
+                    "X" : 148,
+                    "Y" : 895
                 }
             }
         ]
@@ -302,7 +302,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 669
+                    "Y" : 639
                 },
             "css_properties":{
                 	"color": "rgba(68, 68, 68, 1)"
@@ -329,7 +329,7 @@
                 },
                 "element_location" : {
                     "X" : 105,
-                    "Y" : 630
+                    "Y" : 600
                 }
             },
             {
@@ -341,7 +341,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 630
+                    "Y" : 600
                 }
             },
             {
@@ -353,7 +353,7 @@
                 },
                 "element_location" : {
                     "X" : 33,
-                    "Y" : 630
+                    "Y" : 600
                 }
             },
             {
@@ -365,7 +365,7 @@
                 },
                 "element_location" : {
                     "X" : 51,
-                    "Y" : 630
+                    "Y" : 600
                 }
             },
             {
@@ -377,7 +377,7 @@
                 },
                 "element_location" : {
                     "X" : 69,
-                    "Y" : 630
+                    "Y" : 600
                 }
             },
             {
@@ -389,7 +389,7 @@
                 },
                 "element_location" : {
                     "X" : 87,
-                    "Y" : 630
+                    "Y" : 600
                 }
             }
         ]

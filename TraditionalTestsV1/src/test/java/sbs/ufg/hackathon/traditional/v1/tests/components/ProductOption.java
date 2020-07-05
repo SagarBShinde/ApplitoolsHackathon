@@ -2,6 +2,7 @@ package sbs.ufg.hackathon.traditional.v1.tests.components;
 
 import java.util.Map;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,6 +43,14 @@ public class ProductOption extends BaseComponent {
 	public void wait_till_load() {
 		waitTilVisible(addToCartBtn);
 		
+	}
+	
+	public String getSizeDropDownDefaultValue() {
+		return this.driver.findElement(By.id("DIV__customsele__92")).findElement(By.xpath(".//span[@class='current']")).getText();
+	}
+	
+	public String getQuantityInputDefaultValue() {
+		return quantityInput.getAttribute("value").trim();
 	}
 	
 	public Map<String,String> checkSizeDropDown(String pageName, TestTarget target) throws FrameworkException{

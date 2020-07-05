@@ -36,5 +36,6 @@ public class ProductDetailPage extends BasePage {
 		
 		
 	}
+	
 
 }

@@ -32,6 +32,7 @@ public class FilterButtons extends BaseComponent {
 	
 	@Override
 	public void wait_till_load() {
+		
 		waitTilVisible(filterBtn);		
 	}
 	

@@ -87,7 +87,7 @@
             }
         ]
     },
-    "mainNavBar" : {
+    "MainNavBar" : {
         "child_elements" : [
             {
                 "element_name" : "searchBar",
@@ -141,24 +141,24 @@
                 "element_name" : "account",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 28,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 367,
+                    "Y" : 62
                 }
             },
             {
                 "element_name" : "wishList",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 28,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 413,
+                    "Y" : 62
                 }
             },
             {
@@ -183,7 +183,7 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 28,
-                    "width" : 670
+                    "width" : 470
                 },
                 "element_location" : {
                     "X" : 15,
@@ -195,14 +195,14 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 350,
-                    "width" : 670
+                    "width" : 470
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 188
+                    "Y" : 189
                 },
-               "css_properties":{
-                	"background-image" : "-webkit-image-set(url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\") 1x, url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\") 2x)"
+             "css_properties":{
+                	"background-image" : "-webkit-image-set(url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\") 1x, url(\"https://demo.applitools.com/grid/img/products/shoes/1.jpg\") 2x)"    
                 }
             }
         ]
@@ -214,11 +214,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 38,
-                    "width" : 320
+                    "width" : 220
                 },
                 "element_location" : {
-                    "X" : 365,
-                    "Y" : 769
+                    "X" : 265,
+                    "Y" : 781
                 }
             },
             {
@@ -229,8 +229,8 @@
                     "width" : 40
                 },
                 "element_location" : {
-                    "X" : 505,
-                    "Y" : 808
+                    "X" : 355,
+                    "Y" : 820
                 }
             },
             {
@@ -241,8 +241,8 @@
                     "width" : 121
                 },
                 "element_location" : {
-                    "X" : 563,
-                    "Y" : 873
+                    "X" : 363,
+                    "Y" : 885
                 }
             },
             {
@@ -253,22 +253,29 @@
                     "width" : 50
                 },
                 "element_location" : {
-                    "X" : 184,
-                    "Y" : 883
-                }
+                    "X" : 84,
+                    "Y" : 895
+                },
+             "css_properties":{
+                	"color": "rgba(153, 153, 153, 1)",
+                	"text-decoration-line": "line-through"
+               }
             },
             {
                 "element_name" : "salePrice",
                 "isDisplayed" : true,
-                "element_text" : "$33.00",
                 "element_size" : {
                     "height" : 19,
                     "width" : 50
                 },
                 "element_location" : {
-                    "X" : 131,
-                    "Y" : 885
-                }
+                    "X" : 31,
+                    "Y" : 897
+                },
+            "css_properties":{
+                	"color": "rgba(0, 77, 218, 1)",
+                	"text-decoration-line": "none"
+               }
             },
             {
                 "element_name" : "discount",
@@ -278,8 +285,8 @@
                     "width" : 87
                 },
                 "element_location" : {
-                    "X" : 248,
-                    "Y" : 884
+                    "X" : 148,
+                    "Y" : 896
                 }
             }
         ]
@@ -295,10 +302,10 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 670
+                    "Y" : 640
                 },
-               	  "css_properties":{
-                	"color": "rgb(68, 68, 68)"
+            "css_properties":{
+                	"color": "rgba(68, 68, 68, 1)"
                 }
             },
             {
@@ -322,7 +329,7 @@
                 },
                 "element_location" : {
                     "X" : 105,
-                    "Y" : 631
+                    "Y" : 601
                 }
             },
             {
@@ -334,7 +341,7 @@
                 },
                 "element_location" : {
                     "X" : 15,
-                    "Y" : 631
+                    "Y" : 601
                 }
             },
             {
@@ -346,7 +353,7 @@
                 },
                 "element_location" : {
                     "X" : 33,
-                    "Y" : 631
+                    "Y" : 601
                 }
             },
             {
@@ -358,7 +365,7 @@
                 },
                 "element_location" : {
                     "X" : 51,
-                    "Y" : 631
+                    "Y" : 601
                 }
             },
             {
@@ -370,7 +377,7 @@
                 },
                 "element_location" : {
                     "X" : 69,
-                    "Y" : 631
+                    "Y" : 601
                 }
             },
             {
@@ -382,7 +389,7 @@
                 },
                 "element_location" : {
                     "X" : 87,
-                    "Y" : 631
+                    "Y" : 601
                 }
             }
         ]

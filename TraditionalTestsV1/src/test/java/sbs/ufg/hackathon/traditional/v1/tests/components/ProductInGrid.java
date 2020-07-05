@@ -55,6 +55,7 @@ public class ProductInGrid extends BaseComponent {
 		return this.compareElementVisuals(pageName, target, this.offRibbon, "offRibbon");
 	
 	}
+
 	
 	public void waitTilAccountMenu() {
 		

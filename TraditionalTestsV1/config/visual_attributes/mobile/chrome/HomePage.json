@@ -6,7 +6,7 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 21,
-                    "width" : 670
+                    "width" : 470
                 },
                 "element_location" : {
                     "X" : 15,
@@ -134,7 +134,7 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 0,
-                    "width" : 670
+                    "width" : 470
                 },
                 "element_location" : {
                     "X" : 15,
@@ -149,7 +149,7 @@
                     "width" : 26
                 },
                 "element_location" : {
-                    "X" : 613,
+                    "X" : 413,
                     "Y" : 61
                 }
             },
@@ -186,7 +186,7 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 200,
-                    "width" : 670
+                    "width" : 470
                 },
                 "element_location" : {
                     "X" : 15,
@@ -198,7 +198,7 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 25,
-                    "width" : 640
+                    "width" : 440
                 },
                 "element_location" : {
                     "X" : 30,
@@ -249,7 +249,7 @@
                     "width" : 16
                 },
                 "element_location" : {
-                    "X" : 629,
+                    "X" : 429,
                     "Y" : 365
                 }
             },
@@ -257,8 +257,8 @@
                 "element_name" : "productGrid",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 2315,
-                    "width" : 680
+                    "height" : 1815,
+                    "width" : 480
                 },
                 "element_location" : {
                     "X" : 10,
@@ -389,8 +389,8 @@
                 "element_name" : "productImage",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 330,
-                    "width" : 330
+                    "height" : 230,
+                    "width" : 230
                 },
                 "element_location" : {
                     "X" : 15,
@@ -402,11 +402,11 @@
                 "isDisplayed" : true,
                 "element_size" : {
                     "height" : 22,
-                    "width" : 100
+                    "width" : 90
                 },
                 "element_location" : {
-                    "X" : 135,
-                    "Y" : 726
+                    "X" : 85,
+                    "Y" : 626
                 },
                 "css_properties":{
 					"background-color": "rgba(255, 51, 51, 1)",    
@@ -421,8 +421,8 @@
                     "width" : 102
                 },
                 "element_location" : {
-                    "X" : 129,
-                    "Y" : 772
+                    "X" : 79,
+                    "Y" : 672
                 }
             },
             {
@@ -433,8 +433,8 @@
                     "width" : 50
                 },
                 "element_location" : {
-                    "X" : 129,
-                    "Y" : 793
+                    "X" : 79,
+                    "Y" : 693
                 },
         "css_properties":{
                 	"color": "rgba(0, 77, 218, 1)",
@@ -449,8 +449,8 @@
                     "width" : 44
                 },
                 "element_location" : {
-                    "X" : 186,
-                    "Y" : 793
+                    "X" : 136,
+                    "Y" : 693
                 },
                 "css_properties":{
                 	"color": "rgba(153, 153, 153, 1)",
@@ -465,8 +465,8 @@
                     "width" : 18
                 },
                 "element_location" : {
-                    "X" : 135,
-                    "Y" : 829
+                    "X" : 85,
+                    "Y" : 729
                 }
             },
             {
@@ -477,8 +477,8 @@
                     "width" : 18
                 },
                 "element_location" : {
-                    "X" : 171,
-                    "Y" : 829
+                    "X" : 121,
+                    "Y" : 729
                 }
             },
             {
@@ -489,8 +489,8 @@
                     "width" : 18
                 },
                 "element_location" : {
-                    "X" : 207,
-                    "Y" : 829
+                    "X" : 157,
+                    "Y" : 729
                 }
             }
         ]

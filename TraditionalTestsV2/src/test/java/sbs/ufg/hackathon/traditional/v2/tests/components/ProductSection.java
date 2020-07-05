@@ -65,6 +65,11 @@ public class ProductSection extends BaseComponent {
 		
 	}
 	
+	public void wait_till_searchResult() {
+		waitTilVisible(productGrid);
+		
+	}
+	
 	public WebElement getGridItem(int index) {
 		return gridItems.get(index - 1);
 	}
@@ -91,6 +96,8 @@ public class ProductSection extends BaseComponent {
 			this.openFilterBtn.click();
 		}
 	}
+	
+	
 	
 	public Map<String,String> checkTopProduct(String pageName, TestTarget target) throws FrameworkException{
 		return this.compareElementVisuals(pageName, target, this.topProduct, "topProduct");

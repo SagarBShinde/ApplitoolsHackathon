@@ -1,0 +1,15 @@
+
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: CHROME, Viewport: 768X700, Device: MacBookPro, Status:Fail Reason:: expected location  X:681 Y:52 actual location X:635 Y:52
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: CHROME, Viewport: 500X700, Device: iPhone X, Status:Pass
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: FIREFOX, Viewport: 768X700, Device: MacBookPro, Status:Fail Reason:: expected location  X:681 Y:52 actual location X:635 Y:52
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: CHROME, Viewport: 1200X700, Device: MacBookPro, Status:Pass
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: MacBookPro, Status:Fail Reason:: expected location  X:681 Y:52 actual location X:635 Y:52
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: MacBookPro, Status:Pass
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: FIREFOX, Viewport: 1200X700, Device: MacBookPro, Status:Pass
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: CHROME, Viewport: 768X700, Device: MacBookPro, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: CHROME, Viewport: 500X700, Device: iPhone X, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: FIREFOX, Viewport: 768X700, Device: MacBookPro, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: CHROME, Viewport: 1200X700, Device: MacBookPro, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: MacBookPro, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: MacBookPro, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: FIREFOX, Viewport: 1200X700, Device: MacBookPro, Status:Fail Reason:ed: expected visibility  true actual visibility false

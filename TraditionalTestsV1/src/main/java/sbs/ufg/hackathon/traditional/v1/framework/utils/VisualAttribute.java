@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -13,21 +12,15 @@ import java.util.Map;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONArray;
-import org.json.JSONObject;
 import org.openqa.selenium.WebElement;
 
-import com.google.gson.Gson;
-
-import sbs.ufg.hackathon.traditional.v1.framework.baseTest.BaseTest;
 import sbs.ufg.hackathon.traditional.v1.framework.excptions.FactoryException;
 import sbs.ufg.hackathon.traditional.v1.framework.excptions.FrameworkException;
-import sbs.ufg.hackathon.traditional.v1.framework.excptions.VisualAttributeException;
 import sbs.ufg.hackathon.traditional.v1.framework.setup.TestTarget;
 
 public class VisualAttribute {
 	
 	private String pageName;
-	private TestTarget target;
 	
 	private static final Logger LOG = LogManager.getLogger(VisualAttribute.class);
 	
@@ -41,6 +34,7 @@ public class VisualAttribute {
 		try {
 		LOG.debug(String.format("Component Name: %s Element Name is : %s Test Target is %s}",componentName,elementName,target.targetName ));
 		LOG.debug(String.format("Visual Attribute JSON File Path: %s", target.visual_attribute_dir + "//"+ this.pageName + ".json"));
+	
 		String visualAttributeJson = new String(Files.readAllBytes(Paths.get(target.visual_attribute_dir + "//"+ this.pageName + ".json")));
 		JSONUtils jsonUtils =  new JSONUtilsGsonImpl(visualAttributeJson);
 		JSONArray child_elements = jsonUtils.getJSONObject(componentName).getJSONArray("child_elements");
@@ -153,20 +147,8 @@ public class VisualAttribute {
 		return actualAttributes;	
 	}
 	
-	//TODO: Remove this
-	public static void main(String[] args) throws FrameworkException {
-		
-		TestTarget t1 = new TestTarget("test");
-		t1.visual_attribute_dir = ".//config/visual_attributes//laptop_chrome";
-		
-		VisualAttribute v1 = new VisualAttribute("HomePage");
-		Map<String,Object> m1 = v1.getExpectedVisualAttributes("AppHeader", "applitoolsLogo", t1);
-		
-		System.out.println((Map<String,String>)(m1.get("css_properties")));
-				
-	}
 
-	// Start from this.
+	
 	public static Map<String,String> compareAttributes(Map<String, Object> expected_values, Map<String, Object> actual_values) {
 		Map<String,String> ComparisionResult = new HashMap<String,String>();
 		if ((boolean)actual_values.get("isDisplayed")) {
@@ -211,7 +193,6 @@ public class VisualAttribute {
 	}
 	
 	private static String validateText(String expected, String actual) {
-		System.out.println("----------------------Inside Validate Test-------------------------------------------------------------");
 		if (expected.contentEquals(actual)) {
 			return "Pass";
 		}else {
@@ -228,7 +209,6 @@ public class VisualAttribute {
 		}
 
 		return "Fail: expected size  height:" + exp_size.get("height").intValue() + " width:" + exp_size.get("width").intValue() + " actual size height:" + act_size.get("height").intValue() + " width:" + act_size.get("width").intValue();
-		//return "height:" + act_size.get("height").intValue() + " width:" + act_size.get("width").intValue();
 		
 	}
 
@@ -239,8 +219,6 @@ public class VisualAttribute {
 			
 		}
 		return "Fail: expected location  X:" + exp_loc.get("X").intValue() + " Y:" + exp_loc.get("Y").intValue() + " actual location X:" + act_loc.get("X").intValue() + " Y:" + act_loc.get("Y").intValue();
-		//return "location X:" + act_loc.get("X").intValue() + " Y:" + act_loc.get("Y").intValue();
-
 	}
 
 

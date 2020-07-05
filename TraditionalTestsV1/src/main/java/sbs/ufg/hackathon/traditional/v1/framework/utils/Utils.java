@@ -24,6 +24,8 @@ public class Utils {
 	
 	private static final Logger LOG = LogManager.getLogger(Utils.class);
 	
+	public static InputStream io;
+	
 	public static String StreamToString (InputStream io) {
 		
 	return new BufferedReader(new InputStreamReader(io, StandardCharsets.UTF_8))
@@ -34,8 +36,18 @@ public class Utils {
 	
 	public static String readFile (String fileLoc) throws FileNotFoundException {
 		
-		InputStream io = new FileInputStream(fileLoc);
+		io = new FileInputStream(fileLoc);
 		return StreamToString(io);
+	}
+	
+	public static void closeStream() {
+		try {
+			io.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 	
 	public static String mapToString(Map map) {

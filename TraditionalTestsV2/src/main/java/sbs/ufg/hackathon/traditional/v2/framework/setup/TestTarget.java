@@ -2,19 +2,8 @@ package sbs.ufg.hackathon.traditional.v2.framework.setup;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
-import sbs.ufg.hackathon.traditional.v2.framework.baseTest.DriverFactory;
-import sbs.ufg.hackathon.traditional.v2.framework.dataProvider.DataProviderJsonImpl;
-import sbs.ufg.hackathon.traditional.v2.framework.excptions.FrameworkException;
-import sbs.ufg.hackathon.traditional.v2.framework.setup.Browser;
 import sbs.ufg.hackathon.traditional.v2.framework.setup.device.Device;
-import sbs.ufg.hackathon.traditional.v2.framework.utils.propertyHandler;
 
 public class TestTarget {
 	
@@ -31,36 +20,11 @@ public TestTarget(String targetName) {
 	this.targetName = targetName;
 }	
 
-
-// Move the main class to Test Class
-public static void main(String[] args) throws FrameworkException {
+@Override
+public String toString() {
+	return this.targetName + "::" + this.device.toString() + "::" + this.orientation + "::" + this.browser.toString() + "::" + this.browserSize.toString();
 	
-	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver");
-	System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"//drivers//msedgedriver");
-	System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//drivers//geckodriver");
-	//WebDriver D = new ChromeDriver();
-	//WebDriver D = new EdgeDriver();
-	TestTarget t = new TestTarget("test");
-	Browser b = new Browser();
-	b.browserName = "edge";
-	t.browser = b;
-	ViewPort browserSize = new ViewPort();
-	browserSize.height = 500;
-	browserSize.width = 700;
-	
-	b.size = browserSize;
-	t.browserSize = browserSize;
-	WebDriver D = new DriverFactory(t).setUpDriver();
-	
-	D.get(propertyHandler.getInstance().getValue("app.v1.url"));
-	LOG.debug(String.format("Browser height is:",D.manage().window().getSize().height));
-	LOG.debug(String.format("Browser width is:",D.manage().window().getSize().width));	
-
 }
-
-
-
-
 
 
 

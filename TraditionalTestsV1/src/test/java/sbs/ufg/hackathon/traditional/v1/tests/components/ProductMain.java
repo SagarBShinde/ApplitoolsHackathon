@@ -40,6 +40,11 @@ public class ProductMain extends BaseComponent {
 		
 	}
 	
+	public String getProductName() {
+		return this.productName.getText();
+		
+	}
+	
 	public Map<String,String> checkProductName(String pageName, TestTarget target) throws FrameworkException{
 		return this.compareElementVisuals(pageName, target, this.productName, "productName");
 	

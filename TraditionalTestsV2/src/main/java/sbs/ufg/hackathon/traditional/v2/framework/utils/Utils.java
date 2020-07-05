@@ -17,7 +17,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import sbs.ufg.hackathon.traditional.v2.framework.basePage.BasePage;
 import sbs.ufg.hackathon.traditional.v2.framework.excptions.FrameworkException;
 
 public class Utils {
@@ -90,4 +89,11 @@ public class Utils {
 		
 	}
 
+	public static void hardWait(int timeInSeconds) {
+		try {
+			Thread.sleep(timeInSeconds * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 }

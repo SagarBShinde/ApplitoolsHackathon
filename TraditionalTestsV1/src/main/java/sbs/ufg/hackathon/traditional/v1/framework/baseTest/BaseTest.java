@@ -29,12 +29,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Factory;
 
 import sbs.ufg.hackathon.traditional.v1.framework.constants.*;
-import sbs.ufg.hackathon.traditional.v1.framework.dataProvider.TestTargetList;
 import sbs.ufg.hackathon.traditional.v1.framework.excptions.FactoryException;
 import sbs.ufg.hackathon.traditional.v1.framework.excptions.FrameworkException;
 import sbs.ufg.hackathon.traditional.v1.framework.excptions.ReporterException;
 import sbs.ufg.hackathon.traditional.v1.framework.excptions.VisualAttributeException;
 import sbs.ufg.hackathon.traditional.v1.framework.setup.TestTarget;
+import sbs.ufg.hackathon.traditional.v1.framework.testFactory.TestTargetList;
 import sbs.ufg.hackathon.traditional.v1.framework.utils.JSONUtils;
 import sbs.ufg.hackathon.traditional.v1.framework.utils.JSONUtilsGsonImpl;
 import sbs.ufg.hackathon.traditional.v1.framework.utils.TestReporter;
@@ -64,13 +64,16 @@ public class BaseTest {
 	
 	
 	@BeforeSuite
-	public void methodBeforeSuite() throws FrameworkException {
-		LOG.info(propertyHandler.getInstance().getValue("app.v1.url"));
+	public void beforeSuiteMethod() throws FrameworkException {
+		LOG.info("STARTING TEST EXECUTION......");
+		LOG.info("Application URL is:"+propertyHandler.getInstance().getValue("app.v1.url"));
 		
 	}	
 	@AfterSuite
 	public void afterSuiteMethod() throws ReporterException  {
+		LOG.debug("Closing report..");
 		this.report.close();
+		LOG.info("FINISHING TEST EXECUTION......");	
 		
 	}
 		
@@ -78,58 +81,66 @@ public class BaseTest {
 	
 	@BeforeClass
 	public void beforeClassMethod() throws FrameworkException {
+		LOG.debug("Starting Execution for Target---------------"+ this.testTarget.toString());
 		this.report = TestReporter.getInstance();
 		LOG.debug("Initializing Driver.....");
 		this.driver = new DriverFactory(this.testTarget).setUpDriver();
 		this.driver.get(propertyHandler.getInstance().getValue("app.v1.url"));
+
 	
 	}
 	
 	@AfterClass
-	public void afterClassMethod() throws FrameworkException {
+	public void afterClassMethod() throws FrameworkException {	
 		LOG.debug("Closing Driver.....");
 		this.getDriver().quit();
+		LOG.debug("Finishing Execution for Target---------------"+ this.testTarget.toString());
+
+		
 		
 	
 	}
 	
-	
-	@BeforeTest
-	public void initDriver() throws FrameworkException {
-		
-		LOG.info(propertyHandler.getInstance().getValue("app.v1.url"));
-	}
 	
 	@BeforeMethod
 	public void beforeMethod() throws FrameworkException {
+		LOG.debug("Opening report for writting......");
 		this.report.open();
+		LOG.debug("Report Open.......");
+		Utils.closeStream();
 	}
 	
 	@AfterMethod
 	public void afterMethod() throws FrameworkException {
+		LOG.debug("Closinng report for writting......");
 		this.report.close();
 	}
 	
+
 	
 	@AfterTest
 	public void afterTestMethod() throws FrameworkException {
-		this.report.close();
+		LOG.debug("Closing Driver.....");
+		this.getDriver().quit();
+
 		
 	}
 	
 	
 	
 	
-	@Factory
+	@Factory()
     public Object[] factMethod() throws FrameworkException {
 		LOG.info(propertyHandler.getInstance().getValue("app.v1.url"));
 		try {
-			LOG.debug("In the factory method");		
-			String targetJson = Utils.readFile(System.getProperty("user.dir")+"//config//test_targets.json");
+			LOG.debug("In the factory method");	
+			LOG.debug("Reading target file from:"+ System.getProperty("user.dir")+"/config/test_targets.json");
+			String targetJson = Utils.readFile(System.getProperty("user.dir")+"/config/test_targets.json");
 			JSONUtils jsonUtil =  new JSONUtilsGsonImpl(targetJson);
 			
 			TestTargetList testTargets = this.getClass().getAnnotation(TestTargetList.class);
 			List<Object> testList = new ArrayList<Object>();
+			
 			for(String testTargetArrayName: testTargets.value()) {
 				TestTarget[] targets = (TestTarget[]) jsonUtil.getObject(jsonUtil.getJSONArray(testTargetArrayName).toString(), TestTarget[].class);
 				LOG.debug("Test Target Array Name:"+ testTargetArrayName +" Test Target Array lenght:"+ targets.length);
@@ -138,16 +149,17 @@ public class BaseTest {
 				}
 				
 			}
-			
 			LOG.debug(String.format("Length of the Target Array is: %d", testList.toArray().length));
 			return testList.toArray();
 		
 		} catch (FileNotFoundException e) {
 			
+			LOG.error("Test Target file not found at:"+ System.getProperty("user.dir")+"//config//test_targets.json");
 			throw new FactoryException("Test targets file not found at:"+ System.getProperty("user.dir")+"//config//test_targets.json" );
 			
 		} catch (Exception e) {
 			
+			LOG.error("Encountered error in the factory method while creating Test target objects:"+ e.getStackTrace());
 			throw new FactoryException("Encountered exception in the test factory:"+ e.getStackTrace());
 			
 		}	
@@ -155,16 +167,17 @@ public class BaseTest {
 	}
 	
 	public StringBuilder getReportLine(String testDescription, String locator, TestTarget target) {
+		LOG.debug("Creating a Record line for reporting...");
 		StringBuilder reportRec = new StringBuilder(testDescription);
-		reportRec.append(",");
-		//reportRec.append("DOM ID:" + locator);
-		//reportRec.append(",");
-		reportRec.append("Browser:"+this.testTarget.browser.browserName.toUpperCase());
-		reportRec.append(",");
-//		reportRec.append("Viewport:"+this.testTarget.browserSize.width + "X" + this.testTarget.browserSize.height);
-//		reportRec.append(",");
-//		reportRec.append("Device:"+this.testTarget.device.deviceName);
-//		reportRec.append(",");
+		reportRec.append(", ");
+		reportRec.append("DOM ID: " + locator);
+		reportRec.append(", ");
+		reportRec.append("Browser: "+this.testTarget.browser.browserName.toUpperCase());
+		reportRec.append(", ");
+		reportRec.append("Viewport: "+this.testTarget.browserSize.width + "X" + this.testTarget.browserSize.height);
+		reportRec.append(", ");
+		reportRec.append("Device: "+this.testTarget.device.deviceName);
+		reportRec.append(", ");
 		
 		return reportRec;
 		

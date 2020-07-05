@@ -1,8 +1,15 @@
 TODO List
-- Integrate the WebDriver Manager
-- Integrate reporter
-- Maven Parent Child project
-- Managing waits
+- Integrate the WebDriver Manager- Done
+- Integrate reporter- Package donne
+- Maven Parent Child project- NA
+- Managing waits - Done
+- Compare bugs with Applitools
+- Complete 2 Tests
+- Fix Reporter
+- Complete Readme
+
+
+
 
 
 Changes
@@ -15,3 +22,4 @@ Heart sign disappears
 Applifashio gets repositioned
 Add unit tests for Framework
 product howver over does not work in the new app
+

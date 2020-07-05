@@ -1,4 +1,0 @@
-
-Task: 1, Test Name: Validate Account,Browser:CHROME,Status:Pass
-Task: 1, Test Name: Validate Account,Browser:FIREFOX,Status:Pass
-Task: 1, Test Name: Validate Account,Browser:FIREFOX,Status:Pass

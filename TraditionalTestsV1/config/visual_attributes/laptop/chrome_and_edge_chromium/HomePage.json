@@ -243,15 +243,7 @@
             },
             {
                 "element_name" : "openFilterBtn",
-                "isDisplayed" : false,
-                "element_size" : {
-                    "height" : 100,
-                    "width" : 200
-                },
-                "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
-                }
+                "isDisplayed" : false
             },
             {
                 "element_name" : "productGrid",

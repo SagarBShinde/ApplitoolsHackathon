@@ -17,6 +17,11 @@ public class Browser {
 		this.browserDriverLoc = browserDriverLoc;
 	}
 	
+	@Override
+	public String toString() {
+		 return browserName + "::" + version;
+		
+	}
 	
 	
 }

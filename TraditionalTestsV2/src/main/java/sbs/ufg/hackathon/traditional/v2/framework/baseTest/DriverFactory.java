@@ -28,10 +28,10 @@ public class DriverFactory {
 	}
 
 	public WebDriver setUpDriver() throws FrameworkException {
-		
+				
 		WebDriver d;
 		
-		
+		LOG.info("Setting up driver the Driver factory...");
 		switch(this.target.browser.browserName.toLowerCase()) {
 		
 		case "chrome":
@@ -56,7 +56,7 @@ public class DriverFactory {
 			break;
 		
 		default:
-			throw new FrameworkException("Test target contains a browser not supported by the framework, supported browser are chrome, firefox and edge. Browser found" + target.browser.browserName );
+			throw new FrameworkException("Test target contains a browser not supported by the framework, supported browser are chrome, firefox and edge. Browser found :" + target.browser.browserName );
 		
 		
 		}
@@ -65,12 +65,14 @@ public class DriverFactory {
 	}
 
 	private void setTimeOuts(WebDriver d) {
+		LOG.info("Setting up wait timeouts....");
 		d.manage().timeouts().implicitlyWait(FrameworkConstants.DRIVER_IMPLICIT_WAIT, TimeUnit.SECONDS);
 		d.manage().timeouts().pageLoadTimeout(FrameworkConstants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		d.manage().timeouts().setScriptTimeout(FrameworkConstants.SCRRIPT_TIMEOUT, TimeUnit.SECONDS);
 	}
 
 	private void setBrowserSize(WebDriver d) {
+		LOG.info("Setting up browser size as:"+target.browserSize.toString() );
 		Dimension browser_size = new Dimension(target.browserSize.width,target.browserSize.height);
 		d.manage().window().setSize(browser_size);
 	} 
