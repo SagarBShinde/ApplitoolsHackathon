@@ -1,8 +1,9 @@
-# ApplitoolsHackathon
+# Applitools UFG Hackathon 2020
 ## Table of contents
 
 * [Introduction](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#introduction)
 * [System Requirements](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#system-requirements)
+* [Test Results](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#test-results) 
 * [Instructions To Run Tests](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#instructions-to-run-tests)
 * [Traditional UI Testing Approach](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#traditional-ui-testing-approach)
    * [UI Test Framework](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#ui-test-framework)
@@ -32,7 +33,37 @@ The code has been tested with following configurarion
     * Microsoft Edge Chromium - Version 83.0.478.58 (Official build) (64-bit)
     * Mozilla Firefox Version 78.0.1 (64-bit)
 
-**Note** : Traditional Tests will may fail if run on Windows/ Linux Machine since the Visual Attributes (Refer framework concepts section) are specific to browser installed on MAC machine
+## Test Results
+
+### Modern V1
+* **Total TCs:** 3
+* **Pass TCs:** 3 
+* **Failed TCs:** 0
+* **UFG Batch Status:** Unresolved
+* [Test Results](https://eyes.applitools.com/app/test-results/00000251808239140134/?accountId=mdeyMVGPpkmhCDsGnZPwXw~~)
+
+### Modern v2
+* **Total TCs:** 3
+* **Pass TCs:** 0
+* **Failed TCs:** 3
+* **UFG Batch Status:** Failed 
+* [Test Results](https://eyes.applitools.com/app/test-results/00000251808238892279/?accountId=mdeyMVGPpkmhCDsGnZPwXw~~)
+
+### Traditional V1
+* **Total TCs:** 371
+* **Pass TCs:** 371
+* **Failed TCs:** 0
+
+### Traditional V2
+* **Total TCs:** 371
+* **Pass TCs:** 281
+* **Failed TCs:** 90
+
+**Notes** : 
+1. No. Of Failures are high for Traditional V2 run since the traditional framework checks visibility as well as other visual attributes e.g. element size, location, text, color. All the failure reasons can be found in Traditional-V2-TestResults-with-Failure-Reasons.txt in the root folder. Please refer [Traditional UI Testing Approach](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#traditional-ui-testing-approach) for further details
+2. Traditional Tests have been tested on MAC and may fail if run on Windows/ Linux Machine since the Visual Attributes (Refer framework concepts section) are specific to browsers installed on MAC machine
+
+
 
 ## Instructions to run tests
 1. Clone the repo from this [location](https://github.com/SagarBShinde/ApplitoolsHackathon) on GitHub
