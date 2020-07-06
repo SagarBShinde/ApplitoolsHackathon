@@ -60,7 +60,7 @@ The code has been tested with following configurarion
 * **Failed TCs:** 90
 
 **Notes** : 
-1. No. Of Failures are high for Traditional V2 run since the traditional framework checks visibility as well as other visual attributes e.g. element size, location, text, color. All the failure reasons can be found in Traditional-V2-TestResults-with-Failure-Reasons.txt in the root folder. Please refer [Traditional UI Testing Approach](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#traditional-ui-testing-approach) for further details
+1. No. of Failures are high for Traditional V2 run since the traditional framework checks visibility as well as other visual attributes e.g. element size, location, text, color, etc. All the failure reasons can be found in Traditional-V2-TestResults-with-Failure-Reasons.txt in the root folder. Please refer [Traditional UI Testing Approach](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#traditional-ui-testing-approach) for further details
 2. Traditional Tests have been tested on MAC and may fail if run on Windows/ Linux Machine since the Visual Attributes (Refer framework concepts section) are specific to browsers installed on MAC machine
 
 
