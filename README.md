@@ -283,6 +283,7 @@ Following is the Sample HomePage baseline with AppHeader Component
             }
         ]
     }
+ ```
 4. Start writing UI Validations tests
 5. You can provide any random values in the beginning. Run the test and report will tell you the actual values for each attribute
 6. Review the report, check each element on the UI and update baseline as required. 
