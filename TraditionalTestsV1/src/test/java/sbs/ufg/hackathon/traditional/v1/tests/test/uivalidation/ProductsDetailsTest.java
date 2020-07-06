@@ -43,11 +43,9 @@ public class ProductsDetailsTest extends AppliToolsBaseTest {
 
 		ProductDetailPage productDetailsPage = new ProductDetailPage(this.getDriver());
 		
-		String actualDefaultSize = productDetailsPage.productOption.getSizeDropDownDefaultValue();
-		reportRec.append(", "); 
+		String actualDefaultSize = productDetailsPage.productOption.getSizeDropDownDefaultValue(); 
 		String status = (actualDefaultSize.equals("Small (S)")) ? "Pass" : "Fail";
-		reportRec.append(", ");
-		reportRec.append(status);
+		reportRec.append("Status: "+status);
 		this.report.write(reportRec.toString());
 		Assert.assertEquals(actualDefaultSize, "Small (S)");
 		
@@ -60,10 +58,8 @@ public class ProductsDetailsTest extends AppliToolsBaseTest {
 		ProductDetailPage productDetailsPage = new ProductDetailPage(this.getDriver());
 		String actualDefaultQuantity = productDetailsPage.productOption.getQuantityInputDefaultValue();
 		
-		reportRec.append(", ");
 		String status = (actualDefaultQuantity.equals("1")) ? "Pass" : "Fail";
-		reportRec.append(", ");
-		reportRec.append(status);
+		reportRec.append("Status: "+status);
 		this.report.write(reportRec.toString());
 		Assert.assertEquals(actualDefaultQuantity, "1");
 		
@@ -310,7 +306,7 @@ public class ProductsDetailsTest extends AppliToolsBaseTest {
 	public void validateAccount() throws FrameworkException {
 		ProductDetailPage productDetailPage = new ProductDetailPage(this.getDriver());
 		
-		StringBuilder reportRec = this.getReportLine("Task: 3, Test Name: Validate Account",productDetailPage.mainNavBar.getLocator("account"),this.testTarget );
+		StringBuilder reportRec = this.getReportLine("Task: 3, Test Name: Validate Account on product detail page",productDetailPage.mainNavBar.getLocator("account"),this.testTarget );
 		
 		Map<String, String> compareResult = productDetailPage.mainNavBar.checkAccount("productDetailPage", this.testTarget);
 		

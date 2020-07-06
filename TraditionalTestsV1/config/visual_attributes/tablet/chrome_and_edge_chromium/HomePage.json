@@ -147,10 +147,6 @@
                 "element_size" : {
                     "height" : 60,
                     "width" : 26
-                },
-                "element_location" : {
-                    "X" : 635,
-                    "Y" : 51
                 }
             },
             {
@@ -173,8 +169,8 @@
                     "width" : 26
                 },
                 "element_location" : {
-                    "X" : 1159,
-                    "Y" : 68
+                    "X" : 727,
+                    "Y" : 51
                 }
             }
         ]

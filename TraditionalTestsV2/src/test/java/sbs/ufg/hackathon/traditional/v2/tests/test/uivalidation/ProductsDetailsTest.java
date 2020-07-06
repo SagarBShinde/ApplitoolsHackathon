@@ -13,7 +13,7 @@ import sbs.ufg.hackathon.traditional.v2.tests.pages.HomePage;
 import sbs.ufg.hackathon.traditional.v2.tests.pages.ProductDetailPage;
 
 @Test
-@TestTargetList({"Mobile_chrome"})
+@TestTargetList({"Laptop_all", "Tablet_all", "Mobile_chrome"})
 public class ProductsDetailsTest extends AppliToolsBaseTest {
 	
 
@@ -44,8 +44,7 @@ public class ProductsDetailsTest extends AppliToolsBaseTest {
 		
 		String actualDefaultSize = productDetailsPage.productOption.getSizeDropDownDefaultValue();
 		String status = (actualDefaultSize.equals("Small (S)")) ? "Pass" : "Fail";
-		reportRec.append(", ");
-		reportRec.append(status);
+		reportRec.append("Status:" + status);
 		this.report.write(reportRec.toString());
 		Assert.assertEquals(actualDefaultSize, "Small (S)");
 		
@@ -58,13 +57,8 @@ public class ProductsDetailsTest extends AppliToolsBaseTest {
 		ProductDetailPage productDetailsPage = new ProductDetailPage(this.getDriver());
 		String actualDefaultQuantity = productDetailsPage.productOption.getQuantityInputDefaultValue();
 		
-		reportRec.append(", ");
-		reportRec.append("Expected results: "+ "1"); 
-		reportRec.append(", ");
-		reportRec.append("Actual results: "+actualDefaultQuantity); 
 		String status = (actualDefaultQuantity.equals("1")) ? "Pass" : "Fail";
-		reportRec.append(", ");
-		reportRec.append(status);
+		reportRec.append("Status: "+ status);
 		this.report.write(reportRec.toString());
 		Assert.assertEquals(actualDefaultQuantity, "1");
 		

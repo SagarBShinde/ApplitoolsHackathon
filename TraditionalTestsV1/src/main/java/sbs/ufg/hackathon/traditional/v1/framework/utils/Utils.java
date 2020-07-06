@@ -97,7 +97,9 @@ public class Utils {
 		if (status.equalsIgnoreCase("Pass")){
 			return status;
 		}else {
-			return status + " Reason:" + reason;
+		//TODO: Needs to remove reason as per requirement in Hackathon
+			 //return status + " Reason:" + reason;
+			return status;
 		}
 		
 	}

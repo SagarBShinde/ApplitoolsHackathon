@@ -81,11 +81,12 @@ public class BaseTest {
 	
 	@BeforeClass
 	public void beforeClassMethod() throws FrameworkException {
-		LOG.debug("----------------Starting Test for Target---------------------" + this.testTarget.toString());
+		LOG.debug("Starting Execution for Target---------------"+ this.testTarget.toString());
 		this.report = TestReporter.getInstance();
 		LOG.debug("Initializing Driver.....");
 		this.driver = new DriverFactory(this.testTarget).setUpDriver();
 		this.driver.get(propertyHandler.getInstance().getValue("app.v2.url"));
+
 	
 	}
 	
@@ -93,7 +94,10 @@ public class BaseTest {
 	public void afterClassMethod() throws FrameworkException {	
 		LOG.debug("Closing Driver.....");
 		this.getDriver().quit();
-		LOG.debug("----------------Ending Test for Target---------------------" + this.testTarget.toString());
+		LOG.debug("Finishing Execution for Target---------------"+ this.testTarget.toString());
+
+		
+		
 	
 	}
 	
@@ -102,26 +106,30 @@ public class BaseTest {
 	public void beforeMethod() throws FrameworkException {
 		LOG.debug("Opening report for writting......");
 		this.report.open();
+		LOG.debug("Report Open.......");
+		Utils.closeStream();
 	}
 	
 	@AfterMethod
 	public void afterMethod() throws FrameworkException {
 		LOG.debug("Closinng report for writting......");
 		this.report.close();
-		
 	}
 	
+
 	
 //	@AfterTest
 //	public void afterTestMethod() throws FrameworkException {
-//		this.report.close();
+//		LOG.debug("Closing Driver.....");
+//		this.getDriver().quit();
+//
 //		
 //	}
 	
 	
 	
 	
-	@Factory
+	@Factory()
     public Object[] factMethod() throws FrameworkException {
 		LOG.info(propertyHandler.getInstance().getValue("app.v2.url"));
 		try {
@@ -168,7 +176,7 @@ public class BaseTest {
 		reportRec.append(", ");
 		reportRec.append("Viewport: "+this.testTarget.browserSize.width + "X" + this.testTarget.browserSize.height);
 		reportRec.append(", ");
-		reportRec.append("Device: "+this.testTarget.device.deviceName);
+		reportRec.append("Device: "+this.testTarget.device.deviceType);
 		reportRec.append(", ");
 		
 		return reportRec;

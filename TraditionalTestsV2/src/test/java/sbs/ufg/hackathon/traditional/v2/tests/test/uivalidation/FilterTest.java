@@ -34,8 +34,7 @@ public class FilterTest extends AppliToolsBaseTest {
 		int matchProductCount = homePage.colorFilter.getExpectedMatchCount("Black");
 		int actualProductCount = homePage.productSection.getGridItemCount();
 		String status = (matchProductCount == actualProductCount) ? "Pass" : "Fail";
-		reportRec.append(", ");
-		reportRec.append(status);
+		reportRec.append("Status: "+status);
 		this.report.write(reportRec.toString());
 		Assert.assertEquals(actualProductCount, matchProductCount);	
 		

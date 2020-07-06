@@ -68,7 +68,7 @@ public class ColorFilter extends ProductFilter {
 		switch (color.toLowerCase()) {
 		
 			case "black":
-				Utils.hardWait(1);
+			
 				return this.blackFilterSection;
 			
 			case "white":

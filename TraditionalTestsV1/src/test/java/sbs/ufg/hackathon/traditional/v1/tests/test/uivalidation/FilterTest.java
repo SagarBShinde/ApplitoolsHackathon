@@ -35,8 +35,7 @@ public class FilterTest extends AppliToolsBaseTest {
 		int matchProductCount = homePage.colorFilter.getExpectedMatchCount("Black");
 		int actualProductCount = homePage.productSection.getGridItemCount();
 		String status = (matchProductCount == actualProductCount) ? "Pass" : "Fail";
-		reportRec.append(", ");
-		reportRec.append(status);
+		reportRec.append("Status: "+status);
 		this.report.write(reportRec.toString());
 		Assert.assertEquals(actualProductCount, matchProductCount);	
 		
@@ -100,7 +99,7 @@ public class FilterTest extends AppliToolsBaseTest {
 		softAssert.assertAll();	
 	}
 	
-	@Test(description = "Validate original price for the first product on the grid on the home page", priority = 1)
+	@Test(description = "Validate sale price for the first product on the grid on the home page", priority = 1)
 	public void validateOriginalPrice() throws FrameworkException {
 		HomePage homePage = new HomePage(this.getDriver());
 		

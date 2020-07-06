@@ -145,12 +145,12 @@
                 "element_name" : "cart",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 60,
+                    "height" : 28,
                     "width" : 26
                 },
                 "element_location" : {
-                    "X" : 1159,
-                    "Y" : 68
+                    "X" : 459,
+                    "Y" : 62
                 }
             }
         ]

@@ -55,6 +55,7 @@ public class ProductSection extends BaseComponent {
 	}
 	
 	public void viewProductDetail(int productIndex) {
+		scrollToElement(this.gridItems.get(productIndex));	
 		this.gridItems.get(productIndex).click();
 		
 	}

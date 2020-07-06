@@ -176,7 +176,7 @@ public class BaseTest {
 		reportRec.append(", ");
 		reportRec.append("Viewport: "+this.testTarget.browserSize.width + "X" + this.testTarget.browserSize.height);
 		reportRec.append(", ");
-		reportRec.append("Device: "+this.testTarget.device.deviceName);
+		reportRec.append("Device: "+this.testTarget.device.deviceType);
 		reportRec.append(", ");
 		
 		return reportRec;

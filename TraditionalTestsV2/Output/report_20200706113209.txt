@@ -1,0 +1,365 @@
+
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:681 Y:52 actual location X:635 Y:52
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:681 Y:52 actual location X:635 Y:52
+Task: 1, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:681 Y:52 actual location X:635 Y:52
+Task: 1, Test Name: Validate ApplitoolsLogo, DOM ID: logo, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate ApplitoolsLogo, DOM ID: logo, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate ApplitoolsLogo, DOM ID: logo, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate ApplitoolsLogo, DOM ID: logo, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate ApplitoolsLogo, DOM ID: logo, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate ApplitoolsLogo, DOM ID: logo, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate ApplitoolsLogo, DOM ID: logo, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Black Filter Section, DOM ID: LI____103, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Black Filter Section, DOM ID: LI____103, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Black Filter Section, DOM ID: LI____103, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Black Filter Section, DOM ID: LI____103, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Black Filter Section, DOM ID: LI____103, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Black Filter Section, DOM ID: LI____103, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Black Filter Section, DOM ID: LI____103, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Cart Button, DOM ID: DIV__dropdowndr__48, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Cart Button, DOM ID: DIV__dropdowndr__48, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Cart Button, DOM ID: DIV__dropdowndr__48, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Cart Button, DOM ID: DIV__dropdowndr__48, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Cart Button, DOM ID: DIV__dropdowndr__48, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Cart Button, DOM ID: DIV__dropdowndr__48, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Cart Button, DOM ID: DIV__dropdowndr__48, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Customer Tool Section, DOM ID: UL__toptools__46, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Customer Tool Section, DOM ID: UL__toptools__46, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Customer Tool Section, DOM ID: UL__toptools__46, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Customer Tool Section, DOM ID: UL__toptools__46, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected size  height:60 width:112 actual size height:60 width:138: expected location  X:641 Y:52 actual location X:615 Y:52
+Task: 1, Test Name: Validate Customer Tool Section, DOM ID: UL__toptools__46, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Customer Tool Section, DOM ID: UL__toptools__46, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected size  height:60 width:112 actual size height:60 width:138: expected location  X:641 Y:52 actual location X:615 Y:52
+Task: 1, Test Name: Validate Customer Tool Section, DOM ID: UL__toptools__46, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected size  height:60 width:112 actual size height:60 width:138: expected location  X:641 Y:52 actual location X:615 Y:52
+Task: 1, Test Name: Validate Grid View, DOM ID: I__tiviewgrid__203, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Grid View, DOM ID: I__tiviewgrid__203, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Grid View, DOM ID: I__tiviewgrid__203, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Grid View, DOM ID: I__tiviewgrid__203, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Grid View, DOM ID: I__tiviewgrid__203, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Grid View, DOM ID: I__tiviewgrid__203, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Grid View, DOM ID: I__tiviewgrid__203, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Home Menu, DOM ID: LI__submenu__22, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Home Menu, DOM ID: LI__submenu__22, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Home Menu, DOM ID: LI__submenu__22, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Home Menu, DOM ID: LI__submenu__22, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Home Menu, DOM ID: LI__submenu__22, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Home Menu, DOM ID: LI__submenu__22, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Home Menu, DOM ID: LI__submenu__22, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate List View Button, DOM ID: I__tiviewlist__205, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate List View Button, DOM ID: I__tiviewlist__205, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate List View Button, DOM ID: I__tiviewlist__205, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate List View Button, DOM ID: I__tiviewlist__205, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate List View Button, DOM ID: I__tiviewlist__205, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate List View Button, DOM ID: I__tiviewlist__205, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate List View Button, DOM ID: I__tiviewlist__205, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Main Menu, DOM ID: DIV__mainmenu__15, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Main Menu, DOM ID: DIV__mainmenu__15, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Main Menu, DOM ID: DIV__mainmenu__15, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Main Menu, DOM ID: DIV__mainmenu__15, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Main Menu, DOM ID: DIV__mainmenu__15, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Main Menu, DOM ID: DIV__mainmenu__15, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Main Menu, DOM ID: DIV__mainmenu__15, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Men Menu, DOM ID: LI__megamenusu__24, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Men Menu, DOM ID: LI__megamenusu__24, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Men Menu, DOM ID: LI__megamenusu__24, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Men Menu, DOM ID: LI__megamenusu__24, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Men Menu, DOM ID: LI__megamenusu__24, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Men Menu, DOM ID: LI__megamenusu__24, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Men Menu, DOM ID: LI__megamenusu__24, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Open Filter Button:, DOM ID: A__openfilter__207, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Open Filter Button:, DOM ID: A__openfilter__207, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Open Filter Button:, DOM ID: A__openfilter__207, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Open Filter Button:, DOM ID: A__openfilter__207, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:638 Y:527 actual location X:603 Y:528
+Task: 1, Test Name: Validate Open Filter Button:, DOM ID: A__openfilter__207, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Open Filter Button:, DOM ID: A__openfilter__207, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:638 Y:527 actual location X:603 Y:528
+Task: 1, Test Name: Validate Open Filter Button:, DOM ID: A__openfilter__207, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:638 Y:527 actual location X:603 Y:528
+Task: 1, Test Name: Validate product grid: , DOM ID: product_grid, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product grid: , DOM ID: product_grid, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate product grid: , DOM ID: product_grid, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product grid: , DOM ID: product_grid, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product grid: , DOM ID: product_grid, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product grid: , DOM ID: product_grid, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product grid: , DOM ID: product_grid, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product view bar, DOM ID: UL__clearfix__192, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product view bar, DOM ID: UL__clearfix__192, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate product view bar, DOM ID: UL__clearfix__192, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product view bar, DOM ID: UL__clearfix__192, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product view bar, DOM ID: UL__clearfix__192, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product view bar, DOM ID: UL__clearfix__192, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product view bar, DOM ID: UL__clearfix__192, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Running Menu, DOM ID: LI__megamenusu__28, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Running Menu, DOM ID: LI__megamenusu__28, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Running Menu, DOM ID: LI__megamenusu__28, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Running Menu, DOM ID: LI__megamenusu__28, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Running Menu, DOM ID: LI__megamenusu__28, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Running Menu, DOM ID: LI__megamenusu__28, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Running Menu, DOM ID: LI__megamenusu__28, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Bar, DOM ID: DIV__customsear__41, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Bar, DOM ID: DIV__customsear__41, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Search Bar, DOM ID: DIV__customsear__41, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Bar, DOM ID: DIV__customsear__41, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Bar, DOM ID: DIV__customsear__41, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Bar, DOM ID: DIV__customsear__41, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Bar, DOM ID: DIV__customsear__41, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Input, DOM ID: INPUTtext____42, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Input, DOM ID: INPUTtext____42, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Search Input, DOM ID: INPUTtext____42, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Input, DOM ID: INPUTtext____42, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Input, DOM ID: INPUTtext____42, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Input, DOM ID: INPUTtext____42, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Search Input, DOM ID: INPUTtext____42, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down, DOM ID: sort, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down, DOM ID: sort, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down, DOM ID: sort, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down, DOM ID: sort, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down, DOM ID: sort, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down, DOM ID: sort, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Sort Drop Down, DOM ID: sort, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Top Product, DOM ID: DIV__topbanner__188, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Top Product, DOM ID: DIV__topbanner__188, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Top Product, DOM ID: DIV__topbanner__188, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Top Product, DOM ID: DIV__topbanner__188, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Top Product, DOM ID: DIV__topbanner__188, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Top Product, DOM ID: DIV__topbanner__188, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Top Product, DOM ID: DIV__topbanner__188, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Training Menu, DOM ID: LI__megamenusu__30, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Training Menu, DOM ID: LI__megamenusu__30, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Training Menu, DOM ID: LI__megamenusu__30, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Training Menu, DOM ID: LI__megamenusu__30, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Training Menu, DOM ID: LI__megamenusu__30, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Training Menu, DOM ID: LI__megamenusu__30, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Training Menu, DOM ID: LI__megamenusu__30, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate Women Menu, DOM ID: LI__megamenusu__26, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Women Menu, DOM ID: LI__megamenusu__26, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Women Menu, DOM ID: LI__megamenusu__26, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Women Menu, DOM ID: LI__megamenusu__26, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Women Menu, DOM ID: LI__megamenusu__26, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Women Menu, DOM ID: LI__megamenusu__26, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Women Menu, DOM ID: LI__megamenusu__26, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Mobile, DOM ID: A__btnsearchm__59, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Mobile, DOM ID: A__btnsearchm__59, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:: expected location  X:15 Y:62 actual location X:255 Y:62
+Task: 1, Test Name: Validate search button for Mobile, DOM ID: A__btnsearchm__59, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Mobile, DOM ID: A__btnsearchm__59, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Mobile, DOM ID: A__btnsearchm__59, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Mobile, DOM ID: A__btnsearchm__59, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Mobile, DOM ID: A__btnsearchm__59, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Laptop and Tablet, DOM ID: BUTTONsubmit____43, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Laptop and Tablet, DOM ID: BUTTONsubmit____43, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 1, Test Name: Validate search button for Laptop and Tablet, DOM ID: BUTTONsubmit____43, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Laptop and Tablet, DOM ID: BUTTONsubmit____43, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Laptop and Tablet, DOM ID: BUTTONsubmit____43, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Laptop and Tablet, DOM ID: BUTTONsubmit____43, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate search button for Laptop and Tablet, DOM ID: BUTTONsubmit____43, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 2, Test Name: Validate number of filtered products for Black color filter:, DOM ID: Filter Results, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status: Fail
+Task: 2, Test Name: Validate number of filtered products for Black color filter:, DOM ID: Filter Results, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status: Fail
+Task: 2, Test Name: Validate number of filtered products for Black color filter:, DOM ID: Filter Results, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status: Fail
+Task: 2, Test Name: Validate number of filtered products for Black color filter:, DOM ID: Filter Results, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status: Fail
+Task: 2, Test Name: Validate number of filtered products for Black color filter:, DOM ID: Filter Results, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status: Fail
+Task: 2, Test Name: Validate number of filtered products for Black color filter:, DOM ID: Filter Results, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status: Fail
+Task: 2, Test Name: Validate number of filtered products for Black color filter:, DOM ID: Filter Results, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status: Fail
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate cart icon, DOM ID: I__tishopping__234, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate Add to compare icon, DOM ID: I__ticontrols__230, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate Add to compare icon, DOM ID: I__ticontrols__230, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate Add to compare icon, DOM ID: I__ticontrols__230, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate Add to compare icon, DOM ID: I__ticontrols__230, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate Add to compare icon, DOM ID: I__ticontrols__230, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate Add to compare icon, DOM ID: I__ticontrols__230, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate Add to compare icon, DOM ID: I__ticontrols__230, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate count down, DOM ID: DIV__countdown__217, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate count down, DOM ID: DIV__countdown__217, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate count down, DOM ID: DIV__countdown__217, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate count down, DOM ID: DIV__countdown__217, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate count down, DOM ID: DIV__countdown__217, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate count down, DOM ID: DIV__countdown__217, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate count down, DOM ID: DIV__countdown__217, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product, DOM ID: SPAN__ribbonoff__213, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product, DOM ID: SPAN__ribbonoff__213, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product, DOM ID: SPAN__ribbonoff__213, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product, DOM ID: SPAN__ribbonoff__213, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product, DOM ID: SPAN__ribbonoff__213, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product, DOM ID: SPAN__ribbonoff__213, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate Off Ribbon first product, DOM ID: SPAN__ribbonoff__213, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate original price, DOM ID: SPAN__oldprice__222, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate original price, DOM ID: SPAN__oldprice__222, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate original price, DOM ID: SPAN__oldprice__222, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate original price, DOM ID: SPAN__oldprice__222, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate original price, DOM ID: SPAN__oldprice__222, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate original price, DOM ID: SPAN__oldprice__222, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate original price, DOM ID: SPAN__oldprice__222, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product image, DOM ID: product_1, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product image, DOM ID: product_1, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product image, DOM ID: product_1, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product image, DOM ID: product_1, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product image, DOM ID: product_1, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product image, DOM ID: product_1, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate product image, DOM ID: product_1, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product name, DOM ID: H3____219, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product name, DOM ID: H3____219, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product name, DOM ID: H3____219, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product name, DOM ID: H3____219, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product name, DOM ID: H3____219, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate product name, DOM ID: H3____219, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate product name, DOM ID: H3____219, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate sale price, DOM ID: SPAN__newprice__221, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate sale price, DOM ID: SPAN__newprice__221, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate sale price, DOM ID: SPAN__newprice__221, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate sale price, DOM ID: SPAN__newprice__221, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate sale price, DOM ID: SPAN__newprice__221, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate sale price, DOM ID: SPAN__newprice__221, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 1, Test Name: Validate sale price, DOM ID: SPAN__newprice__221, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 1, Test Name: Validate wish list icon, DOM ID: I__tiheart__226, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate wish list icon, DOM ID: I__tiheart__226, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate wish list icon, DOM ID: I__tiheart__226, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate wish list icon, DOM ID: I__tiheart__226, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate wish list icon, DOM ID: I__tiheart__226, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate wish list icon, DOM ID: I__tiheart__226, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 1, Test Name: Validate wish list icon, DOM ID: I__tiheart__226, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  true actual visibility false
+Task: 3, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:: expected size  height:100 width:200 actual size height:60 width:26: expected location  X:10 Y:20 actual location X:1067 Y:69
+Task: 3, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Account, DOM ID: DIV__dropdowndr__55, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Default value in Quantity input box:, DOM ID: Filter Results, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status: Pass
+Task: 3, Test Name: Validate Default value in Quantity input box:, DOM ID: Filter Results, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status: Pass
+Task: 3, Test Name: Validate Default value in Quantity input box:, DOM ID: Filter Results, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status: Pass
+Task: 3, Test Name: Validate Default value in Quantity input box:, DOM ID: Filter Results, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status: Pass
+Task: 3, Test Name: Validate Default value in Quantity input box:, DOM ID: Filter Results, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status: Pass
+Task: 3, Test Name: Validate Default value in Quantity input box:, DOM ID: Filter Results, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status: Pass
+Task: 3, Test Name: Validate Default value in Quantity input box:, DOM ID: Filter Results, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status: Pass
+Task: 3, Test Name: Validate Default Value in Size Dropdown:, DOM ID: Filter Results, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Fail
+Task: 3, Test Name: Validate Default Value in Size Dropdown:, DOM ID: Filter Results, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail
+Task: 3, Test Name: Validate Default Value in Size Dropdown:, DOM ID: Filter Results, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail
+Task: 3, Test Name: Validate Default Value in Size Dropdown:, DOM ID: Filter Results, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Fail
+Task: 3, Test Name: Validate Default Value in Size Dropdown:, DOM ID: Filter Results, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Fail
+Task: 3, Test Name: Validate Default Value in Size Dropdown:, DOM ID: Filter Results, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail
+Task: 3, Test Name: Validate Default Value in Size Dropdown:, DOM ID: Filter Results, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail
+Task: 3, Test Name: Validate Product Name, DOM ID: shoe_name, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product Name, DOM ID: shoe_name, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Product Name, DOM ID: shoe_name, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product Name, DOM ID: shoe_name, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product Name, DOM ID: shoe_name, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product Name, DOM ID: shoe_name, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product Name, DOM ID: shoe_name, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 3, Test Name: Validate Wish List, DOM ID: A__wishlist__52, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:ed: expected visibility  false actual visibility true
+Task: 3, Test Name: Validate Product Image, DOM ID: SMALL____84, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason::colorexpected_value: rgb(68, 68, 68)actual_value: rgb(255, 255, 255)
+Task: 3, Test Name: Validate Product Image, DOM ID: SMALL____84, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason::colorexpected_value: rgba(68, 68, 68, 1)actual_value: rgba(255, 255, 255, 1)
+Task: 3, Test Name: Validate Product Image, DOM ID: SMALL____84, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason::colorexpected_value: rgb(68, 68, 68)actual_value: rgb(255, 255, 255)
+Task: 3, Test Name: Validate Product Image, DOM ID: SMALL____84, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason::colorexpected_value: rgb(68, 68, 68)actual_value: rgba(255, 255, 255, 1): expected location  X:15 Y:698 actual location X:15 Y:699
+Task: 3, Test Name: Validate Product Image, DOM ID: SMALL____84, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason::colorexpected_value: rgb(68, 68, 68)actual_value: rgba(255, 255, 255, 1): expected location  X:15 Y:698 actual location X:15 Y:699
+Task: 3, Test Name: Validate Product Image, DOM ID: SMALL____84, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason::colorexpected_value: rgb(68, 68, 68)actual_value: rgba(255, 255, 255, 1)
+Task: 3, Test Name: Validate Product Image, DOM ID: SMALL____84, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason::colorexpected_value: rgb(68, 68, 68)actual_value: rgba(255, 255, 255, 1)
+Task: 3, Test Name: Validate Product Image, DOM ID: shoe_img, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason::background-imageexpected_value: url("https://demo.applitools.com/grid/img/products/shoes/1.jpg")actual_value: none
+Task: 3, Test Name: Validate Product Image, DOM ID: shoe_img, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Product Image, DOM ID: shoe_img, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason::background-imageexpected_value: url("https://demo.applitools.com/grid/img/products/shoes/1.jpg")actual_value: none
+Task: 3, Test Name: Validate Product Image, DOM ID: shoe_img, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product Image, DOM ID: shoe_img, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product Image, DOM ID: shoe_img, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product Image, DOM ID: shoe_img, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review count, DOM ID: EM__ratingcoun__82, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review count, DOM ID: EM__ratingcoun__82, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:: expected location  X:105 Y:601 actual location X:75 Y:601
+Task: 3, Test Name: Validate Product review count, DOM ID: EM__ratingcoun__82, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:105 Y:644 actual location X:75 Y:644
+Task: 3, Test Name: Validate Product review count, DOM ID: EM__ratingcoun__82, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review count, DOM ID: EM__ratingcoun__82, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review count, DOM ID: EM__ratingcoun__82, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:105 Y:643 actual location X:75 Y:643
+Task: 3, Test Name: Validate Product review count, DOM ID: EM__ratingcoun__82, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:105 Y:643 actual location X:75 Y:643
+Task: 3, Test Name: Validate Product review star_1 , DOM ID: I__iconstarvo__77, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_1 , DOM ID: I__iconstarvo__77, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Product review star_1 , DOM ID: I__iconstarvo__77, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_1 , DOM ID: I__iconstarvo__77, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_1 , DOM ID: I__iconstarvo__77, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_1 , DOM ID: I__iconstarvo__77, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_1 , DOM ID: I__iconstarvo__77, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__78, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__78, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__78, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__78, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__78, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__78, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__78, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_3 , DOM ID: I__iconstarvo__79, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_3 , DOM ID: I__iconstarvo__79, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Product review star_3 , DOM ID: I__iconstarvo__79, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_3 , DOM ID: I__iconstarvo__79, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_3 , DOM ID: I__iconstarvo__79, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_3 , DOM ID: I__iconstarvo__79, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_3 , DOM ID: I__iconstarvo__79, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__80, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__80, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__80, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__80, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__80, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__80, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_2 , DOM ID: I__iconstarvo__80, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: I__iconstar__81, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: I__iconstar__81, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: I__iconstar__81, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: I__iconstar__81, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: I__iconstar__81, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: I__iconstar__81, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: I__iconstar__81, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Add To Cart Button , DOM ID: A__btn__114, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Add To Cart Button , DOM ID: A__btn__114, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Add To Cart Button , DOM ID: A__btn__114, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:631 Y:885 actual location X:631 Y:836
+Task: 3, Test Name: Validate Add To Cart Button , DOM ID: A__btn__114, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Add To Cart Button , DOM ID: A__btn__114, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Add To Cart Button , DOM ID: A__btn__114, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:631 Y:884 actual location X:631 Y:835
+Task: 3, Test Name: Validate Add To Cart Button , DOM ID: A__btn__114, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected location  X:631 Y:884 actual location X:631 Y:835
+Task: 3, Test Name: Validate product discount  , DOM ID: discount, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate product discount  , DOM ID: discount, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate product discount  , DOM ID: discount, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate product discount  , DOM ID: discount, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate product discount  , DOM ID: discount, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate product discount  , DOM ID: discount, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate product discount  , DOM ID: discount, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product original price , DOM ID: old_price, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product original price , DOM ID: old_price, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason::text-decoration-lineexpected_value: line-throughactual_value: nonecolorexpected_value: rgba(153, 153, 153, 1)actual_value: rgba(0, 77, 218, 1)
+Task: 3, Test Name: Validate Product original price , DOM ID: old_price, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product original price , DOM ID: old_price, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product original price , DOM ID: old_price, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product original price , DOM ID: old_price, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product original price , DOM ID: old_price, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: new_price, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:: expected size  height:19 width:49 actual size height:19 width:27ed: expected text  $33.00 actual text $33: expected location  X:772 Y:775 actual location X:795 Y:775
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: new_price, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Fail Reason:: expected size  height:19 width:50 actual size height:19 width:27: expected location  X:31 Y:897 actual location X:53 Y:897
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: new_price, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected size  height:19 width:49 actual size height:19 width:27ed: expected text  $33.00 actual text $33: expected location  X:165 Y:898 actual location X:187 Y:898
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: new_price, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:: expected size  height:19 width:50 actual size height:19 width:27ed: expected text  $33.00 actual text $33: expected location  X:772 Y:773 actual location X:795 Y:774
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: new_price, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Fail Reason:: expected size  height:19 width:50 actual size height:19 width:27ed: expected text  $33.00 actual text $33: expected location  X:772 Y:773 actual location X:795 Y:774
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: new_price, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected size  height:19 width:50 actual size height:19 width:27ed: expected text  $33.00 actual text $33
+Task: 3, Test Name: Validate Product review star_5 , DOM ID: new_price, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Fail Reason:: expected size  height:19 width:50 actual size height:19 width:27ed: expected text  $33.00 actual text $33
+Task: 3, Test Name: Validate Product quantity input , DOM ID: quantity_1, Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product quantity input , DOM ID: quantity_1, Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Product quantity input , DOM ID: quantity_1, Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product quantity input , DOM ID: quantity_1, Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product quantity input , DOM ID: quantity_1, Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product quantity input , DOM ID: quantity_1, Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Product quantity input , DOM ID: quantity_1, Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Size drop down , DOM ID: //*[@class = 'nice-select wide'], Browser: FIREFOX, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Size drop down , DOM ID: //*[@class = 'nice-select wide'], Browser: CHROME, Viewport: 500X700, Device: MOBILE, Status:Pass
+Task: 3, Test Name: Validate Size drop down , DOM ID: //*[@class = 'nice-select wide'], Browser: FIREFOX, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Size drop down , DOM ID: //*[@class = 'nice-select wide'], Browser: EDGE_CHROMIUM, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Size drop down , DOM ID: //*[@class = 'nice-select wide'], Browser: CHROME, Viewport: 1200X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Size drop down , DOM ID: //*[@class = 'nice-select wide'], Browser: EDGE_CHROMIUM, Viewport: 768X700, Device: LAPTOP, Status:Pass
+Task: 3, Test Name: Validate Size drop down , DOM ID: //*[@class = 'nice-select wide'], Browser: CHROME, Viewport: 768X700, Device: LAPTOP, Status:Pass

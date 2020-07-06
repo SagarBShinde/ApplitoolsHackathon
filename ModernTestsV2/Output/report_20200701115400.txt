@@ -1,8 +1,0 @@
-
-Task 1 – Cross-Device Elements Test Test Target:laptop_chrome::windows_laptop::LAPTOP::WIN::windows_10::windows_10::POTRAIT::Chrome::v75.0::1200X700 Status:Unresolved
-Task 1 – Cross-Device Elements Test Test Target:laptop_edge_chromium::windows_laptop::LAPTOP::WIN::windows_10::windows_10::POTRAIT::edge_chromium::v75.0::1200X700 Status:Unresolved
-Task 1 – Cross-Device Elements Test Test Target:laptop_firefox::windows_laptop::LAPTOP::MAC::windows_10::windows_10::POTRAIT::firefox::v75.0::1200X700 Status:Unresolved
-Task 1 – Cross-Device Elements Test Test Target:tablet_chrome::windows_laptop::LAPTOP::WIN::windows_10::windows_10::POTRAIT::Chrome::v75.0::768X700 Status:Unresolved
-Task 1 – Cross-Device Elements Test Test Target:tablet_edge_chromium::windows_laptop::LAPTOP::MAC::windows_10::windows_10::POTRAIT::edge_chromium::v75.0::768X700 Status:Passed
-Task 1 – Cross-Device Elements Test Test Target:tablet_firefox::windows_laptop::LAPTOP::MAC::windows_10::windows_10::POTRAIT::chrome::v75.0::768X700 Status:Unresolved
-Task 1 – Cross-Device Elements Test Test Target:mobile_chrome::iPhone X::MOBILE::iOS::windows_10::xxxx::POTRAIT::Chrome::v75.0::700X500 Status:Passed

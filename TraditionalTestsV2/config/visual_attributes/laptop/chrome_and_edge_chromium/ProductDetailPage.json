@@ -141,24 +141,24 @@
                 "element_name" : "account",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 60,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 1067,
+                    "Y" : 69
                 }
             },
             {
                 "element_name" : "wishList",
                 "isDisplayed" : true,
                 "element_size" : {
-                    "height" : 100,
-                    "width" : 200
+                    "height" : 60,
+                    "width" : 26
                 },
                 "element_location" : {
-                    "X" : 10,
-                    "Y" : 20
+                    "X" : 1113,
+                    "Y" : 69
                 }
             },
             {

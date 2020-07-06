@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Applitools_UFG_Hackathon_Suite">
+  <test name="Cross Device Element Test-1">
+      <classes>
+      	<class name="sbs.ufg.hackathon.traditional.v1.tests.test.uivalidation.CrossDeviceElementTest"/>
+      </classes>
+  </test> <!-- Test --> 
+<test name="Filter Test">    
+    <classes>
+      <class name="sbs.ufg.hackathon.traditional.v1.tests.test.uivalidation.FilterTest"/>
+   </classes>
+  </test> 
+     
+ <test name="Product Details Test">    
+    <classes>
+      <class name="sbs.ufg.hackathon.traditional.v1.tests.test.uivalidation.ProductsDetailsTest"/>
+   </classes>
+  </test>
+  
+</suite> <!-- Suite -->

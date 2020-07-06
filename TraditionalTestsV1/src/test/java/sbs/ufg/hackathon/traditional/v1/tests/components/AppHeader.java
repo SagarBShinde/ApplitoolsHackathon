@@ -1,25 +1,18 @@
 package sbs.ufg.hackathon.traditional.v1.tests.components;
 
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.PageFactory;
-
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
 
 import sbs.ufg.hackathon.traditional.v1.framework.basePage.BaseComponent;
 import sbs.ufg.hackathon.traditional.v1.framework.excptions.FactoryException;
 import sbs.ufg.hackathon.traditional.v1.framework.excptions.FrameworkException;
 import sbs.ufg.hackathon.traditional.v1.framework.setup.TestTarget;
-import sbs.ufg.hackathon.traditional.v1.framework.utils.Utils;
 import sbs.ufg.hackathon.traditional.v1.framework.utils.VisualAttribute;
 
 public class AppHeader extends BaseComponent {

@@ -42,8 +42,7 @@ public class DriverFactory {
 			break;
 		
 		case "firefox":
-		//	WebDriverManager.firefoxdriver().setup();
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//drivers//geckodriver");
+			WebDriverManager.firefoxdriver().setup();
 			d = new FirefoxDriver();
 			setBrowserSize(d);
 			setTimeOuts(d);

@@ -23,3 +23,8 @@
 hs_err_pid*
 /.metadata/
 /.DS_Store
+Applitools_hackathon.code-workspace
+ModernTestsV1/.factorypath
+ModernTestsV1/.settings/org.eclipse.jdt.apt.core.prefs
+TraditionalTestsV2/.settings/org.eclipse.jdt.apt.core.prefs
+TraditionalTestsV2/TODOList

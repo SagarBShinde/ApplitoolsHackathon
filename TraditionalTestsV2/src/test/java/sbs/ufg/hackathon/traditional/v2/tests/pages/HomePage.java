@@ -53,7 +53,6 @@ public class HomePage extends BasePage {
 		this.productSection.openFilter();
 		this.colorFilter.selectFilterOption(color);
 		this.filterButtons.applyFilter();
-		this.productSection.wait_till_searchResult();
 		
 	}
 	
