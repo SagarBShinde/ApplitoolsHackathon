@@ -1,4 +1,22 @@
 # ApplitoolsHackathon
+## Table of contents
+
+* [Introduction](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#introduction)
+* [System Requirements](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#system-requirements)
+* [Instructions To Run Tests](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#instructions-to-run-tests)
+* [Traditional UI Testing Approach](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#traditional-ui-testing-approach)
+   * [UI Test Framework](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#ui-test-framework)
+   * [Framework Concepts](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#framework-concepts)
+   * [Page Object Model Using Components](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#page-object-model-using-components)
+   * [Test Design](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#test-design)
+   * [Sample UI Test](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#sample-ui-test)
+   * [Reporting](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#reporting)
+   * [Getting Started](https://github.com/SagarBShinde/ApplitoolsHackathon/blob/master/README.md#getting-started)
+
+
+
+
+
 ## Introduction
 This project is a collection of four maven subprojects that are created for [Applitools UFG Hackathon 2020](https://applitools.com/cross-browser-testing-hackathon-v20-1-apply/). As per hackathon instructions the 2 versions of the applitools demo app have been automated by the modern and traditional approach.
 Frameworks : Java + Selenium 3 + TestNG
