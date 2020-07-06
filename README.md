@@ -42,7 +42,7 @@ The code has been tested with following configurarion
 * **UFG Batch Status:** Unresolved
 * [Test Results](https://eyes.applitools.com/app/test-results/00000251808239140134/?accountId=mdeyMVGPpkmhCDsGnZPwXw~~)
 
-### Modern v2
+### Modern V2
 * **Total TCs:** 3
 * **Pass TCs:** 0
 * **Failed TCs:** 3
